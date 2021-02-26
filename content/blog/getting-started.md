@@ -1,5 +1,5 @@
 +++
-Description = ""
+Description = "Why Bother? How Did This Start? Will It Last? -Questions no one asked but I'm here to answer."
 Date = 2021-02-25T14:15:27-06:00
 PublishDate = 2021-02-25T14:15:27-06:00 # this is the datetime for the when the epsiode was published. This will default to Date if it is not set. Example is "2016-04-25T04:09:45-05:00"
 title = "Getting Things in Order"
