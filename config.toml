@@ -1,5 +1,5 @@
-baseurl = "http://localhost:1313"
-#baseurl = "https:linuxlemming.com/"
+#baseurl = "http://localhost:1313"
+baseurl = "http:linuxlemming.com/"
 languageCode = "en-us"
 title = "The Linux Lemming"
 theme = "castanet"
