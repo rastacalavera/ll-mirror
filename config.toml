@@ -14,9 +14,9 @@ buildFuture = true
   tag = "tags"
 
 [permalinks]
-#  page = "/:filename/"
-#	about = "/:filename/"
-#	episode = "/:filename/"
+  page = "/content/page:filename/"
+	about = "/content/TLL:filename/"
+	episode = "/content/episode:filename/"
 
 
 # The theme supports menus with up to one submenu per menu item
