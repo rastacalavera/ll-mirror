@@ -1,6 +1,6 @@
 #baseurl = "http://localhost:1313"
-baseurl = "https:linuxlemming.com/"
-#baseurl = "https://rastacalavera.gitlab.io/"
+#baseurl = "https:linuxlemming.com/"
+baseurl = "https://rastacalavera.gitlab.io/"
 languageCode = "en-us"
 title = "The Linux Lemming"
 theme = "castanet"
