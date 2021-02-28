@@ -44,3 +44,44 @@ I recently decided to purchase my domain of `linuxlemming.com` from [register4le
 - The gitlab page- https://rastacalavera.gitlab.io/linuxlemming
 - My Domain page- https://linuxlemming.com/
 The gitlab page url works fine but the domain one only loads the main page and 404s on everything else. Searching seemed to lead me to that I might have to wait 24-48 hours and then everything will work. I hope that is the case. . . otherwise I'll be popping into the gitlab forums next to try to trouble shoot the issue.
+
+### baseURL and Extra Stuff
+
+Now that the site is up, more things don't work! HOORAY!
+
+So here is the main issue, If my baseURL is set to different options, the theme breaks but the links all go to the correct location or the theme works but none of the links move accordingly. Here it is laid out:
+
+#### baseurl= "https://rastacalavera.gitlab.io/linuxlemming/" 
+* Theme works
+* gitlab page url works fine, all links work
+* linuxlemming.com landing pages works with theme
+* none of the links work. All have an extra `/linuxlemming/`
+
+### baseurl= "https://www.linuxlemming.com/"
+* gitlab page loads but there is no theme
+    * none of the links work, they all 404. 
+    * after the main "rastacalavera.gitlab.io/" there is no "/linuxlemming/"
+* linuxlemming.com loads but there is no theme
+    * all links work
+```
+#baseurl = "http://localhost:1313"
+#baseurl = "https:www.linuxlemming.com/"
+baseurl = "https://rastacalavera.gitlab.io/linuxlemming/"
+#relativeURLs = true
+languageCode = "en-us"
+title = "The Linux Lemming"
+theme = "castanet"
+googleAnalytics = ""
+paginate = "9"
+buildFuture = true
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[permalinks]
+  page = "../..:filename/"
+  about = "../..:filename/"
+  episode = "../..:filename/"
+```
