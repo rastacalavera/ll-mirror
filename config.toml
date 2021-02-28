@@ -1,6 +1,7 @@
 #baseurl = "http://localhost:1313"
-#baseurl = "http:linuxlemming.com/"
-baseurl = "https://rastacalavera.gitlab.io/linuxlemming"
+baseurl = "https:www.linuxlemming.com/"
+#baseurl = "https://rastacalavera.gitlab.io/linuxlemming/"
+#relativeURLs = true
 languageCode = "en-us"
 title = "The Linux Lemming"
 theme = "castanet"
@@ -14,9 +15,9 @@ buildFuture = true
   tag = "tags"
 
 [permalinks]
-	# page = "/:filename/"
-	about = "/:filename/"
-	episode = "/:filename/"
+  page = "../..:filename/"
+	about = "../..:filename/"
+	episode = "../..:filename/"
 
 
 # The theme supports menus with up to one submenu per menu item
