@@ -1,7 +1,7 @@
 #baseurl = "http://localhost:1313"
 baseurl = "https://www.linuxlemming.com/"
 #baseurl = "https://rastacalavera.gitlab.io/linuxlemming/"
-canonifyURLs = true
+#canonifyURLs = true
 #relativeURLs = true
 languageCode = "en-us"
 title = "The Linux Lemming"
@@ -21,7 +21,7 @@ buildFuture = true
 	episode = "/:filename/"
 
 
-# The theme supports menus with up to one submenu per menu item
+# The theme supports menus with up to one sub-menu per menu item
 # The menu name must be "Main"
 # The menus are sorted based upon their identifier
 [[Menu.Main]]
