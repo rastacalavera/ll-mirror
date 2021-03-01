@@ -9,7 +9,7 @@ variables:
 
 test:
   script:
-    - hugo --theme=castanet --baseURL=https://www.linuxlemming.com/
+    - hugo
   except:
     - master
 
