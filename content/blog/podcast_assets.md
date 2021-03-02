@@ -2,7 +2,7 @@
 Description = ""
 Date = 2021-03-01T16:12:58-06:00
 PublishDate = 2021-03-01T16:12:58-06:00 # this is the datetime for the when the epsiode was published. This will default to Date if it is not set. Example is "2016-04-25T04:09:45-05:00"
-title = "Setting the Framework for Community Podcasting"
+title = "Setting the Framework for Community Contribution"
 #blog_banner = ""
 blog_image = "img/episode/default.jpg"
 images = ["img/episode/default-social.jpg"]
@@ -18,8 +18,14 @@ In order to do this, there has to be a rigid methodology so that a user knows ho
 ### Asking For and Providing Help
 * A [template](/files/Request_Template.odt) should be followed before a user asks for dedicated assistance.
 * Contributors should clearly understand the goals and deliverable.
+* GitLab will be the place for project tracking.
 
-### Post from 11/2019
+### Publishing the Deliverable
+This is still a work in progress. I don't necessarily want this to turn into it's own page for "How To" documents. I want the contributions to go upstream whenever possible. Places like [linuxDelta](https://wiki.linuxdelta.com/mediawiki/index.php/Main_Page) or [Self-Hosted](https://wiki.selfhosted.show/) or [Front Page Linux](https://frontpagelinux.com/) would be ideal but if the authors and contributors have other places to post, great. I think if good sources are in multiple places, that would be ideal.
+
+If someone wants to produce an audio contribution, like a podcast episode, then that I would want to be in the LL stream. It can also be posted where ever else if another podcast wants to pick it up. If things actually move forward, I would also release an episode just detailing the work going on in the gitlab repo.
+
+### Original Post from 11/2019 on DLN Discourse
 > I listen to shows and lurk in forums, telegram, etc. but my schedule doesn’t really line up with interacting with the community much.
 >
 >I’ve experienced the generosity from members in the community in terms of troubleshoot issues and recently thought, “WHY DIDN’T I DOCUMENT ANYTHING?!?!”. I want to solve personal technology problems AND help the community at the same time so this is where this crazy idea came from.
@@ -34,4 +40,5 @@ In order to do this, there has to be a rigid methodology so that a user knows ho
 >
 > To be clear, I don’t want this to benefit me as an individual. The thought is that individuals in the community benefit, we have a concise way to share that with everyone! 
 
-
+### Testing Image resize
+![testing resize](img/website_woes.jpg)
