@@ -41,4 +41,4 @@ If someone wants to produce an audio contribution, like a podcast episode, then 
 > To be clear, I don’t want this to benefit me as an individual. The thought is that individuals in the community benefit, we have a concise way to share that with everyone! 
 
 ### Testing Image resize
-![testing resize](img/website_woes.jpg)
+![testing resize](/img/website_woes.jpg)
