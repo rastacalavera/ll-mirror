@@ -9,6 +9,16 @@ images = ["img/episode/default-social.jpg"]
 #Author = "RastaCalavera"
 #aliases = ["/##"]
 +++
+
+### Getting Involved
+I would love people to submit work to the project or ask someone to attempt a project and report back on their process. 
+
+In order to do this, there has to be a rigid methodology so that a user knows how to ask and what to present. I've come up with a few ideas that still need some testing but I think it is a good place to start.
+
+### Asking For and Providing Help
+* A [template](/files/Request_Template.odt) should be followed before a user asks for dedicated assistance.
+* Contributors should clearly understand the goals and deliverable.
+
 ### Post from 11/2019
 ``` 
 I listen to shows and lurk in forums, telegram, etc. but my schedule doesn’t really line up with interacting with the community much.
@@ -22,8 +32,6 @@ A request is made following an agreed upon template. If someone from the communi
 The end result is a guaranteed submission to an audio stream (podcast) where a host sums up what the issue was and how it was solved and where additional resources can be accessed.
 
 I’m I crazy or is this a cool idea? I don’t know the best way to share documents other than google, so I made a quick post on my blog and added downloads in otd and pdf formats of the template and an example I created.
-
-https://www.mrbracchi.science/blog/2019/11/27/open-podcasting/ 5
 
 To be clear, I don’t want this to benefit me as an individual. The thought is that individuals in the community benefit, we have a concise way to share that with everyone! 
 ```
