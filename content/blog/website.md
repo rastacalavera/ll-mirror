@@ -85,3 +85,13 @@ buildFuture = true
   about = "../..:filename/"
   episode = "../..:filename/"
 ```
+### Light at the End of the Tunnel
+I had tried everything and was out of my depth. I wasn't sure where to turn next. GitLab community support forums? A group from DLN or JB? My problem was pretty unique to me and it seemed like a big ask to jump in a random public group asking for help.
+
+I had previously posted an issue on the [castanet github page](https://github.com/mattstratton/castanet) and the developer, [Matt Stratton](https://github.com/mattstratton) was super friendly and quick to respond! I figured it was worth another shot to open an issue and detail everything that I had tried. 
+
+Well, Matt returned and again was super helpful and friendly! Together we solved the issue and also fixed a larger setting in the theme that may benefit others in the future! If felt really good to close issue [342](https://github.com/mattstratton/castanet/issues/342) not only because it solved my problem but because I had a great community interaction. I really hope I can contribute back to the project by helping to close some of the "chore" issues for him. 
+
+My interaction with Matt just reaffirmed how great open source can be. To get hands on with the actual dev and have a positive interaction is priceless. I'm sure most of his [Arrested DevOps Podcast](https://www.arresteddevops.com/) is over my head, but I'll be sure to give it a listen and if it sounds interesting, you should too!
+
+If you want to see some of our fixes in detail, check out the [issue tracker on his page](https://github.com/mattstratton/castanet/issues/342) or my commit history on [GitLab](https://gitlab.com/rastacalavera/linuxlemming/-/commits/master)
