@@ -59,17 +59,18 @@ buildFuture = true
     identifier = "resources"
     url = "#!"
 
-#[[Menu.Main]]
-#    name = "Books"
-#    identifier = "books"
-#    url = "/books"
-#    parent = "resources"
 [[Menu.Main]]
     name = "Podcasts"
     identifier = "podcasts"
     url = "/Other Podcasts"
     parent = "resources"
 
+[[Menu.Main]]
+    name = "Resources"
+    identifier = "resources"
+    url = "/resources"
+    parent = "resources"
+    
 [params]
 mainSections = ["episode"]
 episode_number_style  = "brackets"
