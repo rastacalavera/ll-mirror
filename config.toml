@@ -58,16 +58,14 @@ buildFuture = true
     name = "Resources"
     identifier = "resources"
     url = "#!"
-
 [[Menu.Main]]
     name = "Podcasts"
     identifier = "podcasts"
     url = "/Other Podcasts"
     parent = "resources"
-
 [[Menu.Main]]
-    name = "Resources"
-    identifier = "resources"
+    name = "Links"
+    identifier = "links"
     url = "/resources"
     parent = "resources"
     
