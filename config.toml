@@ -68,7 +68,11 @@ buildFuture = true
     identifier = "links"
     url = "/resources"
     parent = "resources"
-    
+[[Menu.Main]]
+    name = "Credits"
+    identifier = "credits"
+    url = "/Credits"
+    parent = "resources"    
 [params]
 mainSections = ["episode"]
 episode_number_style  = "brackets"
