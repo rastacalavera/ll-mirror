@@ -31,10 +31,10 @@ Once forked, you can **clone** the project locally to you machine.
 <p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/vsclone.png" height="100" width="800" />
 
 Make changes to the project, like for example the `Resource.md` file:
-<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/resources.png" height="100" width="800" />
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/resources.png" height="300" width="800" />
 
 Then **commit** and **push** those changes to your repository.
-<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/push.png" height="100" width="800" />
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/push.png" height="300" width="800" />
 
 ### Open a Merge Request
 Back in the browser at gitlab, you will need to go to the original project page to submit a [merge request](https://gitlab.com/rastacalavera/linuxlemming/-/merge_requests) and click on the `New Merge` request button.
