@@ -2,7 +2,7 @@
 Title = "RastaCalavera"
 date = "2016-12-08T20:55:58-06:00"
 Twitter = ""
-Website = "https://thelinuxlemming.com/"
+Website = "https://linuxlemming.com/"
 Type = "host"
 Facebook = ""
 Linkedin = ""
