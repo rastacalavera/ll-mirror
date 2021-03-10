@@ -15,6 +15,12 @@ Out Track- Boss Splash by [sawsquarenoise](https://freemusicarchive.org/music/sa
 [Backdoor Survival](https://www.flickr.com/photos/backdoorsurvival/7019634849/in/photolist-bGisT4-7YV4zG-bnCNEQ-at9con-dARur2-dBYisw-oT7t1E-dAT37J-6rtuia-oLXSfZ-37S2CG-aRuWUe-kDQwg4-roDfpm-boj58R-kDQw9a-7VZucT-8rsm94-6JxPZU-yGpo4-9kfA9U-bJGd9-dAhpow-dAkE95-2czD39E-24vBWdY-8FipaZ-5XicUA-82yXVc-dARF94-dAuRXn-dAwJ5K-dAKJf1-5vRA8n-px5YU4-qvv6Gj-KdQHf-aQS4Wp-aQS4Uz-kDQwek-t9whUW-b67Ej-bo1SLp-9LCooV-eer58m-aQS4Qr-eer5aJ-dAQBfD-8vMd4G-dXu9Bp)- Episode 00 cover Art
 > ![](https://live.staticflickr.com/7205/7019634849_9101e62305_q.jpg)
 >
+Gitlab Logo 
+
+<img scr="https://about.gitlab.com/images/press/logo/png/gitlab-icon-1-color-black-rgb.png" width="100" height="100"/> 
+
+Blog post for [Contributing to the Linux Lemming](blog/contributing.md)
+
 
 [//]: <[dumpster fire](https://www.deviantart.com/geosammy/art/Dumpster-Fire-830738583)>
 
