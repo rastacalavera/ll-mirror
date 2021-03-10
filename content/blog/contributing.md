@@ -8,7 +8,7 @@ blog_image = "img/episode/default.jpg"
 images = ["img/episode/default-social.jpg"]
 #Author = ""
 #aliases = ["/##"]
-draft = true
+draft = false
 +++
 ### Contributing Links
 The easiest way to contribute to the project would be to submit links to the resource page. As submissions come in, they can be organized a bit more but for now, anything goes.
