@@ -28,4 +28,22 @@ After you are logged into gitlab, the project needs to be **forked**.
 Once forked, you can **clone** the project locally to you machine.
 <p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/clone.png" height="200" width="400" />
 
-<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/vsclone.png" height="200" width="400" />
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/vsclone.png" height="100" width="800" />
+
+Make changes to the project, like for example the `Resource.md` file:
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/resources.png" height="100" width="800" />
+
+Then **commit** and **push** those changes to your repository.
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/push.png" height="100" width="800" />
+
+### Open a Merge Request
+Back in the browser at gitlab, you will need to go to the original project page to submit a [merge request](https://gitlab.com/rastacalavera/linuxlemming/-/merge_requests) and click on the `New Merge` request button.
+<p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/merge.png" height="100" width="800" />
+
+The next steps walk you through on selecting the source and designation and gives you the opportunity to write any comments you wish to include.
+
+### Wait for Approval
+After you've submitted your request, I'll be notified. I can compare the changes and chose to accept or deny certain parts.
+
+### Congratulations on a Successful Merge!
+Most likely, your changes will be approved and you'll be a contributor!! Hooray!
