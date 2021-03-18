@@ -35,6 +35,11 @@ Gitlab Logo
 
 Blog post for [Contributing to the Linux Lemming](blog/contributing.md)
 
+Pingus Art
+
+<img src="https://pingus-devel.nongnu.narkive.com/Uhp948rS/new-style-pingu:i.2.2.full" width=100 height=100/>
+
+Episode 02 Cover Art
 
 [//]: <[dumpster fire](https://www.deviantart.com/geosammy/art/Dumpster-Fire-830738583)>
 
