@@ -11,6 +11,7 @@ images = ["img/episode/E01/audacity.png"]
 draft = false
 +++
 <html>
+
 ### Contributing Links
 The easiest way to contribute to the project would be to submit links to the resource page. As submissions come in, they can be organized a bit more but for now, anything goes.
 <p style="text-align:center;"> <img src="https://linuxlemming.com/img/episode/E01/links.png" height="200" width="400" />
