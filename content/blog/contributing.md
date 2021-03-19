@@ -10,7 +10,6 @@ images = ["img/episode/E01/audacity.png"]
 #aliases = ["/##"]
 draft = false
 +++
-<html>
 
 ### Contributing Links
 The easiest way to contribute to the project would be to submit links to the resource page. As submissions come in, they can be organized a bit more but for now, anything goes.
@@ -49,7 +48,4 @@ After you've submitted your request, I'll be notified. I can compare the changes
 
 ### Congratulations on a Successful Merge!
 Most likely, your changes will be approved and you'll be a contributor!! Hooray!
-<body>
 <noscript><img src="http://linuxlemming.com/ingress/242f8033-73a2-462f-b014-88375d26d4c7/pixel.gif"></noscript> <script src="http://linuxlemming.com/ingress/242f8033-73a2-462f-b014-88375d26d4c7/script.js"></script> 
-</body>
-</html>
