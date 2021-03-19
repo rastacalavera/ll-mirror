@@ -55,3 +55,15 @@ You'd think Podcast Generator would include that little piece of information in 
 
 ### Up and Running
 Well, it's all up now. I eventually I'll be serving my podcast files from [this site](rss.linuxlemming.com) rather than hosting them through gitlab. I am thinking I may try and contribute this back upstream using j-atoms work as a jumping off point as well.
+
+### Addition
+I did open up a [Pull Request](https://github.com/PodcastGenerator/PodcastGenerator/pull/406) with the main project.
+
+### Links and Resources
+[DO LAMP Stack Details](https://marketplace.digitalocean.com/apps/lamp)
+   
+* Linked from there to [Ubuntu PHP Package](https://packages.ubuntu.com/focal/php)
+
+[Linode LAMP Stack Details](https://www.linode.com/docs/guides/deploy-lamp-stack-with-marketplace-apps/)
+   
+* Linked from there to [PHP Home Page](https://www.php.net/)
