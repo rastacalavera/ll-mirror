@@ -45,12 +45,13 @@ So what do I do now? I went back to the source to try to get help. I commented o
 If php-gettext is not available, try to not install it. Maybe it is not required on Ubuntu
 >
 **WHAT?!?**
+
 Are these two things not included in a standard LAMP install?!? I figured I might as well give it a go and see what happens.
 
 The `php-gettext` package was not available. When I tried to `apt install php-xml` it gave me the option to install it. I was floored. After installing the package, everything worked as expected.
 You'd think Podcast Generator would include that little piece of information in their five step installation.
 
-<img src="https://tenor.com/view/facepalm-really-stressed-mad-angry-gif-16109475" />
+<p style="text-align:center;"><img src="https://media.giphy.com/media/SEp6Zq6ZkzUNW/giphy.gif" class="center"> </p>
 
 ### Up and Running
 Well, it's all up now. I eventually I'll be serving my podcast files from [this site](rss.linuxlemming.com) rather than hosting them through gitlab. I am thinking I may try and contribute this back upstream using j-atoms work as a jumping off point as well.
