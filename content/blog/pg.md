@@ -60,6 +60,8 @@ Well, it's all up now. I eventually I'll be serving my podcast files from [this 
 I did open up a [Pull Request](https://github.com/PodcastGenerator/PodcastGenerator/pull/406) with the main project.
 
 ### Links and Resources
+**Side Note** You do not need a LAMP stack to run Podcast Generator. In fact, it would probably be easier to follow my new written documentation that is a [pending pull request](https://github.com/rastacalavera/PodcastGenerator/blob/Updated-Installation-instructions/INSTALL).
+
 [DO LAMP Stack Details](https://marketplace.digitalocean.com/apps/lamp)
    
 * Linked from there to [Ubuntu PHP Package](https://packages.ubuntu.com/focal/php)
