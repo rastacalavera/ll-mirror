@@ -29,5 +29,5 @@ Shynet has great [documentation](https://github.com/milesmcc/shynet/blob/master/
 After cloning the repo, I modified the files according to the instructions. I was a little uneasy at the possibility of having TWO reverse proxies since SWAG gets all my incoming traffic and that Shynet uses nginx as well, but I figured I would see what happens. I set it up without ssl just to try to make things easier at first.
 
 Everything went smoothly! I was able to log into the dashboard of Shynet just fine but there was one weird thing I noticed.
-
-<img src="https:linuxlemming.com/img/blog/shynet/shynetdash.png" width=100 height=100/>
+**Why does it say `example.com`?!?**
+<p style="text-align:center;"><img src="https:linuxlemming.com/img/blog/shynet/shynetdash.png" width=800 height=200/></p>
