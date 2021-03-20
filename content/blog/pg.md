@@ -4,8 +4,8 @@ Date = 2021-03-18T19:42:30-05:00
 PublishDate = 2021-03-18T19:42:30-05:00 # this is the datetime for the when the epsiode was published. This will default to Date if it is not set. Example is "2016-04-25T04:09:45-05:00"
 title = "Self-Hosted Podcast Generator"
 #blog_banner = ""
-blog_image = "img/episode/default.jpg"
-images = ["img/episode/default-social.jpg"]
+blog_image = "img/blog/pg/rsslemming.png"
+images = ["img/blog/pg/rsslemming.png"]
 #Author = ""
 #aliases = ["/##"]
 +++
