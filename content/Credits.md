@@ -18,6 +18,10 @@ title = "Resources Used for the Linux Lemming Podcast"
 [//]: ![](https://freemusicarchive.org/image?file=image%2Fmvlo0sgnTQwV6JoBcNPyOZG0FTb0bkgeikaQPPgt.jpeg&width=290&height=290&type=image)
 
 ### Art
+Episode 03 Art- Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">Pixabay</a>
+
+<img scr="https://cdn.pixabay.com/photo/2013/07/13/13/42/tux-161406_1280.png"/>
+
 Backdoor Survival- Episode 00 cover Art
 
 
