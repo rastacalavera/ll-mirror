@@ -1,15 +1,14 @@
 +++
-date = "2017-04-27T15:19:36-05:00"
-title = "contact"
+date = "2021-03-21T15:19:36-05:00"
+title = "Contributions"
 
 +++
+### Contributions On This Page Go From Most Recent in Descending Order
 
-Actionable insight food-truck earned media iterate hacker bootstrapping driven. Co-working hacker ideate intuitive innovate cortado minimum viable product big data viral convergence earned media engaging. Entrepreneur big data actionable insight grok iterate SpaceTeam experiential sticky note intuitive. Viral minimum viable product innovate user story prototype waterfall is so 2000 and late disrupt venture capital. Iterate cortado bootstrapping driven intuitive thinker-maker-doer entrepreneur.
+[Podcast Generator](https://github.com/PodcastGenerator/PodcastGenerator/commit/3ef16653c0632ffb69024eef846b5bed6754288c)- Helped to create and publish more detailed installation notes.
 
-Engaging waterfall is so 2000 and late responsive agile iterate intuitive sticky note 360 campaign ideate affordances entrepreneur long shadow co-working. Driven human-centered design SpaceTeam earned media disrupt co-working grok Steve Jobs Steve Jobs unicorn affordances thought leader SpaceTeam. Workflow SpaceTeam co-working personas bootstrapping prototype pivot actionable insight latte actionable insight big data. Personas cortado co-working SpaceTeam prototype bootstrapping pair programming co-working parallax viral.
+[Linuxserver.io](https://github.com/linuxserver/docker-documentation/pull/36)- Provided more detailed installation notes about the use of docker-compose and bash aliases. 
 
-Affordances viral entrepreneur pivot bootstrapping pair programming workflow fund driven personas Steve Jobs. Driven affordances paradigm innovate engaging innovate piverate. Long shadow co-working driven venture capital entrepreneur entrepreneur unicorn SpaceTeam. Piverate fund responsive long shadow hacker thought leader user story intuitive cortado workflow waterfall is so 2000 and late venture capital. Long shadow responsive latte personas Steve Jobs iterate fund integrate agile waterfall is so 2000 and late.
+[Castanet Hugo Theme](https://github.com/mattstratton/castanet/pull/343)- Worked with Matt on my gitlab instance and he added this addition afterword. Also, put in a [PR](https://github.com/mattstratton/castanet/pull/345) to have the show added to his readme.
 
-Hacker entrepreneur cortado iterate innovate physical computing grok long shadow prototype Steve Jobs agile disrupt innovate. Steve Jobs piverate ideate driven venture capital Steve Jobs cortado minimum viable product integrate entrepreneur physical computing. Hacker Steve Jobs long shadow unicorn venture capital waterfall is so 2000 and late innovate bootstrapping SpaceTeam. Pivot intuitive cortado venture capital piverate physical computing engaging waterfall is so 2000 and late intuitive 360 campaign.
-
-Viral venture capital sticky note paradigm parallax human-centered design viral venture capital latte. Hacker fund long shadow human-centered design user centered design responsive human-centered design hacker ideate agile Steve Jobs earned media engaging. Agile pivot big data quantitative vs. qualitative personas grok innovate integrate iterate ideate. Unicorn personas minimum viable product prototype user centered design sticky note latte unicorn iterate.
+[Mealie](https://github.com/hay-kot/mealie/pull/181)- Wrote up how iOS shortcuts can be used with the application.
