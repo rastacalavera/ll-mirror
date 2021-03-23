@@ -8,4 +8,5 @@ blog_image = "img/episode/default.jpg"
 images = ["img/episode/default-social.jpg"]
 #Author = ""
 #aliases = ["/##"]
+draft= true #set to false to publish
 +++
