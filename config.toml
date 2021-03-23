@@ -114,20 +114,6 @@ disqusShortname = ""
   [params.realfavicongenerator] # https://realfavicongenerator.net/
     mask_icon_color="#5bbad5"
     msapplication_tilecolor="#2b5797"
-    theme_color="#ffffff"
-
-  [params.podlove] # https://subscribe-button.podlove.org
-    subscribe_title = ""              # fallback: site title from above
-    subscribe_subtitle = ""           # fallback: ""
-    subscribe_description = ""        # fallback: ""
-    subscribe_cover = "img/ll_logo.png"  # fallback: ""
-    subscribe_color = "#585e6c"       # fallback: ""
-    subscribe_size = "medium"         # options: small, medium, big
-    subscribe_format = "rectangle"    # options: rectangle, square, cover
-    subscribe_style = "filled"        # options: filled, outline, frameless
-    subscribe_language = "en"         # options: nl (dutch), en (english), eo (esperanto), de (german), fi (finnish), fr (french), ja (french)
-    subscribe_feed_type = "audio"     # options: audio, video
-    subscribe_feed_format = "mp3"     # options: mp3, aac, ogg, opus
 
   [params.social]
     github = "rastacalavera"
@@ -168,15 +154,6 @@ disqusShortname = ""
       [params.links.sdt]
         name = "Software Defined Talk"
         url = "https://cote.io/podcasts/sdt/"
-      [params.matomo]
-        url = "https://example.org"
-        id = 1
-      [params.matomo.track]
-        button = "Allow Tracking"
-        message = "Tracking Enabled"
-      [params.matomo.block]
-        button = "Disallow Tracking"
-        message = "Traching has been disabled."
 ####
 ##added to try to get html to render
 [markup]
