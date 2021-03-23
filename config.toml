@@ -5,7 +5,7 @@ canonifyURLs = true
 #relativeURLs = true
 languageCode = "en-us"
 title = "The Linux Lemming"
-theme = "castanet"
+theme = ["castanet","matomo"]
 googleAnalytics = ""
 paginate = "9"
 buildFuture = true
@@ -168,6 +168,15 @@ disqusShortname = ""
       [params.links.sdt]
         name = "Software Defined Talk"
         url = "https://cote.io/podcasts/sdt/"
+      [params.matomo]
+        url = "https://example.org"
+        id = 1
+      [params.matomo.track]
+        button = "Allow Tracking"
+        message = "Tracking Enabled"
+      [params.matomo.block]
+        button = "Disallow Tracking"
+        message = "Traching has been disabled."
 ####
 ##added to try to get html to render
 [markup]
