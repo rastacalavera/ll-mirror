@@ -18,6 +18,10 @@ title = "Resources Used for the Linux Lemming Podcast"
 [//]: ![](https://freemusicarchive.org/image?file=image%2Fmvlo0sgnTQwV6JoBcNPyOZG0FTb0bkgeikaQPPgt.jpeg&width=290&height=290&type=image)
 
 ### Art
+Episode 04 Art- Found on [Greg Leden's Blog](https://gregladen.com/blog/2019/01/21/how-to-be-a-hacker/)
+
+<img src="https://i2.wp.com/gregladen.com/blog/wp-content/uploads/2019/01/Tux_Hacker.png?resize=562%2C270&ssl=1" width="200" height="100"/>
+
 Episode 03 Art- Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">Pixabay</a>
 
 <img src="https://linuxlemming.com/img/episode/e03/e03_original.png" width="100" height="100">
