@@ -23,4 +23,31 @@ I don't have spare hardware at the moment so I decided to do all the testing in 
 1. Download the ISO(s) that you want to test. I did Kbuntu and Kylin because they still had tests that needed to be done in the live environment. I am familiar with Kbuntu and have heard of Kylin but never tried it.
 2. Open Virtual box and create a new environment.
 
-<img src"https://linuxlemming.com/episode/e04/new/png" width="100" height="100"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/new.png" width="500" height="100"/>
+
+3. Setup the virtual environment for Linux and Ubuntu
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/type.png" width="300" height="200"/>
+
+4. Allocate the memory for ram. I have 32GB so I gave mine around 8GB of ram
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/memory.png" width="300" height="200"/>
+
+5. I did not provide any disk space for the machine since this will be running a live environment only.
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/nodisk.png" width="300" height="200"/>
+
+6. Mount the ISO in the virtual environment
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/iso.png" width="300" height="200"/>
+
+7. Change the settings to recognize it as a live environment
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/live.png" width="400" height="200"/>
+
+Now I was ready to follow the checklist and submit any bugs that I came across! I found only a small "bug" in Kbuntu where the language menu was not in the described place. Kylin on the other hand had LOTS of screen tearing when I was using apps.
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kbuntu.png" width="400" height="200"/>
+
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kylin.png" width="400" height="200"/>
+
+I imagine that the next steps involve a Conical employee to verify my findings. Hopefully I'll find more time to test more but it felt good to contribute to this effort.
