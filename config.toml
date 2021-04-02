@@ -57,7 +57,7 @@ buildFuture = true
 [[Menu.Main]]
     name = "Resources"
     identifier = "resources"
-    url = "#!"
+    url = "/resources"
 [[Menu.Main]]
     name = "Podcasts"
     identifier = "podcasts"
@@ -66,7 +66,7 @@ buildFuture = true
 [[Menu.Main]]
     name = "Links"
     identifier = "links"
-    url = "/resources"
+    url = "/links"
     parent = "resources"
 [[Menu.Main]]
     name = "Credits"
@@ -75,8 +75,8 @@ buildFuture = true
     parent = "resources"    
 [params]
 mainSections = ["episode"]
-episode_number_style  = "brackets"
-episode_number_prefix = "CWC"
+#episode_number_style  = "brackets"
+#episode_number_prefix = "CWC"
 site_theme = "grey"
 # site_layout = "grid"
 site_layout = "row"
