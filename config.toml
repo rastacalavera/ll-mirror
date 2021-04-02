@@ -72,7 +72,7 @@ buildFuture = true
     name = "Credits"
     identifier = "credits"
     url = "/Credits"
-    parent = "resources"    
+    #parent = "resources"    
 [params]
 mainSections = ["episode"]
 #episode_number_style  = "brackets"
