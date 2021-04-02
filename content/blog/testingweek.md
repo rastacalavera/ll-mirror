@@ -20,7 +20,7 @@ I watched Alan's videos on how to do it and then logged into my account and got 
 ### Using Virtual Images
 I don't have spare hardware at the moment so I decided to do all the testing in virtual box. I haven't used virtual box that much, but the process was pretty straight forward. 
 
-1. Download the ISO(s) that you want to test. I did Kbuntu and Kylin because they still had tests that needed to be done in the live environment. I am familiar with Kbuntu and have heard of Kylin but never tried it.
+1. Download the ISO(s) that you want to test. I did Kubuntu and Kylin because they still had tests that needed to be done in the live environment. I am familiar with Kubuntu and have heard of Kylin but never tried it.
 2. Open Virtual box and create a new environment.
 
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/new.png" width="500" height="100"/>
@@ -44,8 +44,8 @@ I don't have spare hardware at the moment so I decided to do all the testing in 
 
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/live.png" width="400" height="200"/>
 
-Now I was ready to follow the checklist and submit any bugs that I came across! I found only a small "bug" in Kbuntu where the language menu was not in the described place. Kylin on the other hand had LOTS of screen tearing when I was using apps.
-<h2 style="text-align:center;"> Kbuntu </h2>  
+Now I was ready to follow the checklist and submit any bugs that I came across! I found only a small "bug" in Kubuntu where the language menu was not in the described place. Kylin on the other hand had LOTS of screen tearing when I was using apps.
+<h2 style="text-align:center;"> Kubuntu </h2>  
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kbuntu.png" width="600" height="100"/>
 <h2 style="text-align:center;"> Kylin </h2> 
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kylin.png" width="600" height="100"/>
