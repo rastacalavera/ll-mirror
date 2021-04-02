@@ -57,7 +57,7 @@ buildFuture = true
 [[Menu.Main]]
     name = "Resources"
     identifier = "resources"
-    url = "/resources"
+    url = "#!"
 [[Menu.Main]]
     name = "Podcasts"
     identifier = "podcasts"
