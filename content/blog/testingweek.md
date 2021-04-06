@@ -48,6 +48,6 @@ Now I was ready to follow the checklist and submit any bugs that I came across! 
 <h2 style="text-align:center;"> Kubuntu </h2>  
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kbuntu.png" width="600" height="100"/>
 <h2 style="text-align:center;"> Kylin </h2> 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kylin.png" width="600" height="100"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kylin.png" class="img-fluid"/>
 
 I imagine that the next steps involve a Conical employee to verify my findings. Hopefully I'll find more time to test more but it felt good to contribute to this effort.
