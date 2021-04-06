@@ -23,30 +23,30 @@ I don't have spare hardware at the moment so I decided to do all the testing in 
 1. Download the ISO(s) that you want to test. I did Kubuntu and Kylin because they still had tests that needed to be done in the live environment. I am familiar with Kubuntu and have heard of Kylin but never tried it.
 2. Open Virtual box and create a new environment.
 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/new.png" width="500" height="100"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/new.png" class="img-fluid"/>
 
 3. Setup the virtual environment for Linux and Ubuntu
 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/type.png" width="300" height="200"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/type.png" class="img-fluid"/>
 
 4. Allocate the memory for ram. I have 32GB so I gave mine around 8GB of ram
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/memory.png" width="300" height="200"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/memory.png" class="img-fluid"/>
 
 5. I did not provide any disk space for the machine since this will be running a live environment only.
 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/nodisk.png" width="300" height="200"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/nodisk.png" class="img-fluid"/>
 
 6. Mount the ISO in the virtual environment
 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/iso.png" width="300" height="200"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/iso.png" class="img-fluid"/>
 
 7. Change the settings to recognize it as a live environment
 
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/live.png" width="400" height="200"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/live.png" class="img-fluid"/>
 
 Now I was ready to follow the checklist and submit any bugs that I came across! I found only a small "bug" in Kubuntu where the language menu was not in the described place. Kylin on the other hand had LOTS of screen tearing when I was using apps.
 <h2 style="text-align:center;"> Kubuntu </h2>  
-<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kbuntu.png" width="600" height="100"/>
+<p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kbuntu.png" class="img-fluid"/>
 <h2 style="text-align:center;"> Kylin </h2> 
 <p style="text-align:center;"><img src="https://linuxlemming.com/img/episode/e04/kylin.png" class="img-fluid"/>
 
