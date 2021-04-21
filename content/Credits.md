@@ -18,6 +18,12 @@ title = "Resources Used for the Linux Lemming Podcast"
 [//]: ![](https://freemusicarchive.org/image?file=image%2Fmvlo0sgnTQwV6JoBcNPyOZG0FTb0bkgeikaQPPgt.jpeg&width=290&height=290&type=image)
 
 ### Art
+Episode 05 Art- Found on Flickr by user [
+Kjell Eson
+](https://www.flickr.com/photos/swedpix/36960629121/in/photolist-Yj5Tme-2dBXB1J-2g2YuBU-fsxiu-6X7ij8-zDcj8K-6Mm5r3-A3NqMm-QVw13h-6Hp91K-28nZk4B-8x3bK2-26jnZUW-vy6hHd-PWTi4z-GoJrTt-2koKc3k-a7X9dk-92HVHb-2hceXU9-XqB8H2-27EmPwJ-852K6b-yXCPzj-29Ampf9-GBnsz8-cmPn6f-9g7ZK6-8zbq1f-awgSxe-6rnYsV-tWMV8i-Zx7MhR-KzbEg3-Mvpfrd-23478dS-uB9xvb-2jJ7UXD-QM3fuZ-wAsD2c-butjfm-2jddXNk-2kaHkdv-PTTeCT-fog1NQ-Xr4WJ7-irgXzW-czL7PE-2ktKiXb-7XD54P)
+
+<img src="https://live.staticflickr.com/4415/36960629121_3866e100f1_n.jpg" width="200" height="100"/>
+
 Episode 04 Art- Found on [Greg Leden's Blog](https://gregladen.com/blog/2019/01/21/how-to-be-a-hacker/)
 
 <img src="https://i2.wp.com/gregladen.com/blog/wp-content/uploads/2019/01/Tux_Hacker.png?resize=562%2C270&ssl=1" width="200" height="100"/>
