@@ -56,7 +56,7 @@ Blog post for [Contributing to the Linux Lemming](blog/contributing.md)
 
 Pingus Art- Taken from their [Gitlab Account](https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0)
 
-<img src="https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0/digger.png" width=10000 height=100/>
+<img src="https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0/digger.png" class="img-fluid"/>
 
 Episode 02 Cover Art
 
