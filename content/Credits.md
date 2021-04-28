@@ -18,6 +18,11 @@ title = "Resources Used for the Linux Lemming Podcast"
 [//]: ![](https://freemusicarchive.org/image?file=image%2Fmvlo0sgnTQwV6JoBcNPyOZG0FTb0bkgeikaQPPgt.jpeg&width=290&height=290&type=image)
 
 ### Art
+
+Episode 06 Art- Found on the [Bristol Penguin Archive Project](http://www.bristol.ac.uk/penguinarchiveproject/about/archive/)
+
+<img src="http://www.bristol.ac.uk/media-library/sites/penguinarchiveproject/migrated/images/librarianpenguin.jpg" width="100" height="100">
+
 Episode 05 Art- Found on Wikimedia Commons by user [Sarah Klockars-Clauser
 ](https://commons.wikimedia.org/wiki/File:Flaming_computer_-_%22don%27t_panic%22_(4549185468).jpg). [Flickr Account](https://www.flickr.com/people/92455770@N00)
 
@@ -49,9 +54,9 @@ Gitlab Logo
 
 Blog post for [Contributing to the Linux Lemming](blog/contributing.md)
 
-Pingus Art
+Pingus Art- Taken from their [Gitlab Account](https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0)
 
-<img src="https://pingus-devel.nongnu.narkive.com/Uhp948rS/new-style-pingu:i.2.2.full" width=100 height=100/>
+<img src="https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0/digger.png" width=10000 height=100/>
 
 Episode 02 Cover Art
 
