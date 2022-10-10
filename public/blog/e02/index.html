@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html itemscope lang="en-us">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="## Setting Up a New Pi4 Server">
+
+<meta name="generator" content="Hugo 0.97.3" />
+
+<meta property="og:title" content="Getting Started With a New Server" />
+<meta name="twitter:title" content="Getting Started with a New Server"/>
+<meta itemprop="name" content="Getting Started with a New Server">
+<meta property="article:published_time" content="2021-03-17T15:21:46-06:00" />
+<meta property="article:modified_time" content="2021-03-17T15:21:46-06:00" />
+<meta property="og:updated_time" content="2021-03-17T15:21:46-06:00" /><meta property="og:site_name" content="The Linux Lemming" /><meta property="og:description" content="## Setting Up a New Pi4 Server" />
+    <meta name="twitter:description" content="## Setting Up a New Pi4 Server" />
+    <meta itemprop="description" content="## Setting Up a New Pi4 Server">
+
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="/blog/e02/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+        <meta property="og:image" content="https://linuxlemming.com/img/walk.gif" />
+        <meta name="twitter:image" content="https://linuxlemming.com/img/walk.gif"/>
+        <meta itemprop="image" content="https://linuxlemming.com/img/walk.gif" />
+    
+
+
+
+
+<title>Getting Started with a New Server</title>
+<link rel="canonical" href="https://linuxlemming.com/blog/e02/">
+
+
+
+
+
+
+
+<link rel="icon" href="icons/favicon.ico">
+
+
+
+
+
+
+<meta name="msapplication-TileColor" content="#2b5797">
+
+
+<link href="https://linuxlemming.com/css/grey.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+
+
+<link href=https://linuxlemming.com/css/all.css rel="stylesheet">
+<link href=https://linuxlemming.com/css/mediaelementplayer.min.css rel="stylesheet">
+<style>
+    .mejs__overlay-button {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    .mejs__overlay-loading-bg-img {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    .mejs__button > button {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    </style>
+<link href=https://linuxlemming.com/css/speed.min.css rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="The Linux Lemming" href="https://linuxlemming.com/blog/index.xml"/>
+
+
+</head>
+
+<body lang="">
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+<div class="container">
+<a class="navbar-brand" href="https://linuxlemming.com">The Linux Lemming</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="navbarSupportedContent" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+          
+          
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/tll" class="nav-link">
+                      
+                      <span>About</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/blog" class="nav-link">
+                      
+                      <span>Blog</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/guest" class="nav-link">
+                      
+                      <span>Guests</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/host" class="nav-link">
+                      
+                      <span>Host</span>
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu">
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/credits">Credits</a>
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/resources">Links</a>
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/other-podcasts">Podcasts</a>
+                
+                </div>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/upcoming" class="nav-link">
+                      
+                      <span>Upcoming Episodes</span>
+                  </a>
+                </li>
+              
+            
+          
+        </ul>
+
+      <ul class="navbar-nav ml-auto">
+        
+        
+        
+        
+        
+        
+        
+          <li>
+            
+
+  <a class="social-links" href = "https://github.com/rastacalavera"><i class="fab fa-github-square fa-2x"></i></a>
+
+
+          </li>
+        
+        
+          <li>
+            
+
+  <a class="social-links" href = "https://gitlab.com/rastacalavera"><i class="fab fa-gitlab fa-2x"></i></a>
+
+
+          </li>
+        
+        
+      </ul>
+  </div>
+  </div>
+  </nav>
+
+<div class="container middle_container">
+  
+
+<h1>Getting Started with a New Server</h1>
+<small>Posted on Wednesday, Mar 17, 2021 
+
+
+
+
+</small>
+<br><br>
+<h3 id="update-317">UPDATE 3/17</h3>
+<p>Ok so I made this post and podcast last week but a lot changed. First, after I got everything working it all fell apart after 24 hours. SSD died and I had to order a new one. I got a 2TB spinning USB 3.0 drive and <strong>still</strong> had to do do Ubuntu 20.10.</p>
+<p>Also, my revised LSIO documentation was <strong>Accepted and MERGED</strong>!! Hooray, first big LL win!</p>
+<h3 id="original-post">Original Post</h3>
+<p>As I was setting up new things, I stumbled across a <a href="https://www.reddit.com/r/selfhosted/comments/m5398n/not_abel_to_set_up_linuxserverswag_with_nextcloud/">redditor asking for help</a> with SWAG and NextCloud. They said they were using LSIO documentation and were stuck so I figured this was a great lemming moment.
+Over the next few hours, I was able to help the individual! Hooray! Hopefully they get involved in the linuxlemming!</p>
+<p>Second thing that occurred, is that I opened a pull request on github for the <a href="https://github.com/linuxserver/docker-documentation/pull/36">LSIO</a> documentation.</p>
+<h3 id="using-an-ssd">Using an SSD</h3>
+<p>I have heard people talk about using an external USB drive rather than a SD card with the Pi4. This was kinda hacky a year or so ago but apparently things have been ironed out. In order to do this, you need to flash the latest RaspberryPiOS and update the firmware first. After that, you should be good to go to use an external drive (or so I assumed)</p>
+<p>I tried flashing Ubuntu Server 20.04 using Etcher but when booting, I was getting an error that ethernet wasn&rsquo;t being dectected. I had a cable hooked up so I thought that maybe it was a bad flash. Did it again and got the same error.</p>
+<p>So then I switched to the RaspberryPi Imager app and repeated the proccess but let the app download the image and flash it. This time it dectected ether net, but didn&rsquo;t recognize a boot environment variable.</p>
+<p><strong>Arg</strong></p>
+<p>So now I went to google and searched for the specific error and came across <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=295609">this forum post</a>. Apparently, this is a know <em>issue</em> with 20.04 and it&rsquo;s debatable as to where it can be classified as a <em>bug</em> or not. The <em>solution</em> is to use 20.10, which I <strong>DIDN&rsquo;T</strong> want but I guess I am out of options if I want to use an Ubuntu based server.</p>
+<p>After reading this, I repeated the process with RaspberryPi Imager and chose Ubuntu Server 20.10 (64 bit). So far, this process has taken about ~45 minutes just to try to get the Pi to boot.</p>
+<p>After plugging it in and booting <details> <summary>SPOILER WARNING</summary> I still didn&rsquo;t have a booting pi.</p>
+<h3 id="sigh"><em>Sigh</em></h3>
+</details>
+<h3 id="round-2">Round 2</h3>
+<p>Without clicking the <strong>spoiler tag</strong> you can guess my result. This time, I used RPImager to format, then flash. But in my haste I must have selected the DESKTOP image and not the server. But, guess what? It booted into the desktop so I guess that&rsquo;s a win? Back to reformat and flashing the correct image.</p>
+<h3 id="round-3">Round 3</h3>
+<p>Give me a break!!!! Still won&rsquo;t work. TONS of errors in the output. Network time, network services, login, availability of block devices, etc.</p>
+<p>Tried RaspberryPiOS and it locked out to a read only file system.</p>
+<p>(ノಠ益ಠ)ノ彡┻━┻</p>
+<p>Tried RaspberryPiOS again, but this time, I plugged it into a USB 2.0 slot.</p>
+<p><strong>it worked</strong></p>
+<p>(o_O)</p>
+<p>So then I did Ubuntu 20.10 again and plugged it into a USB 2.0 slot.</p>
+<p><strong>it worked</strong></p>
+<p>( ͠° ͟ʖ ͡° )</p>
+<h3 id="welcome-to-ubuntu-2010">Welcome to Ubuntu 20.10</h3>
+<p>Ok. So now I got Ubuntu up and running from the SSD on a USB 2.0 port. Time to make a new user.
+I did the typical <code>useradd rastacalavera</code> and <code>chmod -a -G sudo rastacalavera</code> and figured everything was good.</p>
+<p><strong>NO. It wasn&rsquo;t all GOOD</strong></p>
+<p>When I logged back in, there was no home directory and my user wasn&rsquo;t using BASH. What the hell? Did something change recently? I recall when adding users in the past there was this whole interactive prompt where it wanted a room number and stuff like that. This method didn&rsquo;t even give my user a password! I must be missing something. . .</p>
+<p>So I logged back in as Ubuntu and gave my user a password allowed my user to use the BASH shell (easy google search shows how to do this).</p>
+<h3 id="finally-ready-to-go">Finally Ready to Go</h3>
+<p>Ok, time to start my project. I headed over to <a href="docs.linuxserver.io">Linux Server</a> to jump right into their documentation. I have used this in the past and would like to see a disclaimer that their guides assumes that you already have Docker and Docker-Compose installed on your machine. A lot of people who are getting into this are probably told to use images from Linux Server, but if they are complete noobs there are some crucial steps missing from their docs. So I think either they should include a disclaimer or add that information into the documentation.</p>
+<p>I think it is probably out of scope for the project to walk a user through the installation steps and it&rsquo;s appropriate to focus on just the service they provide.</p>
+<h3 id="setting-up-docker">Setting up Docker</h3>
+<p>So for my Ubuntu Installation I did the following steps:</p>
+<ol>
+<li><code>sudo apt install docker.io docker-compose</code></li>
+<li><code>sudo usermod -aG docker rastacalavera</code></li>
+</ol>
+<p>Now my user should be set and I should be good to blindly follow the LS.io documentation.</p>
+<h3 id="lets-go">Let&rsquo;s Go!</h3>
+<p>Fist thing to do, is add some simple commands to the bash alias file</p>
+<ul>
+<li><code> nano .bash_aliases</code></li>
+</ul>
+<p>then paste in</p>
+<ul>
+<li><code># ~/.bash_aliases alias dtail='docker logs -tf --tail=&quot;50&quot; &quot;$@&quot;'</code></li>
+</ul>
+<p>This will help us view and exit the log files of the container without cancelling the execution of it.</p>
+<p>Time to test docker
+<code>docker run hello-world</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>I really like that after this, they give a quick snippit of key vocabulary that the user should become familiar with.</p>
+<p><img src="https://linuxlemming.com/img/e02/vocab.png" alt="screen shot of vocab terms"></p>
+<p>Reading through, they must have changed their documentation since I last looked at it. I recall their old file structure being:</p>
+<p><code>/opt/appdata/CONTAINER NAME/config</code></p>
+<p>and now it appears that they recomment:</p>
+<p><code>/home/user/appdata/heimdall:/config</code></p>
+<p>which in my case will be:</p>
+<p><code>/home/rastacalavera/appdata/heimdall:/config</code></p>
+<p>In the PUID and PGID section, they include information on how to check these values. Since I created a new user, I figured that my values would not be <code>1000</code> and I am glad I checked:</p>
+<p>rastacalavera@ubuntu:~$<code> id rastacalavera</code></p>
+<p>showed me the value of:
+<code>uid=1001(rastacalavera) gid=1001(rastacalavera)</code></p>
+<p>So in all of my compose files, I&rsquo;ll need to change the default values for these.</p>
+<p>Later on in the <em>Volumes</em> section, their documentation confirmed my memory.</p>
+<h3 id="getting-some-swagger">Getting Some Swagger</h3>
+<p>I&rsquo;ve used Traefik and NPM for reverse proxy and SSL certs in the past and never tried out LSIO&rsquo;s approach. Last time I had a home server setup, it got fried and I hadn&rsquo;t backed up any certs so I couldn&rsquo;t get my sites back up with SSL again (it may have been possible, I just couldn&rsquo;t figure it out easily).</p>
+<p>Since this is all new and the point is to follow documentation, this will be a great fore into the LSIO SWAG container.</p>
+<p>Getting it setup was painless. I just had to modify the following criteria in the <code>docker-compose.yml</code> file. I included <code>**</code> in the file so you can see what is changed. They would not be present in the actual file.</p>
+<pre tabindex="0"><code class="language-environment:" data-lang="environment:">      - PUID=**1001**
+      - PGID=**1001**
+      - TZ=America/Chicago
+      - URL=MY NO-IP Domain
+      - SUBDOMAINS=www
+      - VALIDATION=http
+    volumes:
+      - **/opt/appdata/swag/config:/config**
+</code></pre><p>Then after running <code>docker-compose up -d</code> and <code>docker logs swag -f</code> I was able to see that it was working!</p>
+<p>I figured that I should get VSCode up and running so that it can be accessed from anywhere if I so choose. I followed the LSIO documentation on the installation process and changed the variables in my <code>docker-compose.yml</code> to fit my situation. This included added a custom sub domain for vscode and the variables for VScode itself. I also changed the file in <code>/opt/appdata/swag/config/nginx/proxy-confs</code> to make sure that a reverse proxy was up and running.</p>
+<p>I am not sure what I did incorrectly the first time, but I got this error:</p>
+<p><code>ERROR: failed to register layer: Error processing tar file(exit status 1): write /usr/local/share/.config/yarn/global/node_modules/code-server/lib/vscode/out/vs/workbench/workbench.web.api.js.map: read-only file system</code></p>
+<p>I was locked out of my system and couldn&rsquo;t execute any commands. I had to do a hard shutdown and redo my <code>docker-compose.yml</code> a second time and then everything worked as expected.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Aside from getting Ubuntu to run on the Pi, this process was fairly smooth.</p>
+<p>I give LSIO a solid 10/10 in terms of documentation and may try to submit some suggestions up stream.</p>
+<h3 id="things-to-submit-to-lsio">Things to submit to LS.io</h3>
+<p>I think a pull request should be made to the <code>General</code> section of their documentation. Something like this:</p>
+<blockquote>
+<p>Are you completely new to Docker? If so, please see the <a href="https://docs.docker.com/engine/install/">official documentation</a> on how to properly install docker for your OS. Be sure to follow the the <strong>Post Installation</strong> directions as well to make sure your user can execute docker commands.</p>
+</blockquote>
+<p>In the Docker Compose section, it is odd that they return to the bashrc and bash_aliases file. I think it might be advantageous to have this sooner or to leave out the previous section.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>If you get an error about permissions, you may need to log out and then log back in for the changes to take effect. Same thing applies to the addition of the bash_aliases&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+<div id="share"></div>
+<div class="row">
+  
+  <div class="col-md-12">
+    <nav>
+      <ul class="pagination">
+        
+          <li class="page-item">
+            <a href="https://linuxlemming.com/blog/contributing/" class="page-link">
+              <span aria-hidden="true">&larr;</span>
+              Previous</a>
+          </li>
+          
+        
+          <li class="page-item">
+            <a href="https://linuxlemming.com/blog/pg/" class="page-link">Next
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+</div> 
+<div class = "container bottom_container">
+  <div class="row">
+  <div class="col-md-12">
+    <nav class = "navbar navbar-default navbar_footer">
+    <ul class="nav navbar-nav navbar-right">
+      
+        <li>
+          <p class = "footer_copyright">Copyright 2021 The Linux Lemming</p>
+        </li>
+      
+      <li>
+        &nbsp;
+      </li>
+    </ul>
+  </nav>
+
+  </div>
+</div>
+</div>
+<script src='https://linuxlemming.com/js/castanet-min.js'></script>
+<script>
+  $("#share").jsSocials({
+      shares: [
+    {
+      share: "facebook",
+      logo: "fab fa-facebook",
+    },
+    {
+      share: "twitter",           
+      label: "Tweet",             
+      logo: "fab fa-twitter",
+      
+      
+      
+      
+      
+      url: "https:\/\/linuxlemming.com\/blog\/e02\/",
+      text: "Getting Started With a New Server"
+    },
+    {
+      share: "linkedin",
+      logo: "fab fa-linkedin"
+    },
+    {
+      share: "pinterest",
+      logo: "fab fa-pinterest"
+    }
+  ],
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+
+        $('.transcript').hide();
+        $(".hide_transcript").hide();
+        $(".hide_transcript").click(function() {
+            $(".transcript").hide("fast");
+            $(".show_transcript").show();
+            $(".hide_transcript").hide();
+        });
+
+        $(".show_transcript").click(function() {
+            $(".transcript").show(500);
+            $(".hide_transcript").show();
+            $(".show_transcript").hide();
+        });
+
+    });
+</script>
+
+<script>
+    var player = new MediaElementPlayer('player2', {
+        features: ['playpause', 'current', 'progress', 'duration', 'volume', 'speed'],
+        defaultSpeed: 1.0,
+        
+    });
+</script>
+
+</body>
+</html>
+
