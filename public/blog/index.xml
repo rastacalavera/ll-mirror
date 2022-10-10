@@ -1,0 +1,92 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on The Linux Lemming</title>
+    <link>https://linuxlemming.com/blog/</link>
+    <description>Recent blogs in Blogs on The Linux Lemming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 10:25:26 -0500</lastBuildDate>
+    <atom:link href="https://linuxlemming.com/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PEBCAK and Covid</title>
+      <link>https://linuxlemming.com/blog/e05/</link>
+      <pubDate>Wed, 21 Apr 2021 10:25:26 -0500</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/e05/</guid>
+      <description>Check out the Podcast that accompanies this blog too! Where are my Episodes? My release schedule was recently disrupted due to illness. Luckily I have been healthy but members of my family and academic institutions they attend were impacted by the Covid pandemic. Thankfully, no one in my family contracted Covid, but we had to practice quarantine procedures to keep ourselves and our community safe. This took time away from the project and something like this may occur in the future.</description>
+    </item>
+    
+    <item>
+      <title>Helping the Hippo</title>
+      <link>https://linuxlemming.com/blog/testingweek/</link>
+      <pubDate>Thu, 01 Apr 2021 14:54:33 -0500</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/testingweek/</guid>
+      <description>Ubuntu 21.04 Testing Week Oh boy! What an oppertunity! I just heard from many different podcasts about the beta test week for Ubuntu 21.04. I have never participated in an event like this before so I am grateful that something like this exists.
+Alan Pope recently made a forum post about the event that includes documentation for new testers. It&amp;amp;rsquo;s about an hour investment to learn the process of how to conduct the tests.</description>
+    </item>
+    
+    <item>
+      <title>Self-Hosted Podcast Generator</title>
+      <link>https://linuxlemming.com/blog/pg/</link>
+      <pubDate>Thu, 18 Mar 2021 19:42:30 -0500</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/pg/</guid>
+      <description>Moving from Gitlab to Podcast Generator A few years ago, a friend and I had what I would call a &amp;amp;ldquo;hobby cast&amp;amp;rdquo;. We would put together show ideas, meet up once a week and record a 30-60 minute show. It was a lot of fun and I used the open source software Podcast Generator to publish it in iTunes so our friends could subscribe and listen.
+I remember the installation process being really easy so I figured I would go a head and try to get it up and running for the Linux Lemming.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with a New Server</title>
+      <link>https://linuxlemming.com/blog/e02/</link>
+      <pubDate>Wed, 17 Mar 2021 15:21:46 -0600</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/e02/</guid>
+      <description>UPDATE 3/17 Ok so I made this post and podcast last week but a lot changed. First, after I got everything working it all fell apart after 24 hours. SSD died and I had to order a new one. I got a 2TB spinning USB 3.0 drive and still had to do do Ubuntu 20.10.
+Also, my revised LSIO documentation was Accepted and MERGED!! Hooray, first big LL win!
+Original Post As I was setting up new things, I stumbled across a redditor asking for help with SWAG and NextCloud.</description>
+    </item>
+    
+    <item>
+      <title>Contributing to the Linux Lemming</title>
+      <link>https://linuxlemming.com/blog/contributing/</link>
+      <pubDate>Wed, 10 Mar 2021 12:59:59 -0600</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/contributing/</guid>
+      <description>Contributing Links The easiest way to contribute to the project would be to submit links to the resource page. As submissions come in, they can be organized a bit more but for now, anything goes.
+I have come to really like VSCode, so that is my preferred way to interact with Git and what this guide covers.
+This guide assumes the following:
+ Reader has an account on Gitlab Reader has VScode installed Reader understands some Git Basics  Fork the Project After you are logged into gitlab, the project needs to be forked.</description>
+    </item>
+    
+    <item>
+      <title>Setting the Framework for Community Contribution</title>
+      <link>https://linuxlemming.com/blog/podcast_assets/</link>
+      <pubDate>Mon, 01 Mar 2021 16:12:58 -0600</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/podcast_assets/</guid>
+      <description>Getting Involved I would love people to submit work to the project or ask someone to attempt a project and report back on their process.
+In order to do this, there has to be a rigid methodology so that a user knows how to ask and what to present. I&amp;amp;rsquo;ve come up with a few ideas that still need some testing but I think it is a good place to start.</description>
+    </item>
+    
+    <item>
+      <title>Website Woes</title>
+      <link>https://linuxlemming.com/blog/website/</link>
+      <pubDate>Fri, 26 Feb 2021 13:42:00 -0600</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/website/</guid>
+      <description>Ignorance Is Not Bliss- Have Some Grit When Using Git I think I was a little over ambitious with this project. I am fine using git in a terminal but when working with markdown files, I like to have a preview pane so I chose to try to do everything in VSCode. Installing the app wasn&amp;amp;rsquo;t an issue, but I had a lot to learn in terms of using it with github and gitlab.</description>
+    </item>
+    
+    <item>
+      <title>Getting Things in Order</title>
+      <link>https://linuxlemming.com/blog/getting-started/</link>
+      <pubDate>Thu, 25 Feb 2021 14:15:27 -0600</pubDate>
+      
+      <guid>https://linuxlemming.com/blog/getting-started/</guid>
+      <description>Why bother? Yet another drop in the ocean right? Well, I guess this is an outlet for me and something I love doing so why not? I did do a brief podcast with a friend of mine called Let&amp;#39;s Learn Something New and cut my teeth on podcasting there. I put time and energy into getting a small mixer, condenser mic, learning Ardour with the help of someone I met online, learning how to use a publishing program, having intro/outro clips, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

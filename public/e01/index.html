@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html itemscope lang="en-us">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="description" content="Using Git and VSCode to Contribute to the Linux Lemming a [blog](/blog/contributing/) goes with this episode too.">
+
+<meta name="generator" content="Hugo 0.97.3" />
+
+<meta property="og:title" content="Git, VSCode and Contributing to the Linux Lemming" />
+<meta name="twitter:title" content="Git, VSCode and Contributing to the Linux Lemming"/>
+<meta itemprop="name" content="Git, VSCode and Contributing to the Linux Lemming">
+<meta property="article:published_time" content="2021-03-11T00:00:00Z" />
+<meta property="article:modified_time" content="2021-03-11T00:00:00Z" />
+<meta property="og:updated_time" content="2021-03-11T00:00:00Z" /><meta property="og:site_name" content="The Linux Lemming" /><meta property="og:description" content="Using Git and VSCode to Contribute to the Linux Lemming a [blog](/blog/contributing/) goes with this episode too." />
+    <meta name="twitter:description" content="Using Git and VSCode to Contribute to the Linux Lemming a [blog](/blog/contributing/) goes with this episode too." />
+    <meta itemprop="description" content="Using Git and VSCode to Contribute to the Linux Lemming a [blog](/blog/contributing/) goes with this episode too.">
+
+
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/e01/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+        <meta property="og:image" content="https://linuxlemming.com/img/episode/E01/e01.png" />
+        <meta name="twitter:image" content="https://linuxlemming.com/img/episode/E01/e01.png"/>
+        <meta itemprop="image" content="https://linuxlemming.com/img/episode/E01/e01.png" />
+    
+
+
+
+
+<title>Git, VSCode and Contributing to the Linux Lemming</title>
+<link rel="canonical" href="https://linuxlemming.com/e01/">
+
+
+
+
+
+
+
+<link rel="icon" href="icons/favicon.ico">
+
+
+
+
+
+
+<meta name="msapplication-TileColor" content="#2b5797">
+
+
+<link href="https://linuxlemming.com/css/grey.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+
+
+<link href=https://linuxlemming.com/css/all.css rel="stylesheet">
+<link href=https://linuxlemming.com/css/mediaelementplayer.min.css rel="stylesheet">
+<style>
+    .mejs__overlay-button {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    .mejs__overlay-loading-bg-img {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    .mejs__button > button {
+        background-image: url("/img/mejs-controls.svg");
+    }
+    </style>
+<link href=https://linuxlemming.com/css/speed.min.css rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="The Linux Lemming" href="https://linuxlemming.com/episode/index.xml"/>
+
+</head>
+
+<body lang="">
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+<div class="container">
+<a class="navbar-brand" href="https://linuxlemming.com">The Linux Lemming</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="navbarSupportedContent" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+          
+          
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/tll" class="nav-link">
+                      
+                      <span>About</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/blog" class="nav-link">
+                      
+                      <span>Blog</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/guest" class="nav-link">
+                      
+                      <span>Guests</span>
+                  </a>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/host" class="nav-link">
+                      
+                      <span>Host</span>
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu">
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/credits">Credits</a>
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/resources">Links</a>
+                
+                  <a class="dropdown-item" href="https://linuxlemming.com/other-podcasts">Podcasts</a>
+                
+                </div>
+                </li>
+              
+            
+              
+                  <li class= "nav-item ">
+                  <a href="https://linuxlemming.com/upcoming" class="nav-link">
+                      
+                      <span>Upcoming Episodes</span>
+                  </a>
+                </li>
+              
+            
+          
+        </ul>
+
+      <ul class="navbar-nav ml-auto">
+        
+        
+        
+        
+        
+        
+        
+          <li>
+            
+
+  <a class="social-links" href = "https://github.com/rastacalavera"><i class="fab fa-github-square fa-2x"></i></a>
+
+
+          </li>
+        
+        
+          <li>
+            
+
+  <a class="social-links" href = "https://gitlab.com/rastacalavera"><i class="fab fa-gitlab fa-2x"></i></a>
+
+
+          </li>
+        
+        
+      </ul>
+  </div>
+  </div>
+  </nav>
+
+<div class="container middle_container">
+  
+
+  <div class="row">
+    <div class="col">      
+      
+        <h1>Git, VSCode and Contributing to the Linux Lemming</h1>
+      <small>Posted on Thursday, Mar 11, 2021 
+
+
+</small></div>
+  </div>
+
+  
+    <div class="row">
+          <div class="col-md-3">
+            <img src="https://linuxlemming.com/img/episode/E01/e01.png" class="img-fluid episode_image"/>
+          </div>
+          <div class="col-md-8">
+            Using Git and VSCode to Contribute to the Linux Lemming a <a href="https://linuxlemming.com/blog/contributing/">blog</a> goes with this episode too.
+          </div>
+        </div>
+    <div class="row">
+          <div class="col-md-12 player_row">
+
+          <audio id="player2" style="width: 100%" controls preload="none">
+            <source src="https://linuxlemming.com/files/E01.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+
+  <div class="row">
+    <div class="col">
+      <h2>Show Notes</h2>
+      <h3 id="special-thanks">Special Thanks</h3>
+<p><a href="https://github.com/mattstratton">Matt Stratton</a> for his hard work on the castanet theme which drives this site and to <a href="https://discourse.destinationlinux.network/t/how-to-make-a-website-with-hugo-and-gitlab/2119">rwaltr</a> for his awesome <a href="https://www.youtube.com/watch?v=-q6ZiCroiGM">video</a> on using Gitlab to create a website using Hugo. Also, the <a href="https://destinationlinux.org/">DLN Crew</a> for their weekly spotlight on Git which motivated me.</p>
+<h3 id="original-documentation">Original Documentation</h3>
+<p>Written documentation for getting started with building a simple blog lives <a href="https://rastacalavera.gitlab.io/DLNhugo/post/git-and-hugo-walkthrough/">here</a></p>
+<h3 id="how-to-contribute-to-the-linux-lemming">How to Contribute to the Linux Lemming</h3>
+<p>A detailed blog post will be made for this but in this episode I go over how to:</p>
+<ul>
+<li>setup git as a new user</li>
+<li>FORK the linuxlemming repo (difference between clone and fork) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>make changes in VSCode</li>
+<li>submit a Merge Request</li>
+</ul>
+<h3 id="vscode-documentation">VSCode Documentation</h3>
+<p>I never looked at any <a href="https://code.visualstudio.com/docs/editor/versioncontrol#_git-support">documentation</a> for VSCode until I started the process for this episode. It seems that the documentation is very well done and approachable. I really like its level of organization and the inclusion of hyperlinks to other relevant material.</p>
+<p>I <strong>REALLY</strong> like the disclaimer of prior knowledge required to make good use of the documentation and how to gain the required knowledge if you don&rsquo;t meet that criteria.
+<img src="https://linuxlemming.com/img/episode/E01/vscode_intro.png" alt="vscode prior knowledge disclaimer with links"></p>
+<p>I am still getting used to VSCode and will most likely do a blog post on it in the future but my first impression is that VSCode documentation gets a 10/10.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189">Documentation for the difference between a fork and clone</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+  </div>
+
+
+
+  
+
+  
+
+
+      <div class="row">
+        
+        <div class="col-md-12">
+          <div id="share"></div>
+        </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="row">
+        
+        <div class="col-md-12">
+          <nav>
+            <ul class="pagination">
+              
+                <li class="page-item">
+                  <a href="https://linuxlemming.com/e00/" class="page-link">
+                    <span aria-hidden="true">&larr;</span>
+                    Previous</a>
+                </li>
+                
+              
+                <li class="page-item">
+                  <a href="https://linuxlemming.com/e02/" class="page-link">Next
+                    <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </li>
+                
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+    
+</div> 
+<div class = "container bottom_container">
+  <div class="row">
+  <div class="col-md-12">
+    <nav class = "navbar navbar-default navbar_footer">
+    <ul class="nav navbar-nav navbar-right">
+      
+        <li>
+          <p class = "footer_copyright">Copyright 2021 The Linux Lemming</p>
+        </li>
+      
+      <li>
+        &nbsp;
+      </li>
+    </ul>
+  </nav>
+
+  </div>
+</div>
+</div>
+<script src='https://linuxlemming.com/js/castanet-min.js'></script>
+<script>
+  $("#share").jsSocials({
+      shares: [
+    {
+      share: "facebook",
+      logo: "fab fa-facebook",
+    },
+    {
+      share: "twitter",           
+      label: "Tweet",             
+      logo: "fab fa-twitter",
+      
+      
+      
+      
+      
+      url: "https:\/\/linuxlemming.com\/e01\/",
+      text: "Git, VSCode and Contributing to the Linux Lemming"
+    },
+    {
+      share: "linkedin",
+      logo: "fab fa-linkedin"
+    },
+    {
+      share: "pinterest",
+      logo: "fab fa-pinterest"
+    }
+  ],
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+
+        $('.transcript').hide();
+        $(".hide_transcript").hide();
+        $(".hide_transcript").click(function() {
+            $(".transcript").hide("fast");
+            $(".show_transcript").show();
+            $(".hide_transcript").hide();
+        });
+
+        $(".show_transcript").click(function() {
+            $(".transcript").show(500);
+            $(".hide_transcript").show();
+            $(".show_transcript").hide();
+        });
+
+    });
+</script>
+
+<script>
+    var player = new MediaElementPlayer('player2', {
+        features: ['playpause', 'current', 'progress', 'duration', 'volume', 'speed'],
+        defaultSpeed: 1.0,
+        
+    });
+</script>
+
+</body>
+</html>
+
