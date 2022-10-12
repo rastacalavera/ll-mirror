@@ -36,7 +36,7 @@ buildFuture = true
 
 [[Menu.Main]]
     name = "Host"
-    identifier = "hosts"
+    identifier = "host"
     url = "/host"
 
 [[Menu.Main]]
@@ -76,7 +76,7 @@ buildFuture = true
     identifier = "credits"
     url = "/Credits"
     parent = "resources"    
-    
+
 [params]
 mainSections = ["episode"]
 #episode_number_style  = "brackets"
@@ -88,7 +88,7 @@ show_next_upcoming = "true"
 enable_jumbo = "true"
 # enable_jumbo = "false"
 # truncate = "100"
-about_logo = "/img/host/rastacalavera.jpg"
+about_logo = "img/calaveraLogo.png"
 copyright_notice = "Copyright 2021 The Linux Lemming"
 # itunes_subscribe = "https://podcasts.apple.com/us/podcast/arrested-devops/id773888088?ign-mpt=uo%3D4&mt=2"
 # android_subscribe = "http://subscribeonandroid.com/feeds.podtrac.com/VGAulpN7MY1U"
@@ -109,7 +109,7 @@ media_prefix = "https://linuxlemming.com/files/"
     itunes_summary = "A show that explores the open source ecosystem and muddles through documentation. It a show that documents project documentation quality and tries to contribute back. Is that meta enough for you?" # Limited to 4000 characters or less, plain text, no HTML
     itunes_owner_name = "Rastacalavera"
     itunes_owner_email = "rastacalavera@proton.me" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on Apple Podcasts. It will not be publicly displayed on Apple Podcasts.
-    itunes_image = "https://linuxlemming.com/img/ll_logo.jpg" #fqdn to the image art for your podcast
+    itunes_image = "https://linuxlemming.com/img/calaveraLogo" #fqdn to the image art for your podcast
     itunes_top_category = "Technology"
     itunes_first_sub_category = "Software How-To"
     itunes_second_sub_category = "Tech News"
@@ -126,7 +126,7 @@ media_prefix = "https://linuxlemming.com/files/"
   [params.authors]
     [params.authors.RastaCalavera]
       name	= "RastaCalavera"
-      thumbnail = "img/host/edited.jpg" #main circle image on landing page
+      thumbnail = "img/LLcover.png" #main circle image on landing page
       bio = "A Linux enthusiast and maker at heart."
       [params.authors.RastaCalavera.social]
         github = "rastacalavera"
