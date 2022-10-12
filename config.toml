@@ -95,7 +95,7 @@ copyright_notice = "Copyright 2021 The Linux Lemming"
 # pocketcasts_subscribe = "http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
 # mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
 # rss_subscribe = "http://rss.linuxlemming.com/feed.xml" #only set this if you don't want to use the built-in feed
-# description = "The Linux Lemming is here to help you find solid, accurate information in the self-hosting world and to improve documentation for projects as errors arise."
+description = "The Linux Lemming is here to help you find solid, accurate information in the self-hosting world and to improve documentation for projects as errors arise."
 media_prefix = "https://linuxlemming.com/files/"
 disqusShortname = ""
   [params.feed]
