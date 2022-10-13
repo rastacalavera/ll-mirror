@@ -45,6 +45,11 @@ buildFuture = true
     url = "/guest"
 
 [[Menu.Main]]
+    name = "Live Stream"
+    identifier = "live"
+    url = "/live"
+
+[[Menu.Main]]
     name = "Upcoming Episodes"
     identifier = "upcoming"
     url = "/upcoming"
@@ -85,6 +90,7 @@ site_theme = "grey"
 # site_layout = "grid"
 site_layout = "row"
 show_next_upcoming = "true"
+#show_live_status = "" # copy how the above functions and replace with live qualities
 enable_jumbo = "true"
 # enable_jumbo = "false"
 # truncate = "100"
