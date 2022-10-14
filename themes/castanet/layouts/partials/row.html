@@ -3,12 +3,15 @@
     {{- partial "jumbotron.html" . }}
   {{ end }}
 {{ end }}
-
+<!-- This is where it would be nice to have the three options of pending, live and ended
+I don't know where the params.upcoming is declared so that a live one can be made.-->
 {{ if and (and (isset .Site.Params "show_next_upcoming") (eq .Site.Params.show_next_upcoming "true")) (ge (len (where ( where site.RegularPages "Type" "in" site.Params.mainSections) ".Params.upcoming" "==" true )) 1) }}
 <div class="row up_next_container">
   <div class="col-md-12">
     {{ range first 1 (where ( where site.RegularPages "Type" "in" site.Params.mainSections).ByDate ".Params.upcoming" "==" true ) }}
-    Next Episode: <a href="{{ .Permalink }}">{{ .Title }}</a> - Scheduled for {{ dateFormat "Jan 2, 2006" .Date }}
+    Live Stream Status: <a href="{{ .Permalink }}">{{ .Title }}</a> <!-- - Scheduled for {{ dateFormat "Jan 2, 2006" .Date }} -->
+    <!-- It would be good to replace .Title with the live stream status maybe .live_status to replace .Title-->
+    <!-- or maybe replace the string of "scheduled for" with a status? -->
     {{ end }}
   </div>
 </div>
