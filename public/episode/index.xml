@@ -30,10 +30,10 @@
       <itunes:name>Rastacalavera</itunes:name>
       <itunes:email>rastacalavera@proton.me</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://linuxlemming.com/img/calaveraLogo" />
-    <googleplay:image href="https://linuxlemming.com/img/calaveraLogo"></googleplay:image>
+    <itunes:image href="https://linuxlemming.com/img/misc/calaveraLogo.png" />
+    <googleplay:image href="https://linuxlemming.com/img/misc/calaveraLogo.png"></googleplay:image>
     <image>
-      <url>https://linuxlemming.com/img/calaveraLogo</url>
+      <url>https://linuxlemming.com/img/misc/calaveraLogo.png</url>
       <title>The Linux Lemming</title>
       <link>https://linuxlemming.com</link>
     </image>
