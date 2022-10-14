@@ -120,7 +120,13 @@ media_prefix = "https://linuxlemming.com/files/"
     itunes_first_sub_category = "Software How-To"
     itunes_second_sub_category = "Tech News"
     language = "en-us"
-
+#trying to add value tag in main channel rss
+  [params.value]
+    full="lightning"
+    #type = "lightning" #
+    #method = "keysend"
+    #suggested = "0.00000005000"
+  
   [params.realfavicongenerator] # https://realfavicongenerator.net/
     mask_icon_color="#5bbad5"
     msapplication_tilecolor="#2b5797"

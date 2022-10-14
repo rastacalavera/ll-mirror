@@ -1,4 +1,5 @@
 <rss version="2.0"
+     xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:wfw="http://wellformedweb.org/CommentAPI/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,6 +11,9 @@
      xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
     >
   <channel>
+    <podcast:value>type="lightning" method="keysend" suggested="0.00000005000"
+      <podcast:valueRecipient name="rastacalavera" type="node" address="" split="100" />
+      </podcast:value>
     <title>{{ $.Site.Title }}</title>
     <atom:link href="{{ "episode/index.xml" | absURL }}" rel="self" type="application/rss+xml" />
     <link>{{ .Site.BaseURL }}</link>
@@ -129,5 +133,6 @@
         </item>
       {{- end -}}
     {{- end -}}
+
   </channel>
 </rss>
