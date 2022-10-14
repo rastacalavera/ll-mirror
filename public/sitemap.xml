@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linuxlemming.com/episode/</loc>
+    <lastmod>2021-04-30T19:21:00-05:00</lastmod>
+  </url><url>
     <loc>https://linuxlemming.com/e06/</loc>
     <lastmod>2021-04-30T19:21:00-05:00</lastmod>
   </url><url>
@@ -68,9 +71,6 @@
     <loc>https://linuxlemming.com/host/rastacalavera/</loc>
     <lastmod>2016-12-08T20:55:58-06:00</lastmod>
   </url><url>
-    <loc>https://linuxlemming.com/episode/</loc>
-    <lastmod>2016-09-25T02:11:48-05:00</lastmod>
-  </url><url>
     <loc>https://linuxlemming.com/guest/</loc>
     <lastmod>2016-09-25T02:11:48-05:00</lastmod>
   </url><url>
@@ -82,8 +82,6 @@
   </url><url>
     <loc>https://linuxlemming.com/upcoming/</loc>
     <lastmod>2016-09-25T02:11:48-05:00</lastmod>
-  </url><url>
-    <loc>https://linuxlemming.com/e00_shownotes/</loc>
   </url><url>
     <loc>https://linuxlemming.com/categories/</loc>
   </url><url>

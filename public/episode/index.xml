@@ -13,32 +13,32 @@
     <title>The Linux Lemming</title>
     <atom:link href="https://linuxlemming.com/episode/index.xml" rel="self" type="application/rss+xml" />
     <link>https://linuxlemming.com</link>
-    <description></description>
-    <lastBuildDate>Sun, 25 Sep 2016 02:11:48 -0500</lastBuildDate>
+    <description>A show that explores the open source ecosystem and muddles through documentation. It a show that documents project documentation quality and tries to contribute back. Is that meta enough for you?</description>
+    <lastBuildDate>Fri, 30 Apr 2021 19:21:00 -0500</lastBuildDate>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <language>en-us</language>
     <copyright>Copyright 2021 The Linux Lemming</copyright>
-    
+    <itunes:subtitle>How do I get this to work?</itunes:subtitle>
     <itunes:author>Rastacalavera</itunes:author>
     <itunes:type>episodic</itunes:type>
     <googleplay:author>Rastacalavera</googleplay:author>
     <googleplay:email>rastacalavera@proton.me</googleplay:email>
-    <itunes:summary></itunes:summary>
-    <googleplay:description></googleplay:description>
+    <itunes:summary>A show that explores the open source ecosystem and muddles through documentation. It a show that documents project documentation quality and tries to contribute back. Is that meta enough for you?</itunes:summary>
+    <googleplay:description>A show that explores the open source ecosystem and muddles through documentation. It a show that documents project documentation quality and tries to contribute back. Is that meta enough for you?</googleplay:description>
     <itunes:owner>
       <itunes:name>Rastacalavera</itunes:name>
       <itunes:email>rastacalavera@proton.me</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://linuxlemming.com/img/ll_logo.jpg" />
-    <googleplay:image href="https://linuxlemming.com/img/ll_logo.jpg"></googleplay:image>
+    <itunes:image href="https://linuxlemming.com/img/calaveraLogo" />
+    <googleplay:image href="https://linuxlemming.com/img/calaveraLogo"></googleplay:image>
     <image>
-      <url>https://linuxlemming.com/img/ll_logo.jpg</url>
+      <url>https://linuxlemming.com/img/calaveraLogo</url>
       <title>The Linux Lemming</title>
       <link>https://linuxlemming.com</link>
     </image>
-    <itunes:category text="">
-      </itunes:category><generator>Hugo -- gohugo.io</generator>
+    <itunes:category text="Technology">
+      <itunes:category text="Software How-To" /><itunes:category text="Tech News" /></itunes:category><generator>Hugo -- gohugo.io</generator>
         <item>
           
             <title>PEBCAK and Covid
@@ -63,7 +63,7 @@
         <description>To Err is Human. Self reflection about how the individual user is a wildcard for a project. Scaffolding the experience with good documentation is helpful, but PEBCAK will always be a thing. Check out the [blog](/blog/e05) that accompanies this episode for more details about my adventure in getting Wallabag to work on a Raspberry Pi4 using LSIO&#39;s SWAG reverse proxy.</description>
         <googleplay:description>To Err is Human. Self reflection about how the individual user is a wildcard for a project. Scaffolding the experience with good documentation is helpful, but PEBCAK will always be a thing. Check out the [blog](/blog/e05) that accompanies this episode for more details about my adventure in getting Wallabag to work on a Raspberry Pi4 using LSIO&#39;s SWAG reverse proxy.</googleplay:description>
         <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e05/e05.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/e05/e05.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e05.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
+          <googleplay:image href="https://linuxlemming.com/img/episode/e05/e05.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e05.mp3" length="17284193" type="audio/mpeg" /><itunes:duration>20:23</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
@@ -89,7 +89,7 @@
         <description>This week I get involved in testing out beta ISOs for the Ubuntu Project using Virtual Box. I encourage you to participate as well!! See the [blog](/blog/testingweek/) for more details.</description>
         <googleplay:description>This week I get involved in testing out beta ISOs for the Ubuntu Project using Virtual Box. I encourage you to participate as well!! See the [blog](/blog/testingweek/) for more details.</googleplay:description>
         <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e04/e04.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/e04/e04.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e04.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
+          <googleplay:image href="https://linuxlemming.com/img/episode/e04/e04.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e04.mp3" length="6715342" type="audio/mpeg" /><itunes:duration>08:02</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
@@ -115,7 +115,7 @@
         <description>Discussion about the recent documentation into multiple upstream projects and exploring self-hosted web analytic platforms.</description>
         <googleplay:description>Discussion about the recent documentation into multiple upstream projects and exploring self-hosted web analytic platforms.</googleplay:description>
         <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e03/e03.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/e03/e03.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e03.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
+          <googleplay:image href="https://linuxlemming.com/img/episode/e03/e03.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/e03.mp3" length="12560941" type="audio/mpeg" /><itunes:duration>15:06</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
@@ -141,7 +141,7 @@
         <description>**CHECK OUT THE [BLOG](/blog/e02/) FOR THIS EPISODE!!** Installing Ubuntu 20.10 on a RPI 4 using an external hard drive. Then, setup docker and docker-compose. Finally, using documentation from [LSIO](docs.linuxserver.io) a reverse proxy with SSL from their SWAG container, Heimdall and Code-Server.</description>
         <googleplay:description>**CHECK OUT THE [BLOG](/blog/e02/) FOR THIS EPISODE!!** Installing Ubuntu 20.10 on a RPI 4 using an external hard drive. Then, setup docker and docker-compose. Finally, using documentation from [LSIO](docs.linuxserver.io) a reverse proxy with SSL from their SWAG container, Heimdall and Code-Server.</googleplay:description>
         <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e02/E02.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/e02/E02.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/E02.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
+          <googleplay:image href="https://linuxlemming.com/img/episode/e02/E02.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/E02.mp3" length="14688342" type="audio/mpeg" /><itunes:duration>25:40</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
@@ -194,7 +194,7 @@
 </ol>
 </section>
 ]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/E01/e01.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/E01/e01.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/E01.mp3"  type="audio/mpeg" /><itunes:duration>00:7:50:00</itunes:duration><itunes:explicit>false</itunes:explicit>
+          <googleplay:image href="https://linuxlemming.com/img/episode/E01/e01.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/E01.mp3" length="5982438" type="audio/mpeg" /><itunes:duration>07:50</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
@@ -224,7 +224,56 @@
         <itunes:summary>The pre-launch to episode one. Just some introductions and things like that.</itunes:summary>
         <description>The pre-launch to episode one. Just some introductions and things like that.</description>
         <googleplay:description>The pre-launch to episode one. Just some introductions and things like that.</googleplay:description>
-        <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/E00.jpg"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/E00.jpg"></googleplay:image><enclosure url="https://linuxlemming.com/files/E00.mp3"  type="audio/mpeg" /><itunes:duration>00:06:52</itunes:duration><itunes:explicit>false</itunes:explicit>
+        <content:encoded><![CDATA[<h1 id="introduction">Introduction</h1>
+<h3 id="who-am-i">Who am I?</h3>
+<ul>
+<li>Long time Linux Desktop user and new to the server realm.</li>
+<li>Hobbyist who knows enough to start projects but doesn&rsquo;t have enough free time to maintain or spend hours troubleshooting.</li>
+<li>A &ldquo;lemming&rdquo; who appreciates concise, up to date documentation and wants to see more of it widely available.</li>
+<li>Avid podcast listener.</li>
+</ul>
+<h3 id="what-will-this-project-be-like">What Will This Project Be Like?</h3>
+<ul>
+<li>Place for people to listen/read to my journey via podcast and blogs. Will pick projects and blindly follow the documentation and report back on successes and roadblocks.
+<ul>
+<li>Will submit upstream changes to projects on documentation if possible.</li>
+<li>Will submit tutorial if appropriate to other projects.</li>
+</ul>
+</li>
+<li>This will not be a dedicated information hub!
+<ul>
+<li>So many already exist, would rather contribute than reinvent the wheel.</li>
+</ul>
+</li>
+<li>Community contributions are WANTED!
+<ul>
+<li>Want to try your hand at podcasting? Do it here!!</li>
+<li>Want to submit your experience with a project/documentation, do it here!</li>
+<li>Try to keep everything within GitLab for easy additions.</li>
+</ul>
+</li>
+</ul>
+<h3 id="is-there-a-schedule">Is there a schedule?</h3>
+<ul>
+<li>Not really. . .
+<ul>
+<li>Can only record audio at night or on days when alone due to high volumes of ambient noise.</li>
+<li>Will try for 1 new addition per week or biweekly as time permits.</li>
+<li>If community involvement picks up, then more will be released.</li>
+</ul>
+</li>
+<li>Currently not on iTunes/PocketCasts/Spotify/Sticher/etc.
+<ul>
+<li>Don&rsquo;t really plan on doing these unless I have time or community involvement picks up.</li>
+</ul>
+</li>
+</ul>
+<h3 id="first-official-episode">First &ldquo;Official&rdquo; Episode?</h3>
+<ul>
+<li>I wouldn&rsquo;t consider this an official submission based on the ideals of the project. This is more of an obligatory episode, thus the E00 tag.</li>
+<li>Haven&rsquo;t settled on the topic for E01 yet, maybe how to use Git since I have documentation for that already and that is how I would prefer contributions to roll in.</li>
+</ul>
+]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/E00.jpg"></itunes:image>
+          <googleplay:image href="https://linuxlemming.com/img/episode/E00.jpg"></googleplay:image><enclosure url="https://linuxlemming.com/files/E00.mp3" length="5129351" type="audio/mpeg" /><itunes:duration>06:52</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item></channel>
 </rss>
