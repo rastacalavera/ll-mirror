@@ -6,7 +6,16 @@
     <description>Recent content on The Linux Lemming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Apr 2021 19:21:00 -0500</lastBuildDate><atom:link href="https://linuxlemming.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 14:46:19 -0500</lastBuildDate><atom:link href="https://linuxlemming.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LIVE</title>
+      <link>https://linuxlemming.com/upcoming/</link>
+      <pubDate>Thu, 13 Oct 2022 14:46:19 -0500</pubDate>
+      
+      <guid>https://linuxlemming.com/upcoming/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Self-Hosted Image Sharing Made Easy</title>
       <link>https://linuxlemming.com/e06/</link>
@@ -157,7 +166,7 @@ Episode 03 Art- Image by OpenClipart-Vectors from Pixabay</description>
       <pubDate>Fri, 05 Mar 2021 13:18:30 -0600</pubDate>
       
       <guid>https://linuxlemming.com/e00/</guid>
-      <description></description>
+      <description>Introduction Who am I?  Long time Linux Desktop user and new to the server realm. Hobbyist who knows enough to start projects but doesn&amp;rsquo;t have enough free time to maintain or spend hours troubleshooting. A &amp;ldquo;lemming&amp;rdquo; who appreciates concise, up to date documentation and wants to see more of it widely available. Avid podcast listener.  What Will This Project Be Like?  Place for people to listen/read to my journey via podcast and blogs.</description>
     </item>
     
     <item>
@@ -216,15 +225,6 @@ Ask Noah Show A weekly call in show that talks about how to do all the things &a
       <guid>https://linuxlemming.com/tll/</guid>
       <description>The Linux Lemming Origin Story I&amp;rsquo;ve been using the linux desktop off and on since about 2007. In 2009 I went linux full time and haven&amp;rsquo;t looked back. In 2013 I started to get more interested in server side linux but I didn&amp;rsquo;t get too serious about self-hosting until 2018.
 Over the years, I&amp;rsquo;ve learned a lot but I am still learning new things constantly. One thing I&amp;rsquo;ve struggled with is documentation.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linuxlemming.com/e00_shownotes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linuxlemming.com/e00_shownotes/</guid>
-      <description>Introduction Who am I?  Long time Linux Desktop user and new to the server realm. Hobbyist who knows enough to start projects but doesn&amp;rsquo;t have enough free time to maintain or spend hours troubleshooting. A &amp;ldquo;lemming&amp;rdquo; who appreciates concise, up to date documentation and wants to see more of it widely available. Avid podcast listener.  What Will This Project Be Like?  Place for people to listen/read to my journey via podcast and blogs.</description>
     </item>
     
   </channel>

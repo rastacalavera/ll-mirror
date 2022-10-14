@@ -3,7 +3,7 @@ title = "LIVE"
 Description = "This is to test what is used in the upcoming tool chain so that it can be modified to work with the live tag"
 Date = 2022-10-13T14:46:19-05:00
 PublishDate = 2022-10-13T14:46:19-05:00 # this is the datetime for the when the epsiode was published. This will default to Date if it is not set. Example is "2016-04-25T04:09:45-05:00"
-podcast_file = "###.mp3" # the name of the podcast file, after the media prefix.
+podcast_file = "https://demo.azuracast.com/listen/azuratest_radio/radio.mp3" # the name of the podcast file, after the media prefix.
 podcast_duration = "2:50"
 podcast_bytes = "250" # the length of the episode in bytes
 episode_image = "img/episode/default.jpg"
@@ -24,3 +24,4 @@ upcoming = true # set to true if you want this to be listed as upcoming, etc, et
 #series = []
 #tags = []
 +++
+<iframe src="https://demo.azuracast.com/public/azuratest_radio/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
