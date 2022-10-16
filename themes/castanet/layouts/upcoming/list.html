@@ -1,10 +1,13 @@
 {{ define "main" }}
 
-<div class = "row">
-  <div class = "col-md-12">
-    <h1>Live Streaming</h1> <!-- <h1>Upcoming Episodes</h1> #this changes the top heading on the page -->
-  </div>
+<div class = "center">
+    <h1>Linux Lemming Live Stream</h1> <!-- <h1>Upcoming Episodes</h1> #this changes the top heading on the page -->
+    </div>
+<!-- would be nice to have a site param or episode archetype pull from so that the url can change as needed-->
+    <div class ="center">
+ <iframe src="https://demo.azuracast.com/public/azuratest_radio/embed?theme=light" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
 </div>
+<!-- Pretty sure this is what puts text next to image-->
 {{ with .Content }}
 <div class = "row">
   <div class = "col">
