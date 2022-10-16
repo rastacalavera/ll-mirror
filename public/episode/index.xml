@@ -41,6 +41,32 @@
       <itunes:category text="Software How-To" /><itunes:category text="Tech News" /></itunes:category><generator>Hugo -- gohugo.io</generator>
         <item>
           
+            <title>Self-Hosted Image Sharing Made Easy
+          
+          
+          </title>
+          <link>https://linuxlemming.com/e06/</link>
+          <pubDate>Fri, 30 Apr 2021 19:21:00 -0500 </pubDate>
+          <dc:creator></dc:creator>
+          <guid>https://linuxlemming.com/files/###.mp3</guid>
+          <itunes:author>Rastacalavera</itunes:author>
+          
+        
+          <itunes:title>Self-Hosted Image Sharing Made Easy</itunes:title>
+        
+        <itunes:subtitle><![CDATA[
+        
+        Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)
+        
+        ]]></itunes:subtitle>
+        <itunes:summary>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</itunes:summary>
+        <description>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</description>
+        <googleplay:description>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</googleplay:description>
+        <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e06/e06.png"></itunes:image>
+          <googleplay:image href="https://linuxlemming.com/img/episode/e06/e06.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/###.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
+          <googleplay:explicit>no</googleplay:explicit></item>
+        <item>
+          
             <title>PEBCAK and Covid
           
           
