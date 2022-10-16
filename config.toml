@@ -26,61 +26,62 @@ buildFuture = true
 # The menus are sorted based upon their identifier
 [[Menu.Main]]
     name = "About"
-    #identifier = "about"
+    identifier = "1"
     url = "/TLL"
 
+[[Menu.Main]]
+    name = "poop"
+    identifier = "2"
+    url = "/contact"
+
 #[[Menu.Main]]
- #   name = "Contact"
- #   identifier = "contact"
- #   url = "/contact"
+#    name = "Host"
+#    identifier = "host"
+#    url = "/host"
+    
 
-[[Menu.Main]]
-    name = "Host"
-    identifier = "host"
-    url = "/host"
+#[[Menu.Main]]
+#    name = "Guests"
+#    identifier = "guests"
+#    url = "/guest"
 
-[[Menu.Main]]
-    name = "Guests"
-    identifier = "guests"
-    url = "/guest"
-
-[[Menu.Main]]
-    name = "Live Stream"
-    identifier = "live"
-    url = "/live"
+#[[Menu.Main]]
+#    name = "Live Stream"
+#    identifier = "live"
+#    url = "/live"
 
 [[Menu.Main]]
     name = "Upcoming Episodes"
-    identifier = "upcoming"
+    identifier = "3"
     url = "/upcoming"
 
 [[Menu.Main]]
     name = "Blog"
-    identifier = "blog"
+    identifier = "4"
     url = "/blog"
 
 [[Menu.Main]]
     name = "Resources"
-    identifier = "resources"
+    identifier = "5"
     url = "#!"
 
-[[Menu.Main]]
-    name = "Podcasts"
-    identifier = "podcasts"
-    url = "/Other Podcasts"
-    parent = "resources"
+  [[Menu.Main]]
+      name = "Podcasts"
+#      identifier = "6"
+      url = "/Other Podcasts"
+      parent = "Resources"
 
-[[Menu.Main]]
-    name = "Links"
-    identifier = "links"
-    url = "/Resources"
-    parent = "resources"
+  [[Menu.Main]]
+      name = "Links"
+ #     identifier = "7"
+      url = "/Resources"
+      parent = "Resources"
 
-[[Menu.Main]]
-    name = "Credits"
-    identifier = "credits"
-    url = "/Credits"
-    parent = "resources"    
+  [[Menu.Main]]
+      name = "Credits"
+#      identifier = "8"
+      url = "/Credits"
+      parent = "Resources"    
 
 [params]
 mainSections = ["episode"]
@@ -90,7 +91,9 @@ site_theme = "grey"
 # site_layout = "grid"
 site_layout = "row"
 show_next_upcoming = "true"
-#show_live_status = "" # copy how the above functions and replace with live qualities
+show_live_status = "\"Pending\"" # copy how the above functions and replace with live qualities
+show_live_start = "2022-10-15T20:11:00-05:00" #need to convert, https://dencode.com/en/date/iso8601
+show_live_end = "2022-10-15T23:00:00" #need to convert, https://dencode.com/en/date/iso8601
 enable_jumbo = "true"
 # enable_jumbo = "false"
 # truncate = "100"

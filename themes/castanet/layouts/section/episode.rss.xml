@@ -14,6 +14,7 @@
     <podcast:value>type="lightning" method="keysend" suggested="0.00000005000"
       <podcast:valueRecipient name="rastacalavera" type="node" address="" split="100" />
       </podcast:value>
+    <podcast:liveItem> status={{ .Site.Params.show_live_status }} start="{{ .Site.Params.show_live_start }}" end="{{ .Site.Params.show_live_end }}"</podcast:liveItem>
     <title>{{ $.Site.Title }}</title>
     <atom:link href="{{ "episode/index.xml" | absURL }}" rel="self" type="application/rss+xml" />
     <link>{{ .Site.BaseURL }}</link>
