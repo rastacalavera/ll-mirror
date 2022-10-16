@@ -8,3 +8,4 @@
 	url = git@github.com:rastacalavera/lemming-mirror.git
 	fetch = +refs/*:refs/*
 	mirror = true
+	pushurl = git@github.com:rastacalavera/lemming-mirror.git
