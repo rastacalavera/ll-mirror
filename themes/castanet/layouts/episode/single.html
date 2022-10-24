@@ -99,10 +99,16 @@
         {{- end -}}
         <!-- transcript POC end -->
 
+        
   <div class="row">
     <div class="col">
+      {{- if ne $.Params.upcoming true -}}
       <h2>Show Notes</h2>
       {{ .Content }}
+      {{- else -}}
+      <h2>Live Stream Feed</h2>
+      {{ .Content }}
+      {{- end -}}
     </div>
   </div>
 
