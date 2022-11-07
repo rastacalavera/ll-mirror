@@ -9,7 +9,7 @@
 
   <meta name="description" content="## Setting Up a New Pi4 Server">
 
-<meta name="generator" content="Hugo 0.97.3" />
+<meta name="generator" content="Hugo 0.105.0">
 
 <meta property="og:title" content="Getting Started With a New Server" />
 <meta name="twitter:title" content="Getting Started with a New Server"/>
@@ -249,7 +249,7 @@ I did the typical <code>useradd rastacalavera</code> and <code>chmod -a -G sudo 
 </ul>
 <p>then paste in</p>
 <ul>
-<li><code># ~/.bash_aliases alias dtail='docker logs -tf --tail=&quot;50&quot; &quot;$@&quot;'</code></li>
+<li><code># ~/.bash_aliases alias dtail='docker logs -tf --tail=&quot;50&quot; &quot;$@&quot;'</code></li>
 </ul>
 <p>This will help us view and exit the log files of the container without cancelling the execution of it.</p>
 <p>Time to test docker
@@ -294,14 +294,14 @@ I did the typical <code>useradd rastacalavera</code> and <code>chmod -a -G sudo 
 <p>Are you completely new to Docker? If so, please see the <a href="https://docs.docker.com/engine/install/">official documentation</a> on how to properly install docker for your OS. Be sure to follow the the <strong>Post Installation</strong> directions as well to make sure your user can execute docker commands.</p>
 </blockquote>
 <p>In the Docker Compose section, it is odd that they return to the bashrc and bash_aliases file. I think it might be advantageous to have this sooner or to leave out the previous section.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>If you get an error about permissions, you may need to log out and then log back in for the changes to take effect. Same thing applies to the addition of the bash_aliases&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 <div id="share"></div>
 <div class="row">

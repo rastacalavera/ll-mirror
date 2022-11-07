@@ -30,41 +30,15 @@
       <itunes:name>Rastacalavera</itunes:name>
       <itunes:email>rastacalavera@proton.me</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://linuxlemming.com/img/misc/calaveraLogo.png" />
-    <googleplay:image href="https://linuxlemming.com/img/misc/calaveraLogo.png"></googleplay:image>
+    <itunes:image href="https://linuxlemming.com/img/LLcover.png" />
+    <googleplay:image href="https://linuxlemming.com/img/LLcover.png"></googleplay:image>
     <image>
-      <url>https://linuxlemming.com/img/misc/calaveraLogo.png</url>
+      <url>https://linuxlemming.com/img/LLcover.png</url>
       <title>The Linux Lemming</title>
       <link>https://linuxlemming.com</link>
     </image>
     <itunes:category text="Technology">
       <itunes:category text="Software How-To" /><itunes:category text="Tech News" /></itunes:category><generator>Hugo -- gohugo.io</generator>
-        <item>
-          
-            <title>Self-Hosted Image Sharing Made Easy
-          
-          
-          </title>
-          <link>https://linuxlemming.com/e06/</link>
-          <pubDate>Fri, 30 Apr 2021 19:21:00 -0500 </pubDate>
-          <dc:creator></dc:creator>
-          <guid>https://linuxlemming.com/files/###.mp3</guid>
-          <itunes:author>Rastacalavera</itunes:author>
-          
-        
-          <itunes:title>Self-Hosted Image Sharing Made Easy</itunes:title>
-        
-        <itunes:subtitle><![CDATA[
-        
-        Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)
-        
-        ]]></itunes:subtitle>
-        <itunes:summary>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</itunes:summary>
-        <description>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</description>
-        <googleplay:description>Proxy Configs and Image Sharing with [Chevereto](https://v3-docs.chevereto.com/get-started/#use)</googleplay:description>
-        <content:encoded><![CDATA[]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/e06/e06.png"></itunes:image>
-          <googleplay:image href="https://linuxlemming.com/img/episode/e06/e06.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/###.mp3"  type="audio/mpeg" /><itunes:explicit>false</itunes:explicit>
-          <googleplay:explicit>no</googleplay:explicit></item>
         <item>
           
             <title>PEBCAK and Covid
@@ -211,14 +185,14 @@
 <p>I <strong>REALLY</strong> like the disclaimer of prior knowledge required to make good use of the documentation and how to gain the required knowledge if you don&rsquo;t meet that criteria.
 <img src="/img/episode/E01/vscode_intro.png" alt="vscode prior knowledge disclaimer with links"></p>
 <p>I am still getting used to VSCode and will most likely do a blog post on it in the future but my first impression is that VSCode documentation gets a 10/10.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189">Documentation for the difference between a fork and clone</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded><itunes:image href="https://linuxlemming.com/img/episode/E01/e01.png"></itunes:image>
           <googleplay:image href="https://linuxlemming.com/img/episode/E01/e01.png"></googleplay:image><enclosure url="https://linuxlemming.com/files/E01.mp3" length="5982438" type="audio/mpeg" /><itunes:duration>07:50</itunes:duration><itunes:explicit>false</itunes:explicit>
           <googleplay:explicit>no</googleplay:explicit></item>

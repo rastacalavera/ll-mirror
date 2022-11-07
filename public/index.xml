@@ -124,7 +124,7 @@ How to Contribute to the Linux Lemming A detailed blog post will be made for thi
       <description>Contributing Links The easiest way to contribute to the project would be to submit links to the resource page. As submissions come in, they can be organized a bit more but for now, anything goes.
 I have come to really like VSCode, so that is my preferred way to interact with Git and what this guide covers.
 This guide assumes the following:
- Reader has an account on Gitlab Reader has VScode installed Reader understands some Git Basics  Fork the Project After you are logged into gitlab, the project needs to be forked.</description>
+Reader has an account on Gitlab Reader has VScode installed Reader understands some Git Basics Fork the Project After you are logged into gitlab, the project needs to be forked.</description>
     </item>
     
     <item>
@@ -147,8 +147,7 @@ Episode 03 Art- Image by OpenClipart-Vectors from Pixabay</description>
       
       <guid>https://linuxlemming.com/resources/</guid>
       <description>Resources from the Linux Lemming Linuxize- Simple website with good information.
- I really enjoy their commands section. They also have in-depth articles as well. This site often comes up when searching the internet.
- </description>
+I really enjoy their commands section. They also have in-depth articles as well. This site often comes up when searching the internet.</description>
     </item>
     
     <item>
@@ -157,7 +156,7 @@ Episode 03 Art- Image by OpenClipart-Vectors from Pixabay</description>
       <pubDate>Fri, 05 Mar 2021 13:18:30 -0600</pubDate>
       
       <guid>https://linuxlemming.com/e00/</guid>
-      <description>Introduction Who am I?  Long time Linux Desktop user and new to the server realm. Hobbyist who knows enough to start projects but doesn&amp;rsquo;t have enough free time to maintain or spend hours troubleshooting. A &amp;ldquo;lemming&amp;rdquo; who appreciates concise, up to date documentation and wants to see more of it widely available. Avid podcast listener.  What Will This Project Be Like?  Place for people to listen/read to my journey via podcast and blogs.</description>
+      <description>Introduction Who am I? Long time Linux Desktop user and new to the server realm. Hobbyist who knows enough to start projects but doesn&amp;rsquo;t have enough free time to maintain or spend hours troubleshooting. A &amp;ldquo;lemming&amp;rdquo; who appreciates concise, up to date documentation and wants to see more of it widely available. Avid podcast listener. What Will This Project Be Like? Place for people to listen/read to my journey via podcast and blogs.</description>
     </item>
     
     <item>
