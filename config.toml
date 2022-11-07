@@ -124,12 +124,19 @@ media_prefix = "https://linuxlemming.com/files/"
     gitlab = "rastacalavera"
 
   [params.authors]
-    [params.authors.RastaCalavera]
-      name	= "RastaCalavera"
+    [params.authors.show]
+      #name	= "RastaCalavera"
       thumbnail = "img/LLcover.png" #main circle image on landing page
+      #thumbnail = "/img/host/calaveraJP.jpeg" #main circle image on landing page
       bio = "A Linux enthusiast and maker at heart."
-      [params.authors.RastaCalavera.social]
-        github = "rastacalavera"
+      
+    #[params.authors.rastacalavera]
+      #name	= "RastaCalavera"
+      #thumbnail = "img/host/calaveraJP.jpeg" #main circle image on landing page
+      #thumbnail = "/img/host/calaveraJP.jpeg" #main circle image on landing page
+      #bio = "A Linux enthusiast and maker at heart."
+      #[params.authors.rastacalavera.social]
+        #github = "rastacalavera"
 
 ####
 ##added to try to get html to render
