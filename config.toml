@@ -120,8 +120,8 @@ media_prefix = "https://linuxlemming.com/files/"
     msapplication_tilecolor="#2b5797"
 
   [params.social]
-    github = "rastacalavera"
-    gitlab = "rastacalavera"
+    github = "rastacalavera/linuxlemming"
+    gitlab = "rastacalavera/linuxlemming"
 
   [params.authors]
     [params.authors.show]
