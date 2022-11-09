@@ -9,6 +9,9 @@ title = "Resources Used for the Linux Lemming Podcast"
 
 [//]: ![](https://freemusicarchive.org/image?file=images%2Falbums%2FCaptive_Portal_-_Toy_Sounds_Vol_1_-_20180907111646426.png&width=290&height=290&type=image)
 
+<br>
+<br>
+
 #### Out Track- Boss Splash by [sawsquarenoise](https://freemusicarchive.org/music/sawsquarenoise/dojokratos) 
 
 **Album art may not be accurate. Could not easily resize using links provided by the free music archive.**
@@ -17,25 +20,55 @@ title = "Resources Used for the Linux Lemming Podcast"
 
 [//]: ![](https://freemusicarchive.org/image?file=image%2Fmvlo0sgnTQwV6JoBcNPyOZG0FTb0bkgeikaQPPgt.jpeg&width=290&height=290&type=image)
 
+<br>
+<br>
+
+#### Revival Music- Underwhelmed by [Kirk Osamayo](https://freemusicarchive.org/music/kirk-osamayo/purple-season-3/underwhelmed/)
+
+**The original track was altered for length and content.**
+
+<img src="https://freemusicarchive.org/image/?file=album_image%2FhGWmGY4OJzMECHP95w2VAlpLXTxJn1kvzSpchSXf.png&width=290&height=290&type=album" height=100 width=100/>
+
+
+<!--[](https://freemusicarchive.org/image/?file=album_image%2FhGWmGY4OJzMECHP95w2VAlpLXTxJn1kvzSpchSXf.png&width=290&height=290&type=album) --> 
+
+<br>
+<br>
+
 ### Art
 
 Episode 06 Art- Found on the [Bristol Penguin Archive Project](http://www.bristol.ac.uk/penguinarchiveproject/about/archive/)
 
 <img src="http://www.bristol.ac.uk/media-library/sites/penguinarchiveproject/migrated/images/librarianpenguin.jpg" width="100" height="100">
 
+
+<br>
+<br>
+
 Episode 05 Art- Found on Wikimedia Commons by user [Sarah Klockars-Clauser
 ](https://commons.wikimedia.org/wiki/File:Flaming_computer_-_%22don%27t_panic%22_(4549185468).jpg). [Flickr Account](https://www.flickr.com/people/92455770@N00)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Flaming_computer_-_%22don%27t_panic%22_%284549185468%29.jpg/320px-Flaming_computer_-_%22don%27t_panic%22_%284549185468%29.jpg" width="100" height="100"/>
 
+
+<br>
+<br>
+
 Episode 04 Art- Found on [Greg Leden's Blog](https://gregladen.com/blog/2019/01/21/how-to-be-a-hacker/)
 
 <img src="https://i2.wp.com/gregladen.com/blog/wp-content/uploads/2019/01/Tux_Hacker.png?resize=562%2C270&ssl=1" width="200" height="100"/>
+
+
+<br>
+<br>
 
 Episode 03 Art- Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=161406">Pixabay</a>
 
 <img src="https://linuxlemming.com/img/episode/e03/e03_original.png" width="100" height="100">
 
+
+<br>
+<br>
 
 Backdoor Survival- Episode 00 cover Art
 
@@ -45,6 +78,8 @@ width="100" height="100"/>
 
 [//]: ![](https://live.staticflickr.com/7205/7019634849_9101e62305_q.jpg)
 
+<br>
+<br>
 
 Gitlab Logo 
 
@@ -52,11 +87,19 @@ Gitlab Logo
 
 [//]:![](https://about.gitlab.com/images/press/logo/jpg/gitlab-icon-1-color-black-rgb.jpg)
 
+
+<br>
+<br>
+
 Blog post for [Contributing to the Linux Lemming](blog/contributing.md)
 
 Pingus Art- Taken from their [Gitlab Account](https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0)
 
 <img src="https://gitlab.com/pingus/pingus/-/raw/master/data/images/pingus/player0/digger.png" class="img-fluid"/>
+
+
+<br>
+<br>
 
 Episode 02 Cover Art
 
