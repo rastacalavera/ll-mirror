@@ -1,6 +1,7 @@
 1
 00:00:00,000 --> 00:00:20,200
-Hello, and welcome to The Linux Lemming.
+Hello, and welcome to
+The Linux Lemming.
 
 2
 00:00:20,200 --> 00:00:23,040
@@ -8,35 +9,43 @@ I'm your host, Rostek Halibara.
 
 3
 00:00:23,040 --> 00:00:29,280
-This is Episode 4, and I've decided to title this one Helping the Hippo.
+This is Episode 4, and I've decided
+to title this one Helping the Hippo.
 
 4
 00:00:29,280 --> 00:00:37,360
-So this is Ubuntu 20.04 testing week, which has been crossing the feeds and all the Linux
+So this is Ubuntu 20.04 testing week, which
+has been crossing the feeds and all the Linux
 
 5
 00:00:37,360 --> 00:00:42,880
-podcasts out there and news areas and different things like that, so I figured this would
+podcasts out there and news areas and different
+things like that, so I figured this would
 
 6
 00:00:42,880 --> 00:00:50,160
-be a great opportunity to put the documentation to the test and also to help out a project.
+be a great opportunity to put the documentation
+to the test and also to help out a project.
 
 7
 00:00:50,160 --> 00:00:56,320
-So this is a great opportunity, and I've never participated in an event like this before,
+So this is a great opportunity, and I've never
+participated in an event like this before,
 
 8
 00:00:56,320 --> 00:01:00,320
-so I'm really grateful that something like this exists.
+so I'm really grateful that
+something like this exists.
 
 9
 00:01:00,320 --> 00:01:05,920
-Alan Pope recently made a forum post about the event that also includes documentation
+Alan Pope recently made a forum post about
+the event that also includes documentation
 
 10
 00:01:05,920 --> 00:01:12,200
-for new testers and several different videos that you can watch to actually see him conduct
+for new testers and several different videos
+that you can watch to actually see him conduct
 
 11
 00:01:12,200 --> 00:01:15,120
@@ -44,7 +53,8 @@ a test in real time.
 
 12
 00:01:15,120 --> 00:01:21,240
-It's about an hour investment or so to read through the documentation and watch a video
+It's about an hour investment or so to read
+through the documentation and watch a video
 
 13
 00:01:21,240 --> 00:01:23,560
@@ -52,11 +62,13 @@ in its entirety.
 
 14
 00:01:23,560 --> 00:01:28,320
-The video that I watched was about 25 to 30 minutes long, and I did skip through a little
+The video that I watched was about 25 to 30
+minutes long, and I did skip through a little
 
 15
 00:01:28,320 --> 00:01:34,520
-bit of it, but it is helpful to have that written documentation and a visual representation
+bit of it, but it is helpful to have that written
+documentation and a visual representation
 
 16
 00:01:34,520 --> 00:01:35,760
@@ -64,11 +76,13 @@ as well.
 
 17
 00:01:35,760 --> 00:01:42,160
-So after reading through and watching the videos, you have to log in to an Ubuntu account, which
+So after reading through and watching the videos,
+you have to log in to an Ubuntu account, which
 
 18
 00:01:42,160 --> 00:01:49,840
-I've had since 2008 or something like that, so I was able to log in to my account and
+I've had since 2008 or something like that,
+so I was able to log in to my account and
 
 19
 00:01:49,840 --> 00:01:52,080
@@ -76,15 +90,18 @@ I got started.
 
 20
 00:01:52,080 --> 00:01:56,880
-When you do get started with the testing week, you have a lot of different options, and depending
+When you do get started with the testing week, you
+have a lot of different options, and depending
 
 21
 00:01:56,880 --> 00:02:01,960
-on the test, some of them want you to do bare metal installs and different things like that.
+on the test, some of them want you to do bare
+metal installs and different things like that.
 
 22
 00:02:01,960 --> 00:02:06,720
-I don't have any spare hardware at the moment, so I decided that I would try to do all of
+I don't have any spare hardware at the moment,
+so I decided that I would try to do all of
 
 23
 00:02:06,720 --> 00:02:09,400
@@ -92,35 +109,43 @@ my testing in VirtualBox.
 
 24
 00:02:09,400 --> 00:02:17,840
-And I really haven't used VirtualBox all that much, but the process was pretty straightforward.
+And I really haven't used VirtualBox all that
+much, but the process was pretty straightforward.
 
 25
 00:02:17,840 --> 00:02:22,680
-So I downloaded the ISOs that I wanted to test.
+So I downloaded the ISOs
+that I wanted to test.
 
 26
 00:02:22,680 --> 00:02:29,680
-I chose to do Kabuntu because that's what I run on a daily basis, and also Kylan.
+I chose to do Kabuntu because that's what
+I run on a daily basis, and also Kylan.
 
 27
 00:02:29,680 --> 00:02:37,200
-I've never really used Kylan at all before, but looking at both of those flavors, I noticed
+I've never really used Kylan at all before, but
+looking at both of those flavors, I noticed
 
 28
 00:02:37,200 --> 00:02:41,120
-they still had tests that needed to be done in the live environment.
+they still had tests that needed to
+be done in the live environment.
 
 29
 00:02:41,120 --> 00:02:44,240
-So I figured that would be a good thing to do.
+So I figured that would
+be a good thing to do.
 
 30
 00:02:44,240 --> 00:02:51,320
-So after installing VirtualBox, you have to click on to create a new virtual environment.
+So after installing VirtualBox, you have to
+click on to create a new virtual environment.
 
 31
 00:02:51,320 --> 00:02:55,640
-And when you go to set that up, you want to make sure that you change your settings to
+And when you go to set that up, you want to
+make sure that you change your settings to
 
 32
 00:02:55,640 --> 00:02:58,720
@@ -132,43 +157,53 @@ So I'm doing 64-bit.
 
 34
 00:03:00,720 --> 00:03:06,520
-I don't even know if these ones support 32, but there you have it.
+I don't even know if these ones
+support 32, but there you have it.
 
 35
 00:03:06,520 --> 00:03:11,760
-I think the default when you go into VirtualBox is to use a Windows system.
+I think the default when you go into
+VirtualBox is to use a Windows system.
 
 36
 00:03:11,760 --> 00:03:14,880
-So just make sure you modify that as needed.
+So just make sure you
+modify that as needed.
 
 37
 00:03:14,880 --> 00:03:18,880
-The next step is allocating memory for that VirtualBox.
+The next step is allocating
+memory for that VirtualBox.
 
 38
 00:03:18,880 --> 00:03:24,960
-I have 32 gigabytes of memory on this laptop, so I gave it 8 gigabytes of memory.
+I have 32 gigabytes of memory on this
+laptop, so I gave it 8 gigabytes of memory.
 
 39
 00:03:24,960 --> 00:03:29,400
-So I didn't want to experience any issues.
+So I didn't want to
+experience any issues.
 
 40
 00:03:29,400 --> 00:03:32,840
-I didn't have to provide any disk space.
+I didn't have to provide
+any disk space.
 
 41
 00:03:32,840 --> 00:03:37,600
-So after you do the memory, it's going to ask if you want to create a virtual hard disk.
+So after you do the memory, it's going to ask
+if you want to create a virtual hard disk.
 
 42
 00:03:37,600 --> 00:03:41,680
-And I figured since I'm not going to be living in this thing, I'm just testing the live environment
+And I figured since I'm not going to be living in
+this thing, I'm just testing the live environment
 
 43
 00:03:41,680 --> 00:03:45,240
-I don't need a virtual hard disk at all.
+I don't need a virtual
+hard disk at all.
 
 44
 00:03:45,240 --> 00:03:47,960
@@ -176,11 +211,13 @@ And that is an option.
 
 45
 00:03:47,960 --> 00:03:50,560
-And after you click that, it's going to ask you, are you sure?
+And after you click that, it's
+going to ask you, are you sure?
 
 46
 00:03:50,560 --> 00:03:54,080
-You'll only be able to run a live environment, and that's exactly what I want to do.
+You'll only be able to run a live environment,
+and that's exactly what I want to do.
 
 47
 00:03:54,080 --> 00:03:56,560
@@ -188,19 +225,23 @@ So no problems there.
 
 48
 00:03:56,560 --> 00:04:01,720
-So after you go through that, your VirtualBox will be created, but you still have to add
+So after you go through that, your VirtualBox
+will be created, but you still have to add
 
 49
 00:04:01,720 --> 00:04:04,880
-the ISO and tell it to boot from that.
+the ISO and tell it
+to boot from that.
 
 50
 00:04:04,880 --> 00:04:09,800
-So you've got to click on the settings for the virtual environment that you just created.
+So you've got to click on the settings for the
+virtual environment that you just created.
 
 51
 00:04:09,800 --> 00:04:16,200
-Then you have to go to the controller IDE and tell it that you want it to be an optical
+Then you have to go to the controller IDE and
+tell it that you want it to be an optical
 
 52
 00:04:16,200 --> 00:04:17,560
@@ -208,19 +249,23 @@ drive.
 
 53
 00:04:17,560 --> 00:04:22,680
-And then after that, you add the ISO from wherever it lives on your computer.
+And then after that, you add the ISO from
+wherever it lives on your computer.
 
 54
 00:04:22,680 --> 00:04:26,680
-And in mine, it was just in my downloads folder.
+And in mine, it was just
+in my downloads folder.
 
 55
 00:04:26,680 --> 00:04:32,520
-After you've mounted that ISO, you need to click on that ISO image.
+After you've mounted that ISO, you
+need to click on that ISO image.
 
 56
 00:04:32,520 --> 00:04:37,960
-And then right below the optical drive, there's an option to tell it that this is a live CD
+And then right below the optical drive, there's
+an option to tell it that this is a live CD
 
 57
 00:04:37,960 --> 00:04:39,760
@@ -228,15 +273,18 @@ or DVD.
 
 58
 00:04:39,760 --> 00:04:44,280
-You want to make sure you click that because if you don't, it won't boot properly.
+You want to make sure you click that because
+if you don't, it won't boot properly.
 
 59
 00:04:44,280 --> 00:04:51,400
-So after that's all been set up, it's time to start up that virtual environment and
+So after that's all been set up, it's time
+to start up that virtual environment and
 
 60
 00:04:51,400 --> 00:04:57,560
-then work through the checklist that they have in their ISO tracker and submit any bugs.
+then work through the checklist that they have
+in their ISO tracker and submit any bugs.
 
 61
 00:04:57,560 --> 00:05:00,160
@@ -244,23 +292,28 @@ So I started with Kabuntu.
 
 62
 00:05:00,160 --> 00:05:05,080
-And as soon as I booted that up, reading through their checklist, they said that the language
+And as soon as I booted that up, reading through
+their checklist, they said that the language
 
 63
 00:05:05,080 --> 00:05:09,240
-menu should be in the left column.
+menu should be in
+the left column.
 
 64
 00:05:09,240 --> 00:05:16,800
-And when I did it, it was above where it says install or try the live environment.
+And when I did it, it was above where it
+says install or try the live environment.
 
 65
 00:05:16,800 --> 00:05:21,200
-So that was kind of the first discrepancy that I came across.
+So that was kind of the first
+discrepancy that I came across.
 
 66
 00:05:21,200 --> 00:05:24,480
-And that seemed to be the only one I came across in Kabuntu.
+And that seemed to be the only
+one I came across in Kabuntu.
 
 67
 00:05:24,480 --> 00:05:26,000
@@ -280,27 +333,33 @@ It was great.
 
 71
 00:05:29,600 --> 00:05:33,160
-It was like I was using it on bare metal.
+It was like I was using
+it on bare metal.
 
 72
 00:05:33,160 --> 00:05:37,800
-So I just submitted that one small little thing that I saw and maybe it's a big deal.
+So I just submitted that one small little
+thing that I saw and maybe it's a big deal.
 
 73
 00:05:37,800 --> 00:05:41,160
-Maybe it's not, but it's on record there now.
+Maybe it's not, but it's
+on record there now.
 
 74
 00:05:41,160 --> 00:05:45,880
-So after going with Kabuntu, I booted up Kylan.
+So after going with Kabuntu,
+I booted up Kylan.
 
 75
 00:05:45,880 --> 00:05:51,120
-And there were a lot of issues with that one.
+And there were a lot of
+issues with that one.
 
 76
 00:05:51,120 --> 00:05:56,480
-One thing that stood out to me is when I booted up Kabuntu, there was no startup noise or
+One thing that stood out to me is when I booted
+up Kabuntu, there was no startup noise or
 
 77
 00:05:56,480 --> 00:05:57,960
@@ -312,31 +371,38 @@ But there was with Kylan.
 
 79
 00:05:59,640 --> 00:06:03,560
-So maybe I need to go back and check sound in Kabuntu.
+So maybe I need to go back
+and check sound in Kabuntu.
 
 80
 00:06:03,560 --> 00:06:08,480
-But Kylan had a little startup ding and everything.
+But Kylan had a little
+startup ding and everything.
 
 81
 00:06:08,480 --> 00:06:13,200
-But as I was moving my cursor around, it was tearing on the screen.
+But as I was moving my cursor around,
+it was tearing on the screen.
 
 82
 00:06:13,200 --> 00:06:19,400
-And every time I opened an app and clicked, these white boxes would pop up and kind of
+And every time I opened an app and clicked,
+these white boxes would pop up and kind of
 
 83
 00:06:19,400 --> 00:06:21,280
-obscure the view and everything.
+obscure the view
+and everything.
 
 84
 00:06:21,280 --> 00:06:28,600
-So it seemed like Kylan was not as polished in a virtual environment as Kabuntu was.
+So it seemed like Kylan was not as polished
+in a virtual environment as Kabuntu was.
 
 85
 00:06:28,600 --> 00:06:35,040
-So I submitted two bugs for Kylan and we'll see where that takes it.
+So I submitted two bugs for Kylan
+and we'll see where that takes it.
 
 86
 00:06:35,040 --> 00:06:36,680
@@ -344,11 +410,13 @@ I'm not quite sure.
 
 87
 00:06:36,680 --> 00:06:40,840
-I maybe skipped over that part in the video about what happens after you submit a bug.
+I maybe skipped over that part in the video
+about what happens after you submit a bug.
 
 88
 00:06:40,840 --> 00:06:46,920
-But I imagine it needs to be reviewed or verified by other users before they treat it as an
+But I imagine it needs to be reviewed or verified
+by other users before they treat it as an
 
 89
 00:06:46,920 --> 00:06:48,600
@@ -356,15 +424,18 @@ actual issue.
 
 90
 00:06:48,600 --> 00:06:55,320
-So I'll just keep my eyes on that ISO tracker and see if anything changes or updates.
+So I'll just keep my eyes on that ISO tracker
+and see if anything changes or updates.
 
 91
 00:06:55,320 --> 00:07:00,920
-And hopefully I'll find some more time to do some more testing in a live environment.
+And hopefully I'll find some more time to do
+some more testing in a live environment.
 
 92
 00:07:00,920 --> 00:07:04,200
-Looking at like Ubuntu proper and things like that, it seemed like a lot of the tests had
+Looking at like Ubuntu proper and things like
+that, it seemed like a lot of the tests had
 
 93
 00:07:04,200 --> 00:07:06,160
@@ -372,7 +443,8 @@ already been done.
 
 94
 00:07:06,160 --> 00:07:11,120
-But I'll just keep looking down that list and see if there are other ways that I can
+But I'll just keep looking down that list
+and see if there are other ways that I can
 
 95
 00:07:11,120 --> 00:07:13,120
@@ -380,19 +452,23 @@ contribute.
 
 96
 00:07:13,120 --> 00:07:16,400
-So that's all I have for testing week.
+So that's all I have
+for testing week.
 
 97
 00:07:16,400 --> 00:07:19,480
-Just a little update on the open web analytics.
+Just a little update on
+the open web analytics.
 
 98
 00:07:19,480 --> 00:07:23,640
-I still haven't gotten that to play nicely with the swag container.
+I still haven't gotten that to play
+nicely with the swag container.
 
 99
 00:07:23,640 --> 00:07:31,160
-I found an ARM64 image for Shinet that somebody had made on their own and I think it was like
+I found an ARM64 image for Shinet that somebody
+had made on their own and I think it was like
 
 100
 00:07:31,160 --> 00:07:33,680
@@ -400,23 +476,28 @@ a year or two old.
 
 101
 00:07:33,680 --> 00:07:36,600
-So that might be part of the problem as well.
+So that might be part of
+the problem as well.
 
 102
 00:07:36,600 --> 00:07:41,440
-I've been really slow at getting back to the main developer and updating him on my process
+I've been really slow at getting back to the
+main developer and updating him on my process
 
 103
 00:07:41,440 --> 00:07:43,000
-and I feel pretty bad about that.
+and I feel pretty
+bad about that.
 
 104
 00:07:43,000 --> 00:07:50,520
-So I just got to find time to execute on that conversation that we were having.
+So I just got to find time to execute on
+that conversation that we were having.
 
 105
 00:07:50,520 --> 00:07:54,240
-But that's all we have for the Linux Lemming this week.
+But that's all we have for
+the Linux Lemming this week.
 
 106
 00:07:54,240 --> 00:08:23,080
