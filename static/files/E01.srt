@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:23,200
+Hello, and welcome to another edition of the Linux Lemming.
+
+2
+00:00:23,200 --> 00:00:28,480
+I am your host, Rostek Halivera, and I want to start this episode by saying a very special
+
+3
+00:00:28,480 --> 00:00:34,400
+thanks to Matt Stratton for his hard work on the Castanet theme, which really drives this site.
+
+4
+00:00:34,400 --> 00:00:41,120
+Also to Ryan Walter of the Destination Linux, he created a very awesome video on using GitLab
+
+5
+00:00:41,120 --> 00:00:47,200
+to create a static website using Hugo, which really was a huge inspiration for me to get
+
+6
+00:00:47,200 --> 00:00:52,800
+started with the whole thing, and also just the Destination Linux crew for their weekly spotlight
+
+7
+00:00:52,800 --> 00:01:00,400
+on Git, which again really motivated me and kind of reinvigorated myself to look back at Ryan's
+
+8
+00:01:00,400 --> 00:01:06,480
+video and actually make a web page. Any of the original documentation for this idea of an open
+
+9
+00:01:06,480 --> 00:01:14,240
+podcast and things like that, and also building a simple website using Hugo and Git, lives on my
+
+10
+00:01:14,240 --> 00:01:24,320
+original post in the Destination Linux forums, which is linked in the show notes. A detailed
+
+11
+00:01:24,320 --> 00:01:30,560
+blog post will be forthcoming about how to actually go through and contribute to the project,
+
+12
+00:01:31,120 --> 00:01:39,280
+and that will be a legitimate how to, but basically what I did to show how you can contribute to the
+
+13
+00:01:39,280 --> 00:01:48,000
+Linux Lemming is to create a new user on my computer. I set up Git as that new user. I had to fork
+
+14
+00:01:48,000 --> 00:01:54,880
+the Linux Lemming repo, and there is a big difference that I wasn't quite aware of, but it
+
+15
+00:01:54,880 --> 00:02:01,920
+kind of confirmed my suspicions between a clone and a fork, especially if you're not like an approved
+
+16
+00:02:01,920 --> 00:02:08,080
+contributor to a project. Forking is the way that you want to go, and then you merge those changes
+
+17
+00:02:08,080 --> 00:02:14,640
+into the master branch once they're approved. So I'll go through how to do that, making these
+
+18
+00:02:14,640 --> 00:02:21,680
+changes using VS Code, and then how to submit a merge request, which at this point in time can't
+
+19
+00:02:21,680 --> 00:02:29,120
+be done that I'm aware of in VS Code directly to GitLab. That feature is available in GitHub,
+
+20
+00:02:29,120 --> 00:02:39,920
+but it's lacking right now in terms of GitLab. So when I created a new user on my machine,
+
+21
+00:02:39,920 --> 00:02:49,280
+I had to reestablish Git as that user. So I used the command git config tack tack global,
+
+22
+00:02:49,280 --> 00:02:56,480
+and then you put in like your username. So it'd be user dot name, and then what you want that name
+
+23
+00:02:56,480 --> 00:03:02,960
+to be. So I chose to just do the Linux Lemming. And then you also have to do git config tack tack
+
+24
+00:03:02,960 --> 00:03:11,600
+global user dot email and put in an email for that as well, which I did. So once all of the Git
+
+25
+00:03:11,600 --> 00:03:18,720
+stuff has been configured, then it's time to go ahead and fork the project. And you have to do this
+
+26
+00:03:18,720 --> 00:03:26,320
+through the web GUI. I'm sure you can do it on the command line and whatnot, but it's just easier
+
+27
+00:03:26,320 --> 00:03:31,040
+for somebody who doesn't really know what they're doing to just go ahead and use the GUI. So you'd
+
+28
+00:03:31,040 --> 00:03:38,080
+have to go to the project homepage, and then right up at the top, where it says the title of the
+
+29
+00:03:38,080 --> 00:03:43,280
+project. So Linux Lemming off to the right hand side, there's a little bell the star and then it
+
+30
+00:03:43,280 --> 00:03:50,800
+says fork. And right next to the word fork, it says how many forks of the project currently exist.
+
+31
+00:03:50,800 --> 00:03:58,080
+And so right now there are two. And when I click on that number two, I can see Matt Stratton head
+
+32
+00:03:58,080 --> 00:04:08,720
+forked it to add canify URLs to it. And also the other one from Roche, which was adding to a resource,
+
+33
+00:04:09,520 --> 00:04:14,160
+which is how you could contribute in the future. If you have a really good resource that you want
+
+34
+00:04:14,160 --> 00:04:21,120
+to link up in there, that's how you would do it. So when you create a fork, it's going to fork it
+
+35
+00:04:21,120 --> 00:04:30,160
+into your own Git lab, user space, and then you can go ahead and clone it down to your local machine
+
+36
+00:04:30,160 --> 00:04:38,880
+and work on it in VS code there. And once you have your clone in VS code, you can make any changes
+
+37
+00:04:38,880 --> 00:04:48,720
+that you want. You can push those changes up to your Git lab repo. And then when you're ready to go
+
+38
+00:04:48,720 --> 00:04:56,720
+ahead and merge it into the master branch to have it officially become part of the project over on
+
+39
+00:04:56,720 --> 00:05:04,480
+the left hand side of the main project, it says merge requests. It kind of goes down project
+
+40
+00:05:04,480 --> 00:05:11,920
+overview, details, repository issues, merge requests. And when you click on that, there is an option
+
+41
+00:05:11,920 --> 00:05:18,240
+off on the right hand side top of the page green button that says new merge request. And you would
+
+42
+00:05:18,240 --> 00:05:23,680
+go ahead and click on that. And then it kind of shows you, you know, where is it coming from and
+
+43
+00:05:23,680 --> 00:05:32,320
+where is it going. So in your source branch, you would pick your fork of the Linux lemming. And
+
+44
+00:05:32,320 --> 00:05:38,080
+then if you had different branches off of there, if you clone it from mine, there's currently a
+
+45
+00:05:38,080 --> 00:05:43,200
+dev and a master. And as things kind of get teased out, maybe there will be a specific one that you
+
+46
+00:05:43,200 --> 00:05:48,320
+have to merge to first, I haven't quite decided. But you go ahead and put in master there. Then
+
+47
+00:05:48,320 --> 00:05:53,760
+the target branch would be the Rasta Calavera Linux Lemming master branch there. And then you just
+
+48
+00:05:53,760 --> 00:05:59,680
+kind of walk through the steps, put in any commit notes, kind of what you did or whatever. And then
+
+49
+00:05:59,680 --> 00:06:04,640
+if it all looks good, it gets merged into the project and becomes part of the overall project.
+
+50
+00:06:12,720 --> 00:06:19,120
+So to kind of wrap things up for this episode, I did all of this stuff in VS code. And I've never
+
+51
+00:06:19,120 --> 00:06:24,160
+looked at any documentation on VS code. I just kind of hopped into the project after hearing
+
+52
+00:06:24,160 --> 00:06:31,360
+other people talk about it. And turned out I really liked it as an editor. So I took a look
+
+53
+00:06:31,360 --> 00:06:37,680
+at the documentation because it's being talked about for this specific project. And my first
+
+54
+00:06:37,680 --> 00:06:43,680
+impressions are that the documentation is very well done and approachable. I really appreciate
+
+55
+00:06:43,680 --> 00:06:49,520
+the level of organization that it has and the inclusion of hyperlinks to other relevant material.
+
+56
+00:06:49,520 --> 00:06:55,840
+For example, I really, really, really like the disclaimer of the prior knowledge that's required
+
+57
+00:06:55,840 --> 00:07:01,920
+to make good use of the documentation before you jump in. And if you don't have that prior
+
+58
+00:07:01,920 --> 00:07:08,800
+document or that prior knowledge, they have hyperlinks in there to show you what you need to
+
+59
+00:07:08,800 --> 00:07:16,000
+do first for this documentation to be valuable. And I think that's something that a lot of projects
+
+60
+00:07:16,000 --> 00:07:21,520
+need to include kind of like a disclaimer for what level of comfort should you have
+
+61
+00:07:21,520 --> 00:07:29,120
+before you attempt to try this thing that you want to do. So I'm still getting used to VS code
+
+62
+00:07:29,120 --> 00:07:35,920
+and will most likely kind of add more to this in terms of like blog posts. But first impression is
+
+63
+00:07:35,920 --> 00:07:43,040
+that VS code documentation gets a solid 10 out of 10. And with that, we'll close out episode one
+
+64
+00:07:43,040 --> 00:07:49,840
+of the Linux Lemming.
+

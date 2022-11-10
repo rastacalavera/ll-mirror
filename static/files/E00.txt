@@ -1,0 +1,88 @@
+Hello, and welcome to the Linux Lemming.
+So this is Episode 00, not really going in line with the view of what this whole project
+will be, but I need to get something out there to start, and I'm learning along the way.
+So this is Episode 00, I'm Rasta Calavera, I'm a long-time desktop Linux user, and I'm
+fairly new to the server realm.
+I have a very small self-hosted setup, I don't think it's correct to call it a home
+lab because it's really just a bunch of raspberry pies running Docker containers and things
+like that, so my experimentation is pretty basic.
+I would describe myself as a hobbyist who knows enough to start projects, but doesn't
+have enough free time to maintain them or spend hours troubleshooting them.
+Now don't get me wrong, if something happens, I'm going to try my best, but I just don't
+have a time investment that others may have.
+So this gets me to the idea of a lemming.
+So I consider myself a lemming, and when I use that word, I'm defining it as someone
+who appreciates, like, concise, up-to-date documentation and really just wants to see
+more of it widely available.
+And we'll get into that in Episode 1 a bit more.
+I'm also an Advid podcast listener, I consume a lot of podcasts from all across the spectrum,
+some of the technology ones, I really enjoy everything that comes out of Jupiter Broadcasting,
+Destination Linux, Joe Resington over in the UK there, and doing Late Night Linux, and
+also the Ubuntu podcast over in the UK.
+Those are all great, great ones, and if you haven't heard of them, I highly, highly suggest
+that you look them up.
+So what's this project going to be like?
+Well, I think this is going to be mainly a place for people to listen or read my journey
+as I kind of go through this, and they can do that either by listening to the podcast
+or reading along with blogs.
+I'm going to pick projects and just blindly follow the documentation, and I'm going to
+report back on any successes and roadblocks that are along the way.
+You know, as things happen, I will try to submit upstream changes to projects for their
+documentation if such a thing is available on GitHub or GitLab, and also I will submit
+tutorials if it's appropriate to the project or just in general.
+And that gets me to this next point.
+This whole thing, this is not a dedicated information hub for how-to's.
+You know, so many already exist that I would rather contribute back to those than reinvent
+the wheel.
+So I would consider this mainly like a staging area for documentation that will be pushed
+out to those bigger areas.
+And just a little example of that, based on the podcast I listen to, things like front
+page Linux from Destination Linux or wiki.linuxdelta.com, which is run by Noah Chalaya.
+And also on the JB side, there is a self-hosted.wiki that needs a lot of love.
+So I feel like, you know, I would try to hit all of them if it's really relevant.
+So can you contribute to this?
+Yes, please, please, please, please contribute to this.
+I kind of think of this as an open podcast.
+So I listen to a lot of podcasts, but I can't really participate in the active ongoing discussion.
+I would kind of classify myself as more of a lurker in the community.
+I'm just really busy with my home life and work life that I consume everything at my
+convenience.
+So I can't hop in mumble, I can't do jitsies or matrix or anything like that.
+I just listen to the podcast feed.
+And you know, I've really always wanted to get into podcasting and there was really
+no easy barrier to entry.
+So if there's other listeners out there who want to try podcasting, I want to make this
+a place where they can cut their teeth and you know, we'll take submissions and put them
+in.
+So if you want to try your hand at podcasting, I really recommend you do it here.
+If you want to submit your experience with projects, any documentation that you've already
+made, again, we can get the wheels moving here and then push it to those other locations.
+And for those contributions, I want to try to keep everything within GitLab.
+That's where this repository is going to live and that will allow process tracking and things
+like that.
+So that's going to be my primary goal for contributions is to try to keep it within GitLab.
+So is there a schedule for this?
+No, not really.
+I can only record audio at night or on days when I'm alone because I have a really loud
+ambient noise in my living space.
+So I am pretty limited on when I can actually do things.
+I'm really going to try for one new edition per week or maybe a bi-weekly schedule if
+time allows.
+And if community involvement picks up, well, then we'll release more frequently.
+So it's kind of, you know, at our discretion currently not on iTunes or Pocketcast or Spotify
+or Stitcher or anything like that.
+I don't really plan on pushing to those locations unless I have time or the community involvement
+really kind of takes off or picks up because right now I'm just one guy sitting in a basement
+talking into the void.
+So I don't really see the point to push it out to those locations.
+So again, like I said, I don't really consider this an official submission based on the ideals
+of the project.
+This is more of an obligatory episode.
+That's why I'm using the Episode 00 tag for all of this.
+I haven't quite settled on a topic yet for Episode 1.
+I'm thinking maybe it'll be about how to use get since I've already created a lot of documentation
+for that on the destination Linux side.
+And since that's how I want contributions to come in, probably would make sense to cover
+that first.
+So this will bring us to the end of Episode 00.
+And if you're here in this and you want to contribute, then please head on over to thelinuxlemming.com.
