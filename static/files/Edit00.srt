@@ -1,0 +1,424 @@
+﻿1
+00:00:00,000 --> 00:00:16,240
+Hello, and welcome to
+the Linux Lemming.
+
+2
+00:00:16,240 --> 00:00:22,860
+So this is Episode 00, not really going in
+line with the view of what this whole project
+
+3
+00:00:22,860 --> 00:00:27,480
+will be, but I need to get something out there
+to start, and I'm learning along the way.
+
+4
+00:00:27,480 --> 00:00:35,360
+So this is Episode 00, I'm Rasta Calavera,
+I'm a long-time desktop Linux user, and I'm
+
+5
+00:00:35,360 --> 00:00:38,920
+fairly new to the server realm.
+
+6
+00:00:38,920 --> 00:00:44,920
+I have a very small self-hosted setup, I
+don't think it's correct to call it a home
+
+7
+00:00:44,920 --> 00:00:49,360
+lab because it's really just a bunch of raspberry
+pies running Docker containers and things
+
+8
+00:00:49,360 --> 00:00:54,600
+like that, so my experimentation
+is pretty basic.
+
+9
+00:00:54,600 --> 00:01:00,520
+I would describe myself as a hobbyist who
+knows enough to start projects, but doesn't
+
+10
+00:01:00,520 --> 00:01:05,960
+have enough free time to maintain them
+or spend hours troubleshooting them.
+
+11
+00:01:05,960 --> 00:01:11,640
+Now don't get me wrong, if something happens,
+I'm going to try my best, but I just don't
+
+12
+00:01:11,640 --> 00:01:16,200
+have a time investment
+that others may have.
+
+13
+00:01:16,200 --> 00:01:20,040
+So this gets me to the
+idea of a lemming.
+
+14
+00:01:20,040 --> 00:01:25,480
+So I consider myself a lemming, and when I
+use that word, I'm defining it as someone
+
+15
+00:01:25,480 --> 00:01:31,120
+who appreciates, like, concise, up-to-date
+documentation and really just wants to see
+
+16
+00:01:31,120 --> 00:01:34,200
+more of it widely available.
+
+17
+00:01:34,200 --> 00:01:38,720
+And we'll get into that
+in Episode 1 a bit more.
+
+18
+00:01:38,720 --> 00:01:46,600
+I'm also an Advid podcast listener, I consume a
+lot of podcasts from all across the spectrum,
+
+19
+00:01:46,600 --> 00:01:51,440
+some of the technology ones, I really enjoy
+everything that comes out of Jupiter Broadcasting,
+
+20
+00:01:51,440 --> 00:01:59,960
+Destination Linux, Joe Resington over in the
+UK there, and doing Late Night Linux, and
+
+21
+00:01:59,960 --> 00:02:02,520
+also the Ubuntu podcast
+over in the UK.
+
+22
+00:02:02,520 --> 00:02:07,760
+Those are all great, great ones, and if you
+haven't heard of them, I highly, highly suggest
+
+23
+00:02:07,760 --> 00:02:10,320
+that you look them up.
+
+24
+00:02:10,320 --> 00:02:13,200
+So what's this project
+going to be like?
+
+25
+00:02:13,200 --> 00:02:19,560
+Well, I think this is going to be mainly a
+place for people to listen or read my journey
+
+26
+00:02:19,560 --> 00:02:24,360
+as I kind of go through this, and they can
+do that either by listening to the podcast
+
+27
+00:02:24,360 --> 00:02:26,840
+or reading along with blogs.
+
+28
+00:02:26,840 --> 00:02:31,640
+I'm going to pick projects and just blindly
+follow the documentation, and I'm going to
+
+29
+00:02:31,640 --> 00:02:37,400
+report back on any successes and
+roadblocks that are along the way.
+
+30
+00:02:37,400 --> 00:02:42,280
+You know, as things happen, I will try to
+submit upstream changes to projects for their
+
+31
+00:02:42,280 --> 00:02:49,360
+documentation if such a thing is available
+on GitHub or GitLab, and also I will submit
+
+32
+00:02:49,360 --> 00:02:55,520
+tutorials if it's appropriate to
+the project or just in general.
+
+33
+00:02:55,520 --> 00:02:57,280
+And that gets me to
+this next point.
+
+34
+00:02:57,280 --> 00:03:04,320
+This whole thing, this is not a
+dedicated information hub for how-to's.
+
+35
+00:03:04,320 --> 00:03:11,680
+You know, so many already exist that I would
+rather contribute back to those than reinvent
+
+36
+00:03:11,680 --> 00:03:12,680
+the wheel.
+
+37
+00:03:12,680 --> 00:03:18,320
+So I would consider this mainly like a staging
+area for documentation that will be pushed
+
+38
+00:03:18,320 --> 00:03:21,680
+out to those bigger areas.
+
+39
+00:03:21,680 --> 00:03:26,480
+And just a little example of that, based on
+the podcast I listen to, things like front
+
+40
+00:03:26,480 --> 00:03:35,440
+page Linux from Destination Linux or
+wiki.linuxdelta.com, which is run by Noah Chalaya.
+
+41
+00:03:35,440 --> 00:03:42,080
+And also on the JB side, there is a
+self-hosted.wiki that needs a lot of love.
+
+42
+00:03:42,080 --> 00:03:47,200
+So I feel like, you know, I would try to
+hit all of them if it's really relevant.
+
+43
+00:03:47,200 --> 00:03:49,360
+So can you contribute to this?
+
+44
+00:03:49,360 --> 00:03:53,600
+Yes, please, please, please,
+please contribute to this.
+
+45
+00:03:53,600 --> 00:03:56,020
+I kind of think of this
+as an open podcast.
+
+46
+00:03:56,020 --> 00:04:03,640
+So I listen to a lot of podcasts, but I can't really
+participate in the active ongoing discussion.
+
+47
+00:04:03,640 --> 00:04:08,560
+I would kind of classify myself as
+more of a lurker in the community.
+
+48
+00:04:08,560 --> 00:04:13,680
+I'm just really busy with my home life and
+work life that I consume everything at my
+
+49
+00:04:13,680 --> 00:04:14,680
+convenience.
+
+50
+00:04:14,680 --> 00:04:19,800
+So I can't hop in mumble, I can't do
+jitsies or matrix or anything like that.
+
+51
+00:04:19,800 --> 00:04:22,040
+I just listen to
+the podcast feed.
+
+52
+00:04:22,040 --> 00:04:25,920
+And you know, I've really always wanted to
+get into podcasting and there was really
+
+53
+00:04:25,920 --> 00:04:28,100
+no easy barrier to entry.
+
+54
+00:04:28,100 --> 00:04:33,360
+So if there's other listeners out there who
+want to try podcasting, I want to make this
+
+55
+00:04:33,360 --> 00:04:37,720
+a place where they can cut their teeth and you
+know, we'll take submissions and put them
+
+56
+00:04:37,720 --> 00:04:38,720
+in.
+
+57
+00:04:38,720 --> 00:04:42,480
+So if you want to try your hand at podcasting,
+I really recommend you do it here.
+
+58
+00:04:42,480 --> 00:04:46,960
+If you want to submit your experience with
+projects, any documentation that you've already
+
+59
+00:04:46,960 --> 00:04:54,840
+made, again, we can get the wheels moving here
+and then push it to those other locations.
+
+60
+00:04:54,840 --> 00:04:59,080
+And for those contributions, I want to
+try to keep everything within GitLab.
+
+61
+00:04:59,080 --> 00:05:03,300
+That's where this repository is going to live
+and that will allow process tracking and things
+
+62
+00:05:03,300 --> 00:05:04,300
+like that.
+
+63
+00:05:04,300 --> 00:05:09,200
+So that's going to be my primary goal for
+contributions is to try to keep it within GitLab.
+
+64
+00:05:09,200 --> 00:05:12,480
+So is there a
+schedule for this?
+
+65
+00:05:12,480 --> 00:05:14,000
+No, not really.
+
+66
+00:05:14,000 --> 00:05:19,520
+I can only record audio at night or on days
+when I'm alone because I have a really loud
+
+67
+00:05:19,520 --> 00:05:22,040
+ambient noise in
+my living space.
+
+68
+00:05:22,040 --> 00:05:26,520
+So I am pretty limited on when
+I can actually do things.
+
+69
+00:05:26,520 --> 00:05:32,200
+I'm really going to try for one new edition
+per week or maybe a bi-weekly schedule if
+
+70
+00:05:32,200 --> 00:05:33,720
+time allows.
+
+71
+00:05:33,720 --> 00:05:37,960
+And if community involvement picks up,
+well, then we'll release more frequently.
+
+72
+00:05:37,960 --> 00:05:44,720
+So it's kind of, you know, at our discretion
+currently not on iTunes or Pocketcast or Spotify
+
+73
+00:05:44,720 --> 00:05:46,280
+or Stitcher or
+anything like that.
+
+74
+00:05:46,280 --> 00:05:52,720
+I don't really plan on pushing to those locations
+unless I have time or the community involvement
+
+75
+00:05:52,720 --> 00:05:58,360
+really kind of takes off or picks up because
+right now I'm just one guy sitting in a basement
+
+76
+00:05:58,360 --> 00:06:00,960
+talking into the void.
+
+77
+00:06:00,960 --> 00:06:05,160
+So I don't really see the point to
+push it out to those locations.
+
+78
+00:06:05,160 --> 00:06:10,280
+So again, like I said, I don't really consider
+this an official submission based on the ideals
+
+79
+00:06:10,280 --> 00:06:11,560
+of the project.
+
+80
+00:06:11,560 --> 00:06:15,160
+This is more of an
+obligatory episode.
+
+81
+00:06:15,160 --> 00:06:18,440
+That's why I'm using the Episode
+00 tag for all of this.
+
+82
+00:06:18,440 --> 00:06:21,560
+I haven't quite settled on
+a topic yet for Episode 1.
+
+83
+00:06:21,560 --> 00:06:26,720
+I'm thinking maybe it'll be about how to use get
+since I've already created a lot of documentation
+
+84
+00:06:26,720 --> 00:06:29,480
+for that on the
+destination Linux side.
+
+85
+00:06:29,480 --> 00:06:34,560
+And since that's how I want contributions to
+come in, probably would make sense to cover
+
+86
+00:06:34,560 --> 00:06:35,560
+that first.
+
+87
+00:06:35,560 --> 00:06:40,920
+So this will bring us to
+the end of Episode 00.
+
+88
+00:06:40,920 --> 00:06:51,920
+And if you're here in this and you want to contribute,
+then please head on over to thelinuxlemming.com.
+
