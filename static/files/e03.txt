@@ -1,0 +1,177 @@
+Hello, and welcome to the Linux Lemming.
+I'm your host, Rasta Calavera.
+In episode 3 today, a couple of things I want to cover.
+The first one that I'm really happy about is the actual accepted documentation that this
+project has accomplished so far.
+And then I want to dive into a little bit of web analytics software, which is kind of
+what I'm experimenting with right now.
+So right now I've got two and counting projects that documentation has actually been accepted
+for.
+The first one is a huge win for me.
+It's from the Linux server IO project, and getting a merge into their project holds a
+very special place in my heart.
+They have a really great community and a team of devs who are constantly fielding questions
+through their Discord.
+In my opinion, their documentation is some of the best out there.
+So being considered a contributor to that makes me very, very happy.
+And what I contributed, I talked about it in a blog post previously, if you had a chance
+to read that.
+They had some bash aliases that made administering their containers a lot easier.
+Things like typing DC up and DC down instead of Docker compose, TACD, or Docker compose
+up TACD and Docker compose down.
+And just little things like that.
+And with the bash aliases that they had in their documentation, it was referencing a
+path into the opt directory.
+So they basically recommend that you keep all of the static volumes and things in a
+file path of opt app data, whatever the container name is and config and all of that stuff.
+And I guess they assumed that the YAML file will live there as well.
+But in my case, I always keep the YAML file in my home directory.
+And then I keep all the container stuff in the opt app data directory.
+And in years past, I've always copied these bash aliases blindly.
+And they just never worked.
+And I just kind of assumed, well, whatever, I'll just ignore those for now and type out
+the whole thing.
+But what I learned is that it was referencing the wrong path.
+And I don't know why that never clicked with me before.
+Maybe I'm just more experienced with it now that it stood out to me.
+But I thought, well, geez, somebody who's just getting started, they probably don't
+have their YAML in that same file path.
+So it would make sense to kind of put in a line of clarity there saying, like, depending
+on where your YAML file is stored, your bash alias will have to change accordingly for
+that.
+So I put in documentation.
+I hopped onto their Discord and kind of threw it out there and said, like, hey, what do
+you think about this?
+Do you think it's like a good addition to the documentation?
+And a couple of users chimed in, provided some feedback.
+I went in, made some edits.
+And lo and behold, it got merged into the project.
+So now when you reference their Docker documentation, you'll see my little commit there about pay
+attention to where your YAML is stored and how it relates to the bash aliases.
+And I also provided a little code snippet to show, OK, maybe it's in your home folder.
+So no matter where you are in the system, you could be in the path of opt app data looking
+at proxy configs or something for swag.
+And if you type DC up, it's still going to hit the YAML file in your home directory.
+So that was just a nice little contribution there.
+The second one is for podcast generator.
+And this is another project very dear to me, because when I first got into podcasting,
+and I like to call it a hobby cast, because it was just me and a buddy chewing on fat,
+you know, and we had a listener pool of our other group of friends, which is like three
+other people.
+But I used podcast generator for that project to publish the podcast and actually get it
+into the iTunes store so that friends and family could easily find it and listen to it
+if they so choose.
+And I wanted to spin that project up again to actually send the podcast feed rather than
+GitLab through a VPS that I spun up.
+Well, geez, I started with Linode, had a bunch of issues with that, then I did Digital
+Ocean, had some issues with that.
+There's a big blog post on that if you want to know what those issues are.
+But long story short, I was running into a whole bunch of problems.
+And I spent hours searching online.
+And if you just do some web searching through Google or whatever, you're really not going
+to find a lot of people talking about the project, which surprised me because they've
+been around since like 2012.
+But it's just not something that comes up a lot in forums and things like that.
+So I dug into their issue tracker.
+And I found a post that was, I think it was from 2020, so pretty recent, and it was people
+complaining about, I shouldn't say complaining, it was people inquiring about similar issues
+to what I was having, but not quite identical.
+And there was a user named Jay Adams, who typed up what they were doing step by step
+by step to get it to work.
+And this was buried in a hyperlink that led to their fork of the project.
+And after I found that, I was like, well, shoot, this should just be in the official
+documentation.
+And if you look at Podcast Generator's website under their self-hosted section, it's five
+lines.
+It's basically download the project, unzip it, put it in your web server directory,
+and then you're good to go.
+And that's all they say.
+And I mean, granted, if you are a backend administrator with web servers and Apache
+and all that stuff, it's probably that easy.
+That's all you really need to know.
+But for somebody who is just trying to get their feet wet and get a project off the ground,
+it is not enough to get started for somebody completely new.
+So I used Jay Adams documentation and then modified it to kind of fit my use case and
+tried to make it accessible for somebody who is also following that path.
+But even if you're not, I think there's enough details there where you can stumble through
+it and make it work for your use case.
+And that was a really good addition.
+I had a great experience.
+I forked the project, made the edits, submitted a pull request, got feedback from one of the
+devs, changed a few things, and then it was accepted and merged.
+But it's not on their web page.
+So the installation that I wrote up is in their installation file, and it's just a text
+file that's included with the project.
+It's not even in markdown, which I thought was kind of strange because I formatted everything
+in markdown just assuming it was a markdown file.
+And then when I looked at the actual merge, I was like, oh, well, this is just a text file.
+So now all my writing looks kind of strange.
+But anyway, after I got that all set up and squared away, I was kind of revisiting things
+and I got the project up and running, but I couldn't upload any files through their web
+admin interface.
+And I even struggled uploading things via FTP.
+So I've got that all figured out now.
+One of the big issues is in the php.ini configuration, there is a limit to the file size that you
+can upload, and it is ridiculously tiny.
+I think it's like two megabytes standard.
+So I bumped that up to like 20,000.
+And then after that, things started working.
+So that needs to be included in the documentation as well.
+And then there was also something too with the user permissions, the command I put in,
+I thought would apply the permission down throughout the entire directory.
+I'm still pretty confident it does, but I'm kind of at the point now where I want to blow
+everything away, follow my own documentation again and make sure that that's accurate before
+I do another pull request on there.
+So that's going to be up and coming with that.
+So those are the two things that have actually been like accepted and merged into projects
+right now.
+I've also got some conversations going with some other devs.
+I've been digging into web analytics software just because I'm curious, are people actually
+listening to this or visiting this and I don't want to use Google Analytics, I just, I get
+kind of, I know it's really easy to do, but with all the privacy and things that people
+are concerned about now and my own kind of moral guidelines, I just, I want to steer
+clear of that if possible.
+So I found out that there's this whole kind of ecosystem with open web analytics and there's
+a couple big name projects out there, Matimo, I believe it's pronounced, is a huge one that
+a lot of people use and that one is free as in beer.
+To a certain extent, they have like a limited free tier and then if you want more additional
+features, they have a paid version.
+So I guess maybe freemium would be like a better way to phrase that.
+There's another one called plausible, which again is kind of the same model and then there's
+another one called shy net, which is completely free as in freedom and beer.
+So that one is supposedly feature parody on with like Matimo, but there's no freemium
+aspect to it.
+The only problem I had with shy net is that it's only built for x86 architecture, so
+I'm trying to run everything off of my raspberry pi and currently I couldn't run shy net off
+of that platform and I couldn't find anything on Docker hub that had builds for arm 64.
+So I installed it on an x86 machine and then I had to try to figure out how to get swag
+to send requests to that machine and that is kind of a mixed bag of tricks.
+I eventually got swag to communicate with it so that if I put in something like shy net
+dot my URL dot com, it takes me to the actual web GUI, but I still wasn't getting any analytics.
+And the snippet is a piece of HTML that you're supposed to put into, I believe it's the head
+area of the HTML of a page and the way that I'm doing it with Hugo, everything's in
+mark down, so I was really confused as to how to find the correct HTML tags, so I had
+to do a lot of inspecting elements and page source and Firefox to try to find where those
+things live and then I had to figure out more with Hugo's architecture with their defaults
+and I learned a lot with that, a lot of that lives in my theme of cast in it and you have
+to go into like page layouts and there's like a whole little header and footer section
+that's just straight up HTML and then you got to find the tags in there and paste your
+snippet in there, but I did eventually figure that all out but I still wasn't getting any
+analytical data, so I'm kind of at a stand still with that right now and the dev is kind
+of waiting for my response back, so I'm really positive that the dev is interested and wants
+to help and things like that, but I've kind of hit my time limit investment with that
+currently, so hopefully I can return to that later.
+I did get Matimo up and running because that one has an arm build, but I hit a lot of roadblocks
+with that too, didn't play nicely with swag and when I eventually did get it to work,
+it still wasn't collecting any analytical data, so I'm just assuming that I'm still
+speaking into the void and hopefully in the near future I can figure out web analytics
+software and put something out with that, but that's where the project is right now.
+If anybody in the community is out there and wants me to try to attempt something or you
+have attempted something and you want to talk about it, anything like that, contributions
+are always welcome through the Get Lab page, you can submit a pull request there and we'll
+get something up and running.
+To try to speed on that community involvement, I was exploring a platform called Comento
+that allows you to embed a commenting system in a blog and a whole bunch of roadblocks
+with that as well.
+So I got a huge backlog of things to try to troubleshoot, but until I come up with solutions
+for that, this will take us to the end of episode 3 of the Linux Lemming.

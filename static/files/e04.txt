@@ -1,0 +1,106 @@
+Hello, and welcome to The Linux Lemming.
+I'm your host, Rostek Halibara.
+This is Episode 4, and I've decided to title this one Helping the Hippo.
+So this is Ubuntu 20.04 testing week, which has been crossing the feeds and all the Linux
+podcasts out there and news areas and different things like that, so I figured this would
+be a great opportunity to put the documentation to the test and also to help out a project.
+So this is a great opportunity, and I've never participated in an event like this before,
+so I'm really grateful that something like this exists.
+Alan Pope recently made a forum post about the event that also includes documentation
+for new testers and several different videos that you can watch to actually see him conduct
+a test in real time.
+It's about an hour investment or so to read through the documentation and watch a video
+in its entirety.
+The video that I watched was about 25 to 30 minutes long, and I did skip through a little
+bit of it, but it is helpful to have that written documentation and a visual representation
+as well.
+So after reading through and watching the videos, you have to log in to an Ubuntu account, which
+I've had since 2008 or something like that, so I was able to log in to my account and
+I got started.
+When you do get started with the testing week, you have a lot of different options, and depending
+on the test, some of them want you to do bare metal installs and different things like that.
+I don't have any spare hardware at the moment, so I decided that I would try to do all of
+my testing in VirtualBox.
+And I really haven't used VirtualBox all that much, but the process was pretty straightforward.
+So I downloaded the ISOs that I wanted to test.
+I chose to do Kabuntu because that's what I run on a daily basis, and also Kylan.
+I've never really used Kylan at all before, but looking at both of those flavors, I noticed
+they still had tests that needed to be done in the live environment.
+So I figured that would be a good thing to do.
+So after installing VirtualBox, you have to click on to create a new virtual environment.
+And when you go to set that up, you want to make sure that you change your settings to
+Linux and an Ubuntu flavor.
+So I'm doing 64-bit.
+I don't even know if these ones support 32, but there you have it.
+I think the default when you go into VirtualBox is to use a Windows system.
+So just make sure you modify that as needed.
+The next step is allocating memory for that VirtualBox.
+I have 32 gigabytes of memory on this laptop, so I gave it 8 gigabytes of memory.
+So I didn't want to experience any issues.
+I didn't have to provide any disk space.
+So after you do the memory, it's going to ask if you want to create a virtual hard disk.
+And I figured since I'm not going to be living in this thing, I'm just testing the live environment
+I don't need a virtual hard disk at all.
+And that is an option.
+And after you click that, it's going to ask you, are you sure?
+You'll only be able to run a live environment, and that's exactly what I want to do.
+So no problems there.
+So after you go through that, your VirtualBox will be created, but you still have to add
+the ISO and tell it to boot from that.
+So you've got to click on the settings for the virtual environment that you just created.
+Then you have to go to the controller IDE and tell it that you want it to be an optical
+drive.
+And then after that, you add the ISO from wherever it lives on your computer.
+And in mine, it was just in my downloads folder.
+After you've mounted that ISO, you need to click on that ISO image.
+And then right below the optical drive, there's an option to tell it that this is a live CD
+or DVD.
+You want to make sure you click that because if you don't, it won't boot properly.
+So after that's all been set up, it's time to start up that virtual environment and
+then work through the checklist that they have in their ISO tracker and submit any bugs.
+So I started with Kabuntu.
+And as soon as I booted that up, reading through their checklist, they said that the language
+menu should be in the left column.
+And when I did it, it was above where it says install or try the live environment.
+So that was kind of the first discrepancy that I came across.
+And that seemed to be the only one I came across in Kabuntu.
+It functioned appropriately.
+All the apps worked just fine.
+There was no screen tearing.
+It was great.
+It was like I was using it on bare metal.
+So I just submitted that one small little thing that I saw and maybe it's a big deal.
+Maybe it's not, but it's on record there now.
+So after going with Kabuntu, I booted up Kylan.
+And there were a lot of issues with that one.
+One thing that stood out to me is when I booted up Kabuntu, there was no startup noise or
+anything like that.
+But there was with Kylan.
+So maybe I need to go back and check sound in Kabuntu.
+But Kylan had a little startup ding and everything.
+But as I was moving my cursor around, it was tearing on the screen.
+And every time I opened an app and clicked, these white boxes would pop up and kind of
+obscure the view and everything.
+So it seemed like Kylan was not as polished in a virtual environment as Kabuntu was.
+So I submitted two bugs for Kylan and we'll see where that takes it.
+I'm not quite sure.
+I maybe skipped over that part in the video about what happens after you submit a bug.
+But I imagine it needs to be reviewed or verified by other users before they treat it as an
+actual issue.
+So I'll just keep my eyes on that ISO tracker and see if anything changes or updates.
+And hopefully I'll find some more time to do some more testing in a live environment.
+Looking at like Ubuntu proper and things like that, it seemed like a lot of the tests had
+already been done.
+But I'll just keep looking down that list and see if there are other ways that I can
+contribute.
+So that's all I have for testing week.
+Just a little update on the open web analytics.
+I still haven't gotten that to play nicely with the swag container.
+I found an ARM64 image for Shinet that somebody had made on their own and I think it was like
+a year or two old.
+So that might be part of the problem as well.
+I've been really slow at getting back to the main developer and updating him on my process
+and I feel pretty bad about that.
+So I just got to find time to execute on that conversation that we were having.
+But that's all we have for the Linux Lemming this week.
+I'll see you next time.
