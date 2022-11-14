@@ -11,6 +11,7 @@ episode_image = "img/episode/default.jpg"
 #sponsors = []
 #episode = ""
 title = ""
+#pod2_transcript = "" #WIP to get transcripts working
 #subtitle = ""
 images = ["img/episode/default-social.jpg"]
 #hosts = [] # The names of your hosts, based on the filename without extension.
