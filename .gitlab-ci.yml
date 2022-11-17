@@ -7,6 +7,7 @@ image: registry.gitlab.com/pages/hugo:latest
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
   ARTIFACT_COMPRESSION_LEVEL: "fastest"
+  FF_USE_FASTZIP: 1
 
 test:
   script:
