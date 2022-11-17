@@ -1,0 +1,62 @@
+{
+    "version": "1.2.0",
+    "chapters":
+    [
+        {
+            "startTime": 22,
+            "title": "Intro"
+        },
+        {
+            "startTime": 59,
+            "title": "Podcast 2.0 Talk"
+        },
+        {
+            "startTime": 79,
+            "title": "Value Tag"
+        },
+        {
+            "startTime": 152,
+            "title": "Chapters Tag"
+        },
+        {
+            "startTime": 164,
+            "title": "LIT Tag"
+        },
+        {
+            "startTime": 192,
+            "title": "Transcripts"
+        },
+        {
+            "startTime": 232,
+            "title": "Explain Break"
+        },
+        {
+            "startTime": 257,
+            "title": "Mini-Series"
+        },
+        {
+            "startTime":304,
+            "title": "My Audio Sucks"
+        },
+        {
+            "startTime":357,
+            "title": "Projects I've been Working on"
+        },
+        {
+            "startTime":470,
+            "title": "Homelab 2.0"
+        },
+        {
+            "startTime":646,
+            "title": "Zorin OS"
+        },
+        {
+            "startTime":695,
+            "title": "Closing"
+        },
+        {
+            "startTime":720,
+            "title":"Get Involved"
+        }
+    ]
+}

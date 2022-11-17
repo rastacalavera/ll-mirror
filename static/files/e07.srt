@@ -1,0 +1,624 @@
+1
+00:00:00,000 --> 00:00:18,920
+Hello, and welcome to the Linux Lemming. I'm
+your host, RastaCalavera, and this is the
+
+2
+00:00:18,920 --> 00:00:24,720
+revival of the podcast. And along with the
+revival, this is going to bring a lot of new
+
+3
+00:00:24,720 --> 00:00:32,080
+topics to the show. I'm mainly really excited
+about podcast 2.0 features, and I've been
+
+4
+00:00:32,080 --> 00:00:37,640
+experimenting on how to implement some of
+those features in the theme that I use for
+
+5
+00:00:37,640 --> 00:00:44,600
+the podcast website and the blog. It's called
+the Castanet theme. And that's really what
+
+6
+00:00:44,600 --> 00:00:53,160
+powers the static Hugo site. If you're unfamiliar
+with podcasting 2.0, there's links everywhere.
+
+7
+00:00:53,160 --> 00:01:01,000
+Show notes, blog posts, wherever. Podcastindex.org
+would be the place to really go check out
+
+8
+00:01:01,000 --> 00:01:06,600
+all the new podcast namespace features and
+different things like that. Some of these
+
+9
+00:01:06,600 --> 00:01:14,520
+ideas, like the value tag, that's a huge one.
+So putting in a value tag into the RSS feed
+
+10
+00:01:14,520 --> 00:01:20,680
+allows a content creator to extract monetary
+value from their audience. And this can be
+
+11
+00:01:20,680 --> 00:01:25,640
+done using digital currencies. Most commonly,
+it's done using Bitcoin over the Lightning
+
+12
+00:01:25,640 --> 00:01:33,240
+Network. And you can send micro payments to
+your content creator to show appreciation
+
+13
+00:01:33,240 --> 00:01:39,040
+for what it is that they do. You can stream
+value to them as you're listening to their
+
+14
+00:01:39,040 --> 00:01:46,240
+production. You can send one time value in
+the form of a boost, and you can attach a
+
+15
+00:01:46,240 --> 00:01:52,400
+500-character message to that. It's pretty
+dang cool. And there's a lot of different
+
+16
+00:01:52,400 --> 00:01:59,280
+ways that people can do this. Right now, I
+actually have a podcaster wallet that is
+
+17
+00:01:59,280 --> 00:02:07,080
+through Fountain FM. I'm working on getting my
+own self-hosted node using a program called
+
+18
+00:02:07,080 --> 00:02:10,800
+Umbrell. And man, I've been waiting about
+three months for that thing to sync up to
+
+19
+00:02:10,800 --> 00:02:18,760
+the Bitcoin network. So I'm at about 95% now,
+so I'm getting kind of close. But the value
+
+20
+00:02:18,760 --> 00:02:26,680
+tag is really, really cool. Also, the chapters
+tag, I've always been intrigued with podcast
+
+21
+00:02:26,680 --> 00:02:32,200
+chapters. I want to find a way to do this
+so that I can automate the process and I'd
+
+22
+00:02:32,200 --> 00:02:37,960
+have to do it manually. So that's really exciting.
+There's a thing called the lit, the live
+
+23
+00:02:37,960 --> 00:02:44,120
+item tag that lets people know if you are
+live streaming. So you could be just sitting
+
+24
+00:02:44,120 --> 00:02:48,120
+around getting ready to listen to a podcast,
+you get a little notification saying, hey,
+
+25
+00:02:48,120 --> 00:02:52,200
+your content creator is going live. And you
+just pull it up in your podcast player and
+
+26
+00:02:52,200 --> 00:02:58,240
+listen to it. And you can send value as you do
+that. Pretty amazing. So I've been playing
+
+27
+00:02:58,240 --> 00:03:04,360
+around with the live item tag using a AzuraCast.
+I'll talk more about that later. Transcripts.
+
+28
+00:03:04,360 --> 00:03:10,920
+They're really cool. Just in the last couple
+like months here, AI, open AI and whisper
+
+29
+00:03:10,920 --> 00:03:17,640
+has just blown up across the community. It is
+a stack of AI and machine learning models
+
+30
+00:03:17,640 --> 00:03:22,640
+that you can run on your own personal computer.
+You can throw audio at it and it does really
+
+31
+00:03:22,640 --> 00:03:27,560
+high quality transcription of that audio. And
+then you can go ahead and use that transcription
+
+32
+00:03:27,560 --> 00:03:34,840
+in a podcast. It's amazing. So I've actually
+got the transcripts tag working right now,
+
+33
+00:03:34,840 --> 00:03:39,880
+which is pretty cool. So podcasting 2.0 is
+this whole big thing. And honestly, that's
+
+34
+00:03:39,880 --> 00:03:47,040
+really what made me come back. You know, obviously
+I took a break, COVID and just family stuff
+
+35
+00:03:47,040 --> 00:03:54,000
+and everything else made me super, super,
+super busy. But podcasting 2.0 really wanted
+
+36
+00:03:54,000 --> 00:04:02,440
+to pull me back in. So here I am doing this
+again. And it's been a lot of fun doing it.
+
+37
+00:04:02,440 --> 00:04:10,040
+So I'm very excited about podcast 2.0 stuff. And
+that's going to be a big push in the documentation.
+
+38
+00:04:10,040 --> 00:04:14,720
+So as the show comes back, I'm going to really
+try to focus on like little mini series that
+
+39
+00:04:14,720 --> 00:04:19,480
+are very centered around different topics.
+So the topic of podcasting 2.0 is going to
+
+40
+00:04:19,480 --> 00:04:25,720
+be something that I revisit from time to time
+to time. And also with like the blog posts,
+
+41
+00:04:25,720 --> 00:04:30,480
+there's going to be a little mini series in
+there as well. So yeah, really just trying
+
+42
+00:04:30,480 --> 00:04:35,880
+to focus down on these little topics, kind of
+like a season, I guess, I'm thinking blog
+
+43
+00:04:35,880 --> 00:04:40,920
+posts will come out first, because that really
+helps me center my thoughts and kind of shape
+
+44
+00:04:40,920 --> 00:04:46,760
+what the actual podcast audio is going to look
+like. And then once those blog posts are
+
+45
+00:04:46,760 --> 00:04:56,160
+all done, it'll manifest as audio and you'll
+be able to hear it. So speaking of audio,
+
+46
+00:04:56,160 --> 00:05:03,160
+my entire process has been turned on its
+head. And I'm starting from scratch, which
+
+47
+00:05:03,160 --> 00:05:11,160
+is pretty brutal. So starting from scratch,
+you know, there's a podcast that I listened
+
+48
+00:05:11,160 --> 00:05:19,880
+to called podcasting for value. It's hosted by
+Josh Dennis, and he had a guest on on episode
+
+49
+00:05:19,880 --> 00:05:27,520
+24 recently, Steve McLaughlin. And they talked a
+lot about, you know, just good podcast etiquette
+
+50
+00:05:27,520 --> 00:05:32,520
+and good podcast setup and just like the basic
+things that you need to do to have a good
+
+51
+00:05:32,520 --> 00:05:39,120
+sounding podcast didn't implement any of those
+for this one. So this one's going to be rough,
+
+52
+00:05:39,120 --> 00:05:42,000
+but I'm going to go back, I'm going to listen
+to some of those things, kind of adjust some
+
+53
+00:05:42,000 --> 00:05:48,840
+of my tooling, and hopefully get back to some
+good high quality audio. In terms of just
+
+54
+00:05:48,840 --> 00:05:54,560
+like general documentation lately, AzuraCast,
+I mentioned that with the lit tag, the live
+
+55
+00:05:54,560 --> 00:06:00,200
+item tag. That's a super cool project. They've
+got rock solid documentation. I'm going to
+
+56
+00:06:00,200 --> 00:06:07,320
+go through that soon. I've got a poll request
+with the LSIO group for their project send
+
+57
+00:06:07,320 --> 00:06:14,880
+container. That was a rough process to get
+that in there, to say the least. You know,
+
+58
+00:06:14,880 --> 00:06:19,120
+I'm a little rusty in terms of like contributing
+back and they're kind of one of the higher
+
+59
+00:06:19,120 --> 00:06:28,560
+caliber projects and they have little leeway
+for low effort contributions, I guess, which
+
+60
+00:06:28,560 --> 00:06:34,120
+mine, mine wasn't a low effort contribution,
+but just the way that they do things, it is
+
+61
+00:06:34,120 --> 00:06:45,120
+so automated. It's a lot of, you know, RTFM or
+GTFO over there. So it was a pretty brutal
+
+62
+00:06:45,120 --> 00:06:49,360
+wake up, but I'm happy to contribute and I'll
+probably contribute more in the future, but
+
+63
+00:06:49,360 --> 00:06:55,960
+I'm just going to take a little break, toughen
+up my skin, and then I'll go back. But I've
+
+64
+00:06:55,960 --> 00:07:03,360
+also been contributing to the SSH Wiki, the
+self hosted show. That's been kind of laying
+
+65
+00:07:03,360 --> 00:07:07,520
+low for a while and there were some really
+good episodes about data sovereignty that
+
+66
+00:07:07,520 --> 00:07:12,320
+kind of energized me. So I contributed to
+that. We'll talk more about that in detail.
+
+67
+00:07:12,320 --> 00:07:17,760
+And Jupiter Broadcasting as a whole has just
+done super amazing things. They opened up
+
+68
+00:07:17,760 --> 00:07:25,120
+their entire podcasting website to the community
+on GitHub to contribute to, which is amazing.
+
+69
+00:07:25,120 --> 00:07:29,840
+The stuff that they've done as a community over
+there is just fantastic. I've been watching
+
+70
+00:07:29,840 --> 00:07:34,440
+on the sidelines. Like I said, I'm trying to
+get my skills back to where they need to
+
+71
+00:07:34,440 --> 00:07:40,200
+be and then hopefully I can do some contributions
+over there, help out with some documentation,
+
+72
+00:07:40,200 --> 00:07:44,960
+different things like that. My entire setup
+has completely changed. I kind of alluded to
+
+73
+00:07:44,960 --> 00:07:49,240
+that earlier in the beginning. I used to run
+everything on a Raspberry Pi with four gigs
+
+74
+00:07:49,240 --> 00:07:56,200
+of RAM with an external hard disk connected
+to it using a powered USB hub. That is gone.
+
+75
+00:07:56,200 --> 00:08:03,480
+No more. I retired that in favor of a Lenovo
+ThinkCenter Tiny with an i5 16 gigs of DDR3
+
+76
+00:08:03,480 --> 00:08:12,000
+RAM and a two terabyte hard drive. So huge,
+huge upgrade. And that Pi is still living
+
+77
+00:08:12,000 --> 00:08:18,280
+around. It's that umbral server that I mentioned
+earlier. So it's now got a single job and
+
+78
+00:08:18,280 --> 00:08:26,800
+that's all it's ever going to do. So I'm done
+with that. I also purchased a Synology NAS,
+
+79
+00:08:26,800 --> 00:08:32,280
+a disk station 418. Got it off of eBay for a
+super great price. I've got two eight terabyte
+
+80
+00:08:32,280 --> 00:08:37,640
+disks in there and a single two terabit disk
+in there. I'm using it to backup computers,
+
+81
+00:08:37,640 --> 00:08:42,960
+photos, media, etc. Just really hoping to
+eventually fill out all four bays with eight
+
+82
+00:08:42,960 --> 00:08:50,920
+terabyte hard disks so that I can just really
+have a good solid NAS setup and backup solution
+
+83
+00:08:50,920 --> 00:08:57,640
+going with some dependable redundancy. And
+I really I made these two large purchases
+
+84
+00:08:57,640 --> 00:09:03,040
+because I don't have any time anymore. Like
+my time bubble, I had a surplus of it and
+
+85
+00:09:03,040 --> 00:09:08,400
+then it just came crashing down and collapsed
+on me. I've changed careers twice within the
+
+86
+00:09:08,400 --> 00:09:16,040
+last year. Families just been super busy. So
+my time for tinkering has gone down to zero.
+
+87
+00:09:16,040 --> 00:09:21,040
+So I invested a little bit so that when I
+do have time to tinker, I can really focus
+
+88
+00:09:21,040 --> 00:09:29,240
+on stuff that brings me joy rather than just
+frustrations. And along with that upgrade.
+
+89
+00:09:29,240 --> 00:09:35,240
+Actually my Docker usage has drastically shrunk.
+Mostly I think because I just don't tinker
+
+90
+00:09:35,240 --> 00:09:40,520
+a whole lot anymore. I do want to slowly bring
+that back. So when I was running the pie,
+
+91
+00:09:40,520 --> 00:09:47,480
+I think I averaged like 14 containers on that
+machine and now I'm down to four. So pretty
+
+92
+00:09:47,480 --> 00:09:53,880
+big decrease there. But there are some applications
+I've really been missing like Mealy, Wallabag,
+
+93
+00:09:53,880 --> 00:10:00,120
+Linkace, YouTube material, different things
+like that. So I really want to get back to
+
+94
+00:10:00,120 --> 00:10:07,640
+bringing those. My holdoff is I had poor backup
+strategies and migration strategies when I
+
+95
+00:10:07,640 --> 00:10:12,640
+got all that new hardware. So I lost a lot
+of my original configs and volumes and I'm
+
+96
+00:10:12,640 --> 00:10:18,440
+just having a little remorse with that, my own
+ignorance. But once I get over that hump,
+
+97
+00:10:18,440 --> 00:10:24,800
+I will bring those back. But speaking of backups,
+since I have that nice fancy NAS now, I've
+
+98
+00:10:24,800 --> 00:10:30,920
+been exploring the best way to backup files
+to it from my main machine. And our sync has
+
+99
+00:10:30,920 --> 00:10:36,960
+just been an amazing tool to explore. So I'll
+do a write up on that at some point as well.
+
+100
+00:10:36,960 --> 00:10:43,760
+I'm currently using Zoran as my daily driver on
+my laptop. And that can do automated backups
+
+101
+00:10:43,760 --> 00:10:50,720
+using duplicity and the NAS server. Zoran
+might be kind of a weird name for a lot of
+
+102
+00:10:50,720 --> 00:10:55,600
+people out there. It's definitely not like
+the forefront of Linux distributions, but
+
+103
+00:10:55,600 --> 00:11:02,720
+I enjoy it. Long time ago, I actually purchased
+a license for it during a DLN charity stream.
+
+104
+00:11:02,720 --> 00:11:07,680
+And then with every new release out of habit,
+I've just been buying another license. So
+
+105
+00:11:07,680 --> 00:11:13,040
+I have these paid licenses. And I was like,
+I should probably use this thing that I pay
+
+106
+00:11:13,040 --> 00:11:18,040
+for. So I threw it on the machine and you
+know, it's been nice. It's been good. It's
+
+107
+00:11:18,040 --> 00:11:24,680
+a nice desktop experience. So I've been playing
+with Zoran, living in Zoran and have been
+
+108
+00:11:24,680 --> 00:11:32,880
+enjoying it so far. So that's the big welcome
+back. Here's what to expect. We're going to
+
+109
+00:11:32,880 --> 00:11:38,520
+be doing series. These series are going to be
+kind of small hyper focused things. They're
+
+110
+00:11:38,520 --> 00:11:43,920
+going to be easily searchable on the web page
+using different tags and things like that.
+
+111
+00:11:43,920 --> 00:11:49,600
+So that'll really go a long way, I think. And
+I do want to try to boost discoverability
+
+112
+00:11:49,600 --> 00:11:55,680
+of the show. So I'm going to be trying to
+promote it a little bit just in, you know,
+
+113
+00:11:55,680 --> 00:11:59,440
+my own little corners of the internet. I'm not
+going to spend money to promote this thing
+
+114
+00:11:59,440 --> 00:12:07,720
+that would be ludicrous, but really just, you
+know, I want people who are podcast curious,
+
+115
+00:12:07,720 --> 00:12:15,840
+techno curious, whatever to reach out and,
+you know, participate. That was the original
+
+116
+00:12:15,840 --> 00:12:21,160
+intent of this whole thing. You know, I wanted to
+have a community driven podcast where somebody
+
+117
+00:12:21,160 --> 00:12:26,400
+could have a cool idea and be like, you know,
+I don't want to go through the trouble of
+
+118
+00:12:26,400 --> 00:12:33,280
+trying to create a podcast. Well, here is a
+platform for you, dear listener, where you
+
+119
+00:12:33,280 --> 00:12:40,760
+can bring your idea to the airwaves. And if
+you can record your own audio and get that
+
+120
+00:12:40,760 --> 00:12:46,440
+audio to me, then you can be a Lennox Lemming
+and you can have airtime and put it out there
+
+121
+00:12:46,440 --> 00:12:53,240
+for the world to hear. So yeah, other people
+that, you know, are pod curious, techno curious
+
+122
+00:12:53,240 --> 00:12:59,920
+and want to dive into this a little bit, please
+reach out, get in touch, find me on GitLab,
+
+123
+00:12:59,920 --> 00:13:07,640
+GitHub, Matrix, wherever. I'm out there, I'm
+around, and we'll put your stuff on the air.
+
+124
+00:13:07,640 --> 00:13:12,400
+So with that, that's going to bring us to a
+close of the revival of the Linux Lemming
+
+125
+00:13:12,400 --> 00:13:32,640
+episode seven.
+

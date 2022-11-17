@@ -1,0 +1,125 @@
+Hello, and welcome to the Linux Lemmion. I'm your host, Rasta Calavera, and this is the
+revival of the podcast. And along with the revival, this is going to bring a lot of new
+topics to the show. I'm mainly really excited about podcast 2.0 features, and I've been
+experimenting on how to implement some of those features in the theme that I use for
+the podcast website and the blog. It's called the Castanet theme. And that's really what
+powers the static Hugo site. If you're unfamiliar with podcasting 2.0, there's links everywhere.
+Show notes, blog posts, wherever. Podcastindex.org would be the place to really go check out
+all the new podcast namespace features and different things like that. Some of these
+ideas, like the value tag, that's a huge one. So putting in a value tag into the RSS feed
+allows a content creator to extract monetary value from their audience. And this can be
+done using digital currencies. Most commonly, it's done using Bitcoin over the Lightning
+Network. And you can send micro payments to your content creator to show appreciation
+for what it is that they do. You can stream value to them as you're listening to their
+production. You can send one time value in the form of a boost, and you can attach a
+500-character message to that. It's pretty dang cool. And there's a lot of different
+ways that people can do this. Right now, I actually have a podcaster wallet that is
+through Fountain FM. I'm working on getting my own self-hosted node using a program called
+Umbrell. And man, I've been waiting about three months for that thing to sync up to
+the Bitcoin network. So I'm at about 95% now, so I'm getting kind of close. But the value
+tag is really, really cool. Also, the chapters tag, I've always been intrigued with podcast
+chapters. I want to find a way to do this so that I can automate the process and I'd
+have to do it manually. So that's really exciting. There's a thing called the lit, the live
+item tag that lets people know if you are live streaming. So you could be just sitting
+around getting ready to listen to a podcast, you get a little notification saying, hey,
+your content creator is going live. And you just pull it up in your podcast player and
+listen to it. And you can send value as you do that. Pretty amazing. So I've been playing
+around with the live item tag using a ZuraCast. I'll talk more about that later. Transcripts.
+They're really cool. Just in the last couple like months here, AI, open AI and whisper
+has just blown up across the community. It is a stack of AI and machine learning models
+that you can run on your own personal computer. You can throw audio at it and it does really
+high quality transcription of that audio. And then you can go ahead and use that transcription
+in a podcast. It's amazing. So I've actually got the transcripts tag working right now,
+which is pretty cool. So podcasting 2.0 is this whole big thing. And honestly, that's
+really what made me come back. You know, obviously I took a break, COVID and just family stuff
+and everything else made me super, super, super busy. But podcasting 2.0 really wanted
+to pull me back in. So here I am doing this again. And it's been a lot of fun doing it.
+So I'm very excited about podcast 2.0 stuff. And that's going to be a big push in the documentation.
+So as the show comes back, I'm going to really try to focus on like little mini series that
+are very centered around different topics. So the topic of podcasting 2.0 is going to
+be something that I revisit from time to time to time. And also with like the blog posts,
+there's going to be a little mini series in there as well. So yeah, really just trying
+to focus down on these little topics, kind of like a season, I guess, I'm thinking blog
+posts will come out first, because that really helps me center my thoughts and kind of shape
+what the actual podcast audio is going to look like. And then once those blog posts are
+all done, it'll manifest as audio and you'll be able to hear it. So speaking of audio,
+my entire process has been turned on its head. And I'm starting from scratch, which
+is pretty brutal. So starting from scratch, you know, there's a podcast that I listened
+to called podcasting for value. It's hosted by Josh Dennis, and he had a guest on on episode
+24 recently, Steve McLaughlin. And they talked a lot about, you know, just good podcast etiquette
+and good podcast setup and just like the basic things that you need to do to have a good
+sounding podcast didn't implement any of those for this one. So this one's going to be rough,
+but I'm going to go back, I'm going to listen to some of those things, kind of adjust some
+of my tooling, and hopefully get back to some good high quality audio. In terms of just
+like general documentation lately, AzuraCast, I mentioned that with the lit tag, the live
+item tag. That's a super cool project. They've got rock solid documentation. I'm going to
+go through that soon. I've got a poll request with the LSIO group for their project send
+container. That was a rough process to get that in there, to say the least. You know,
+I'm a little rusty in terms of like contributing back and they're kind of one of the higher
+caliber projects and they have little leeway for low effort contributions, I guess, which
+mine, mine wasn't a low effort contribution, but just the way that they do things, it is
+so automated. It's a lot of, you know, RTFM or GTFO over there. So it was a pretty brutal
+wake up, but I'm happy to contribute and I'll probably contribute more in the future, but
+I'm just going to take a little break, toughen up my skin, and then I'll go back. But I've
+also been contributing to the SSH Wiki, the self hosted show. That's been kind of laying
+low for a while and there were some really good episodes about data sovereignty that
+kind of energized me. So I contributed to that. We'll talk more about that in detail.
+And Jupiter Broadcasting as a whole has just done super amazing things. They opened up
+their entire podcasting website to the community on GitHub to contribute to, which is amazing.
+The stuff that they've done as a community over there is just fantastic. I've been watching
+on the sidelines. Like I said, I'm trying to get my skills back to where they need to
+be and then hopefully I can do some contributions over there, help out with some documentation,
+different things like that. My entire setup has completely changed. I kind of alluded to
+that earlier in the beginning. I used to run everything on a Raspberry Pi with four gigs
+of RAM with an external hard disk connected to it using a powered USB hub. That is gone.
+No more. I retired that in favor of a Lenovo ThinkCenter Tiny with an i5 16 gigs of DDR3
+RAM and a two terabyte hard drive. So huge, huge upgrade. And that Pi is still living
+around. It's that umbral server that I mentioned earlier. So it's now got a single job and
+that's all it's ever going to do. So I'm done with that. I also purchased a Synology NAS,
+a disk station 418. Got it off of eBay for a super great price. I've got two eight terabyte
+disks in there and a single two terabit disk in there. I'm using it to backup computers,
+photos, media, etc. Just really hoping to eventually fill out all four bays with eight
+terabyte hard disks so that I can just really have a good solid NAS setup and backup solution
+going with some dependable redundancy. And I really I made these two large purchases
+because I don't have any time anymore. Like my time bubble, I had a surplus of it and
+then it just came crashing down and collapsed on me. I've changed careers twice within the
+last year. Families just been super busy. So my time for tinkering has gone down to zero.
+So I invested a little bit so that when I do have time to tinker, I can really focus
+on stuff that brings me joy rather than just frustrations. And along with that upgrade.
+Actually my Docker usage has drastically shrunk. Mostly I think because I just don't tinker
+a whole lot anymore. I do want to slowly bring that back. So when I was running the pie,
+I think I averaged like 14 containers on that machine and now I'm down to four. So pretty
+big decrease there. But there are some applications I've really been missing like Mealy, Wallabag,
+Linkace, YouTube material, different things like that. So I really want to get back to
+bringing those. My holdoff is I had poor backup strategies and migration strategies when I
+got all that new hardware. So I lost a lot of my original configs and volumes and I'm
+just having a little remorse with that, my own ignorance. But once I get over that hump,
+I will bring those back. But speaking of backups, since I have that nice fancy NAS now, I've
+been exploring the best way to backup files to it from my main machine. And our sync has
+just been an amazing tool to explore. So I'll do a write up on that at some point as well.
+I'm currently using Zoran as my daily driver on my laptop. And that can do automated backups
+using duplicity and the NAS server. Zoran might be kind of a weird name for a lot of
+people out there. It's definitely not like the forefront of Linux distributions, but
+I enjoy it. Long time ago, I actually purchased a license for it during a DLN charity stream.
+And then with every new release out of habit, I've just been buying another license. So
+I have these paid licenses. And I was like, I should probably use this thing that I pay
+for. So I threw it on the machine and you know, it's been nice. It's been good. It's
+a nice desktop experience. So I've been playing with Zoran, living in Zoran and have been
+enjoying it so far. So that's the big welcome back. Here's what to expect. We're going to
+be doing series. These series are going to be kind of small hyper focused things. They're
+going to be easily searchable on the web page using different tags and things like that.
+So that'll really go a long way, I think. And I do want to try to boost discoverability
+of the show. So I'm going to be trying to promote it a little bit just in, you know,
+my own little corners of the internet. I'm not going to spend money to promote this thing
+that would be ludicrous, but really just, you know, I want people who are podcast curious,
+techno curious, whatever to reach out and, you know, participate. That was the original
+intent of this whole thing. You know, I wanted to have a community driven podcast where somebody
+could have a cool idea and be like, you know, I don't want to go through the trouble of
+trying to create a podcast. Well, here is a platform for you, dear listener, where you
+can bring your idea to the airwaves. And if you can record your own audio and get that
+audio to me, then you can be a Lennox Lemming and you can have airtime and put it out there
+for the world to hear. So yeah, other people that, you know, are pod curious, techno curious
+and want to dive into this a little bit, please reach out, get in touch, find me on GitLab,
+GitHub, Matrix, wherever. I'm out there, I'm around, and we'll put your stuff on the air.
+So with that, that's going to bring us to a close of the revival of the Lennox Lemming
+4 episode seven.
