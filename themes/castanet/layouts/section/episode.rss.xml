@@ -116,6 +116,7 @@
         <itunes:summary>{{ .Description | plainify }}</itunes:summary>
         <description>{{ .Description  | plainify  }}</description>
         <podcast:transcript url = "{{ .Params.pod2_transcript }}" type="application/srt"/>
+        <podcast:chapters url = "{{ .Params.chapters }}" type="application/json"/>
         <googleplay:description>{{ .Description  | plainify }}</googleplay:description>
         {{ "<content:encoded><![CDATA[" | safeHTML }}{{ .Content | safeHTML }}{{"]]></content:encoded>" | safeHTML}}
           {{- with .Params.episode_image -}}
