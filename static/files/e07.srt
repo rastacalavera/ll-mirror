@@ -495,12 +495,12 @@ do a write up on that at some point as well.
 
 100
 00:10:36,960 --> 00:10:43,760
-I'm currently using Zoran as my daily driver on
+I'm currently using Zorin as my daily driver on
 my laptop. And that can do automated backups
 
 101
 00:10:43,760 --> 00:10:50,720
-using duplicity and the NAS server. Zoran
+using duplicity and the NAS server. Zorin
 might be kind of a weird name for a lot of
 
 102
@@ -531,7 +531,7 @@ know, it's been nice. It's been good. It's
 107
 00:11:18,040 --> 00:11:24,680
 a nice desktop experience. So I've been playing
-with Zoran, living in Zoran and have been
+with Zorin, living in Zorin and have been
 
 108
 00:11:24,680 --> 00:11:32,880

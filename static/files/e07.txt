@@ -97,14 +97,14 @@ just having a little remorse with that, my own ignorance. But once I get over th
 I will bring those back. But speaking of backups, since I have that nice fancy NAS now, I've
 been exploring the best way to backup files to it from my main machine. And our sync has
 just been an amazing tool to explore. So I'll do a write up on that at some point as well.
-I'm currently using Zoran as my daily driver on my laptop. And that can do automated backups
-using duplicity and the NAS server. Zoran might be kind of a weird name for a lot of
+I'm currently using Zorin as my daily driver on my laptop. And that can do automated backups
+using duplicity and the NAS server. Zorin might be kind of a weird name for a lot of
 people out there. It's definitely not like the forefront of Linux distributions, but
 I enjoy it. Long time ago, I actually purchased a license for it during a DLN charity stream.
 And then with every new release out of habit, I've just been buying another license. So
 I have these paid licenses. And I was like, I should probably use this thing that I pay
 for. So I threw it on the machine and you know, it's been nice. It's been good. It's
-a nice desktop experience. So I've been playing with Zoran, living in Zoran and have been
+a nice desktop experience. So I've been playing with Zorin, living in Zorin and have been
 enjoying it so far. So that's the big welcome back. Here's what to expect. We're going to
 be doing series. These series are going to be kind of small hyper focused things. They're
 going to be easily searchable on the web page using different tags and things like that.
