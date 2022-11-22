@@ -17,8 +17,8 @@
     <description>{{ .Site.Params.feed.itunes_summary | truncate 4000 ""}}</description>
     <podcast:liveItem> status={{ .Site.Params.show_live_status }} start="{{ .Site.Params.show_live_start }}" end="{{ .Site.Params.show_live_end }}"
       <title>Linux Lemming Live Stream</title>
-      <enclosure url="https://cautiouslycurious.com/listen/linux_lemming/radio.mp3" type= "audio/mpeg" length="16000" />
-      <podcast:contentLink href="https://cautiouslycurious.com/listen/linux_lemming/radio.mp3">Listen Live!</podcast:contentLink> 
+      <enclosure url="https://cautiouslycurious.com/listen/lemming/radio.mp3" type= "audio/mpeg" length="16000" />
+      <podcast:contentLink href="https://cautiouslycurious.com/listen/lemming/radio.mp3">Listen Live!</podcast:contentLink> 
     </podcast:liveItem>
     <lastBuildDate>{{ dateFormat "Mon, 2 Jan 2006 15:04:05 -0700" .Date }}</lastBuildDate>
     <sy:updatePeriod>hourly</sy:updatePeriod>
