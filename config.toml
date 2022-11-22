@@ -125,6 +125,7 @@ media_prefix = "https://linuxlemming.com/files/"
   [params.social]
     github = "rastacalavera/linuxlemming"
     gitlab = "rastacalavera/linuxlemming"
+    mastodon = "https://podcastindex.social/@rastacalavera"
 
   [params.authors]
     [params.authors.show]

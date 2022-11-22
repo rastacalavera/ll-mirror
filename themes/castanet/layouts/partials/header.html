@@ -77,6 +77,11 @@
           {{ partial "social-link.html" (dict "context" $.Site.Params.social.twitch "aclass" "social-links" "iclass" "fab fa-twitch fa-2x" "prefix" "https://twitch.tv/" "text" "") }}
         </li>
       {{ end }}
+      {{ if (isset .Site.Params.social "mastodon" ) }}
+      <li>
+        {{ partial "social-link.html" (dict "context" $.Site.Params.social.mastodon "aclass" "social-links" "iclass" "fab fa-mastodon fa-2x" "prefix" "https://podcastindex.social/" "text" "") }}
+      </li>
+        {{ end }}
       </ul>
   </div>
   </div>
