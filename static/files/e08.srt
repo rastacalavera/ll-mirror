@@ -1,0 +1,1108 @@
+1
+00:00:00,000 --> 00:00:20,080
+Hello, and welcome to another
+episode of the Linux Lemming.
+
+2
+00:00:20,080 --> 00:00:22,440
+I'm your host, Rasta Calavera.
+
+3
+00:00:22,440 --> 00:00:30,960
+I was really hoping to do a live
+recording with this episode.
+
+4
+00:00:30,960 --> 00:00:36,800
+It was going to be kind of the whole focus,
+and it kind of fell flat on its face, so we
+
+5
+00:00:36,800 --> 00:00:43,720
+will revisit the hows and whys of that
+happening in just a moment here.
+
+6
+00:00:43,720 --> 00:00:52,000
+All right, so let's talk about getting lit,
+and the lit LIT stands for Live Item Tag.
+
+7
+00:00:52,000 --> 00:00:59,560
+So this is a podcast 2.0 namespace, and it's
+something that you can put in the RSS feed
+
+8
+00:00:59,560 --> 00:01:06,840
+of your podcast to let the new podcast 2.0
+apps know that you are going live, and you're
+
+9
+00:01:06,840 --> 00:01:12,680
+doing a live recording, or a live
+broadcast, not a recording.
+
+10
+00:01:12,680 --> 00:01:19,000
+And the only podcast that I'm subscribed to that
+actually makes the use of this is podcasting
+
+11
+00:01:19,000 --> 00:01:20,000
+2.0.
+
+12
+00:01:20,000 --> 00:01:25,960
+I think it's a really cool feature, it
+makes me really excited about podcasting.
+
+13
+00:01:25,960 --> 00:01:32,560
+But I think more and more content creators
+will support this in the future, but it is
+
+14
+00:01:32,560 --> 00:01:39,960
+a bit burdensome to wrap your head around it,
+especially if you're somebody like myself
+
+15
+00:01:39,960 --> 00:01:46,040
+who watches all this stuff vicariously on
+the side, and then tries to figure out how
+
+16
+00:01:46,040 --> 00:01:54,320
+to do it all, having no coding background, and
+this is very limited knowledge on programming
+
+17
+00:01:54,320 --> 00:01:56,680
+languages and things like that.
+
+18
+00:01:56,680 --> 00:02:02,520
+It truly is running the scissors,
+I got a lot of cuts tonight.
+
+19
+00:02:02,520 --> 00:02:07,680
+But you know what, I think I figured out some
+of the basic steps, so let's walk through
+
+20
+00:02:07,680 --> 00:02:08,680
+what that is.
+
+21
+00:02:08,680 --> 00:02:15,840
+Okay, so step one, you need to get a server that
+will allow you to broadcast a live stream.
+
+22
+00:02:15,840 --> 00:02:20,920
+There's probably easier approaches to this,
+maybe there are servers out there that will
+
+23
+00:02:20,920 --> 00:02:25,560
+let you create an account and let you,
+you know, hop on them as needed.
+
+24
+00:02:25,560 --> 00:02:33,600
+I am self-hosting, so I am using an application
+called AzuraCast, and this is an internet
+
+25
+00:02:33,600 --> 00:02:40,080
+radio station, and it has a live
+DJ live broadcast feature.
+
+26
+00:02:40,080 --> 00:02:48,360
+So that is the application that I am running
+on my server to actually get audio out and
+
+27
+00:02:48,360 --> 00:02:51,920
+available in the wider internet,
+and let's take a look.
+
+28
+00:02:51,920 --> 00:02:54,920
+Is anybody currently listening?
+
+29
+00:02:54,920 --> 00:02:55,920
+No.
+
+30
+00:02:55,920 --> 00:03:04,200
+Which I don't blame you, because right now I
+just have a loop of Adam Curry saying this
+
+31
+00:03:04,200 --> 00:03:05,720
+lovely little clip of audio.
+
+32
+00:03:05,720 --> 00:03:09,680
+I screwed it up already, I can't
+figure anything out anymore.
+
+33
+00:03:09,680 --> 00:03:16,520
+Because I literally can't figure anything out
+anymore, I got kind of stuck in a rabbit
+
+34
+00:03:16,520 --> 00:03:18,160
+hole this evening.
+
+35
+00:03:18,160 --> 00:03:20,160
+Oh boy.
+
+36
+00:03:20,160 --> 00:03:27,520
+But so anyway, AzuraCast is doing the broadcasting
+of all of that, and how I'm sending the audio
+
+37
+00:03:27,520 --> 00:03:34,240
+from my local laptop machine to my headless
+server running AzuraCast is using a software
+
+38
+00:03:34,240 --> 00:03:37,760
+called Mix with 3X's.
+
+39
+00:03:37,760 --> 00:03:45,600
+Again, I picked this because it was pre-installed
+on my machine with my distro of Zoran, so
+
+40
+00:03:45,600 --> 00:03:46,600
+why not?
+
+41
+00:03:46,600 --> 00:03:51,680
+And it was pretty straightforward to connect
+the two pieces together, so I'm happy enough
+
+42
+00:03:51,680 --> 00:03:53,280
+with that.
+
+43
+00:03:53,280 --> 00:04:03,640
+Now the next step is adding the lit tag to
+the RSS feed, and I wasn't sure originally
+
+44
+00:04:03,640 --> 00:04:11,280
+if this had to live inside of the tag for an
+individual episode, or if this lived outside
+
+45
+00:04:11,280 --> 00:04:15,840
+of that overall item tag, and I compared a
+couple different feeds, and I finally figured
+
+46
+00:04:15,840 --> 00:04:22,040
+it out, ran it through a validator and everything,
+and it has to live outside of the item tag.
+
+47
+00:04:22,040 --> 00:04:32,720
+And how it's actually added into my RSS feed
+is a little complicated, because I'm using
+
+48
+00:04:32,720 --> 00:04:37,480
+Hugo Static Website Generator, and
+I'm using Castinet as the theme.
+
+49
+00:04:37,480 --> 00:04:44,720
+I had to play around with the actual, well,
+two main files, the episode RSS XML in the
+
+50
+00:04:44,720 --> 00:04:49,800
+Castinet theme, and also the
+default config.toml file.
+
+51
+00:04:49,800 --> 00:05:00,080
+So in the Castinet episode RSS XML file, right
+below the description of my podcast, I had
+
+52
+00:05:00,080 --> 00:05:07,360
+to put in the podcast live item tag, and within
+that first line, it had to have the status,
+
+53
+00:05:07,360 --> 00:05:15,520
+so whether it is ended, live, or pending, it
+also has to have a start and an end time.
+
+54
+00:05:15,520 --> 00:05:24,480
+And those three things, it pulls
+from the config, the config.toml.
+
+55
+00:05:24,480 --> 00:05:31,200
+I mean, I guess you could come in here and
+manually put those in, but my thought process
+
+56
+00:05:31,200 --> 00:05:39,120
+was I only want to touch a single file, so I
+could touch the config file to put in those
+
+57
+00:05:39,120 --> 00:05:44,680
+three things pretty easily, and then just
+push that up to the site, rather than having
+
+58
+00:05:44,680 --> 00:05:53,960
+to go through all the folder structure of
+themes, Castinet, layout, you know, all the
+
+59
+00:05:53,960 --> 00:05:58,440
+way down to find the actual file every single
+time, I could just go to my config and put
+
+60
+00:05:58,440 --> 00:05:59,440
+it in.
+
+61
+00:05:59,440 --> 00:06:03,880
+And then there's some other fields, too, and
+these all remain static, so there's like
+
+62
+00:06:03,880 --> 00:06:07,680
+a title, so I just called it
+the Linux Lemming Livestream.
+
+63
+00:06:07,680 --> 00:06:13,920
+There's the enclosure URL, which is the
+URL to the stream from Azure Cast.
+
+64
+00:06:13,920 --> 00:06:20,440
+You have to say what type it is and the length of
+it, and I had to do a little bit of a conversion
+
+65
+00:06:20,440 --> 00:06:28,480
+from kilobytes to bytes for the
+length, nothing too complicated.
+
+66
+00:06:28,480 --> 00:06:33,600
+And then you close it out with a podcast content
+link, which is basically the same link as
+
+67
+00:06:33,600 --> 00:06:38,440
+above in the enclosure URL,
+I'm pretty sure that's okay.
+
+68
+00:06:38,440 --> 00:06:43,240
+That might be if maybe you're using alternate
+enclosures, maybe you had other types of streams
+
+69
+00:06:43,240 --> 00:06:48,080
+like a Vorbis stream or an Opus stream or something
+like that, you'd have a couple different
+
+70
+00:06:48,080 --> 00:06:52,320
+things, but I only have the one,
+keeping it as easy as possible.
+
+71
+00:06:52,320 --> 00:06:58,120
+Then you close that out with
+a podcast live item tag.
+
+72
+00:06:58,120 --> 00:07:04,520
+So yeah, in the config file then, I just have
+three things that I added under the main params
+
+73
+00:07:04,520 --> 00:07:06,640
+section.
+
+74
+00:07:06,640 --> 00:07:12,080
+I added a show live status, and again, I can
+have three different values pending live
+
+75
+00:07:12,080 --> 00:07:21,000
+or ended, show live start, and this needs
+to be in an ISO 8601 extended format.
+
+76
+00:07:21,000 --> 00:07:28,800
+So I put a link in my file that's available on
+GitLab for everybody to see, just a website
+
+77
+00:07:28,800 --> 00:07:30,360
+that'll do that
+conversion for you.
+
+78
+00:07:30,360 --> 00:07:34,920
+So you put in like the date and the time of when
+you plan on the stream starting and ending
+
+79
+00:07:34,920 --> 00:07:37,920
+and then it converts it and then
+you just copy and paste it over.
+
+80
+00:07:37,920 --> 00:07:40,400
+So easy peasy.
+
+81
+00:07:40,400 --> 00:07:47,280
+So once that technical stuff is
+out of the way, you publish it.
+
+82
+00:07:47,280 --> 00:07:53,640
+So it goes to the website, the RSS
+XML refreshes, everything's updated.
+
+83
+00:07:53,640 --> 00:08:01,720
+The next step is to send off a pod ping, which
+will update the podcast index to let everybody
+
+84
+00:08:01,720 --> 00:08:08,920
+know that you're live basically, and it should
+send a thing to all of the podcast players
+
+85
+00:08:08,920 --> 00:08:11,600
+and everything
+else and whatnot.
+
+86
+00:08:11,600 --> 00:08:15,360
+And I got some help with this.
+
+87
+00:08:15,360 --> 00:08:24,440
+I kind of reached out on Mastodon and other
+places, and the millennial media offensive
+
+88
+00:08:24,440 --> 00:08:31,440
+gave me a Python script that I used, and it
+said feed is marked for immediate update.
+
+89
+00:08:31,440 --> 00:08:34,280
+So seemed like that worked.
+
+90
+00:08:34,280 --> 00:08:40,400
+But then when I checked the podcast index
+and everything, didn't say that I was live.
+
+91
+00:08:40,400 --> 00:08:45,240
+I didn't get any
+notifications in Podverse.
+
+92
+00:08:45,240 --> 00:08:47,800
+So I don't know
+what that's about.
+
+93
+00:08:47,800 --> 00:09:01,560
+There was another way, Stephen Bell from,
+I don't know if he is directly associated
+
+94
+00:09:01,560 --> 00:09:06,960
+with Sovereign feeds, or if he
+just had the suggestion of it.
+
+95
+00:09:06,960 --> 00:09:15,600
+But there's a website called sovereignfeeds.com,
+and you can look up your RSS feed.
+
+96
+00:09:15,600 --> 00:09:23,840
+It's basically a standalone RSS feed editor,
+and you can add podcasting 2.0 tags to your
+
+97
+00:09:23,840 --> 00:09:26,280
+feed from that.
+
+98
+00:09:26,280 --> 00:09:29,440
+You can also send pod
+pings from that.
+
+99
+00:09:29,440 --> 00:09:36,880
+So I sent a pod ping, and you have to solve a
+little captcha, and it was like, all right,
+
+100
+00:09:36,880 --> 00:09:39,920
+we're going to send
+this for an update.
+
+101
+00:09:39,920 --> 00:09:48,680
+But then, I don't know, I never got
+an update, which is confusing to me.
+
+102
+00:09:48,680 --> 00:09:54,480
+But when I ran it through the XML, through
+the Livewire podcast validator, it said that
+
+103
+00:09:54,480 --> 00:09:56,880
+I have four podcast
+names based tags.
+
+104
+00:09:56,880 --> 00:10:01,320
+I have the content link, I have the live item,
+the transcript, and the chapters, and they're
+
+105
+00:10:01,320 --> 00:10:03,160
+all green.
+
+106
+00:10:03,160 --> 00:10:07,680
+So I've done it appropriately.
+
+107
+00:10:07,680 --> 00:10:11,320
+So I don't know what the missing part is,
+but you know what, it doesn't really matter
+
+108
+00:10:11,320 --> 00:10:18,680
+that much because I can't have my microphone
+go to both Audacity and Mix at the same time.
+
+109
+00:10:18,680 --> 00:10:23,080
+So even though I have a looping live stream
+and nobody's listening to it, it's not really
+
+110
+00:10:23,080 --> 00:10:28,040
+a value anyway because
+my voice isn't on it.
+
+111
+00:10:28,040 --> 00:10:31,760
+So I'll probably have to reach out to the
+community and get some help to figure out
+
+112
+00:10:31,760 --> 00:10:35,720
+how I can do some
+audio routing.
+
+113
+00:10:35,720 --> 00:10:42,360
+But yeah, the coding and stuff, it
+was just a lot of trial and error.
+
+114
+00:10:42,360 --> 00:10:46,640
+Wasn't super horrible,
+you know, to figure out.
+
+115
+00:10:46,640 --> 00:10:55,000
+I don't know, I got to learn more about GUIDs
+and how to have that per episode and for the
+
+116
+00:10:55,000 --> 00:11:00,760
+podcast as a whole because I feel like that
+would be like a good logical next step would
+
+117
+00:11:00,760 --> 00:11:03,680
+be doing something
+with the GUID.
+
+118
+00:11:03,680 --> 00:11:07,040
+So that's going to be
+where I'm headed.
+
+119
+00:11:07,040 --> 00:11:11,080
+But actually, you know what, as long as we're
+talking about podcast 2.0 tags, we should
+
+120
+00:11:11,080 --> 00:11:16,920
+just go right into what I've
+been doing with chapters.
+
+121
+00:11:16,920 --> 00:11:18,880
+Oh my goodness.
+
+122
+00:11:18,880 --> 00:11:31,280
+So I started an issue on my GitHub about how
+one could take a chapter file from Audacity
+
+123
+00:11:31,280 --> 00:11:33,480
+and well, I guess it's a label.
+
+124
+00:11:33,480 --> 00:11:37,480
+They don't call it chapters because you can
+put labels into Audacity and then you can
+
+125
+00:11:37,480 --> 00:11:45,720
+export all your labels with timestamps
+and it's like a tab separated text file.
+
+126
+00:11:45,720 --> 00:11:50,000
+So you can get this like nice little output
+and it's a three column output and it's like,
+
+127
+00:11:50,000 --> 00:11:54,840
+you know what, I should be able to take this
+text file and convert it into a JSON to use
+
+128
+00:11:54,840 --> 00:11:57,880
+it for the chapters
+for podcasting 2.0.
+
+129
+00:11:57,880 --> 00:12:00,600
+That would make a lot of
+sense, like this should work.
+
+130
+00:12:00,600 --> 00:12:05,080
+It was way more complicated
+than I wanted it to be.
+
+131
+00:12:05,080 --> 00:12:10,800
+I wanted to just use built in bash
+tools to edit the text and everything.
+
+132
+00:12:10,800 --> 00:12:18,640
+But I very quickly learned that you got to
+use something more robust like Python.
+
+133
+00:12:18,640 --> 00:12:23,480
+That's where I eventually
+landed on it.
+
+134
+00:12:23,480 --> 00:12:29,800
+And I had another community member kind
+of hop in and try to help out Eric.
+
+135
+00:12:29,800 --> 00:12:31,960
+Eric seems like a
+really cool dude.
+
+136
+00:12:31,960 --> 00:12:34,280
+He's active on the mastodon.
+
+137
+00:12:34,280 --> 00:12:39,400
+He's the host of our podcast and I started
+listening to that recently since he's helping
+
+138
+00:12:39,400 --> 00:12:40,400
+me out.
+
+139
+00:12:40,400 --> 00:12:44,080
+Just kind of like check out that little
+area where he is and it's pretty cool.
+
+140
+00:12:44,080 --> 00:12:47,160
+He uses the castnet theme
+too and everything.
+
+141
+00:12:47,160 --> 00:12:51,520
+So Eric and I were kind of going back and forth
+on different approaches for how we could
+
+142
+00:12:51,520 --> 00:12:57,160
+accomplish this because I assume he uses Audacity
+as well and he's interested in the podcasting
+
+143
+00:12:57,160 --> 00:12:59,680
+2.0 namespace.
+
+144
+00:12:59,680 --> 00:13:02,720
+And so, you know, we both have
+something we want to solve.
+
+145
+00:13:02,720 --> 00:13:06,080
+So awesome to work together
+to try to solve the problem.
+
+146
+00:13:06,080 --> 00:13:07,080
+And you know what?
+
+147
+00:13:07,080 --> 00:13:11,200
+That's really the whole value for
+value mantra, time talent, treasure.
+
+148
+00:13:11,200 --> 00:13:15,840
+He was giving me some time and some talent
+to just even reach out and say, hey, yeah,
+
+149
+00:13:15,840 --> 00:13:16,840
+let's work on this.
+
+150
+00:13:16,840 --> 00:13:18,920
+I might be able to help out.
+
+151
+00:13:18,920 --> 00:13:26,760
+So I did a lot of tinkering with
+it, a lot of different approaches.
+
+152
+00:13:26,760 --> 00:13:35,040
+And I eventually landed on
+a good enough solution.
+
+153
+00:13:35,040 --> 00:13:42,880
+So basically, I took, I found some different
+examples of Python scripts online and I mushed
+
+154
+00:13:42,880 --> 00:13:45,840
+them into one file.
+
+155
+00:13:45,840 --> 00:13:50,720
+So I bring in two libraries,
+import CSV and import JSON.
+
+156
+00:13:50,720 --> 00:13:56,720
+And when you get your export from Audacity,
+your text file, the first step is to get
+
+157
+00:13:56,720 --> 00:14:01,760
+you to trim away the
+first column of text.
+
+158
+00:14:01,760 --> 00:14:07,120
+And you can do that just
+using like a bash tool.
+
+159
+00:14:07,120 --> 00:14:15,320
+So I would use something like to just
+get rid of that first column of text.
+
+160
+00:14:15,320 --> 00:14:21,920
+And then I want to find a cleaner way to round
+out the values just to the nearest whole number.
+
+161
+00:14:21,920 --> 00:14:24,880
+That might be something
+to do with AWK.
+
+162
+00:14:24,880 --> 00:14:29,840
+I'm not quite sure on that, but cut is just
+a clean, easy way to get rid of that first
+
+163
+00:14:29,840 --> 00:14:36,120
+column of numbers so that you're just
+left with start times and titles.
+
+164
+00:14:36,120 --> 00:14:44,080
+And then in your file, you have to add headers
+of start time and title to your text file
+
+165
+00:14:44,080 --> 00:14:48,680
+because that's needed
+for the final JSON.
+
+166
+00:14:48,680 --> 00:14:54,680
+So once you've done that to your text file,
+then you're ready to start launching this
+
+167
+00:14:54,680 --> 00:14:59,080
+Python script that I kind
+of mushed together.
+
+168
+00:14:59,080 --> 00:15:05,200
+So it loads two libraries, it then will open
+up the text file and you have to put in the
+
+169
+00:15:05,200 --> 00:15:06,800
+proper name of the text file.
+
+170
+00:15:06,800 --> 00:15:10,800
+So you need to have an established naming
+scheme if you don't constantly want to change
+
+171
+00:15:10,800 --> 00:15:14,640
+things inside of
+this Python script.
+
+172
+00:15:14,640 --> 00:15:17,600
+So it opens your text
+file, it reads the items.
+
+173
+00:15:17,600 --> 00:15:23,280
+The first thing it does is it finds all of
+the tab spaces and cuts the tab space and
+
+174
+00:15:23,280 --> 00:15:32,040
+replaces it with a comma and then it will save
+that file as a CSV file and then it will
+
+175
+00:15:32,040 --> 00:15:37,840
+open up that CSV file and it pulls
+everything into a JSON array.
+
+176
+00:15:37,840 --> 00:15:44,520
+And then once you've got this whole JSON array
+going in, it will strip everything out, create
+
+177
+00:15:44,520 --> 00:15:49,720
+the new file and then spit it
+out to where it needs to be.
+
+178
+00:15:49,720 --> 00:15:54,680
+So the very last step then is once you have this
+JSON file, you just need to add the versions
+
+179
+00:15:54,680 --> 00:15:58,760
+and the chapters to the
+top of the header.
+
+180
+00:15:58,760 --> 00:16:05,840
+And so that's where I'm at right now with
+getting chapters easily created and not having
+
+181
+00:16:05,840 --> 00:16:08,160
+to do too much by hand.
+
+182
+00:16:08,160 --> 00:16:13,240
+Ideally it'd be nice to automate the entire
+process, but I just don't have the coding
+
+183
+00:16:13,240 --> 00:16:20,360
+background and the knowledge to do easy loops
+through all that stuff because how I envision
+
+184
+00:16:20,360 --> 00:16:30,920
+it actually working is you'd export your text
+file and it would have the name, episode,
+
+185
+00:16:30,920 --> 00:16:38,600
+E, number, number, number, three digit number
+and then you drop that into a folder and then
+
+186
+00:16:38,600 --> 00:16:43,400
+the second it's dropped into the folder, your
+machine is aware like, oh, time to convert
+
+187
+00:16:43,400 --> 00:16:50,160
+this and then it just does everything for
+you and you get the JSON file and then you
+
+188
+00:16:50,160 --> 00:16:54,280
+throw that on the website and
+link to it and everything.
+
+189
+00:16:54,280 --> 00:16:58,560
+So that would be the
+ideal flow for that.
+
+190
+00:16:58,560 --> 00:17:10,240
+So yeah, maybe Eric will come in and do some
+looping magic and get that all to be awesome
+
+191
+00:17:10,240 --> 00:17:14,760
+and hopefully I'll figure out this whole lit
+business because I think it'd be pretty cool
+
+192
+00:17:14,760 --> 00:17:22,640
+to just do a little live broadcast pretty
+easy, but I got to figure out pod ping and
+
+193
+00:17:22,640 --> 00:17:30,680
+I got to figure out my audio routing I guess,
+it's just kind of a little bit of a, not great
+
+194
+00:17:30,680 --> 00:17:34,360
+with that.
+
+195
+00:17:34,360 --> 00:17:42,200
+All right, well that brings us to the
+end of this episode of the Linux Lemon.
+
+196
+00:17:42,200 --> 00:17:51,680
+Oh, that is weird, it's only
+coming in a single channel.
+
+197
+00:17:51,680 --> 00:18:16,680
+Okay, wow, let's see here, hmm, hmm, hmm,
+hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm,
+
+198
+00:18:16,680 --> 00:18:39,120
+hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm,
+hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm.
+
+199
+00:18:39,120 --> 00:18:49,800
+says it is sending a pod ping live pod ping
+sent the other one marked for immediate update
+
+200
+00:18:49,800 --> 00:19:07,560
+I don't know how to like verify anything with
+that but who knows we'll see okay well a lot
+
+201
+00:19:07,560 --> 00:19:12,680
+of new things going on tonight it's not
+very scientific change all the things and
+
+202
+00:19:12,680 --> 00:19:25,960
+complain when it doesn't work goodness
+goodness goodness okay keep that up so I
+
+203
+00:19:25,960 --> 00:19:45,240
+kind of see if anybody does get on
+to the channel see if it's live
+
+204
+00:19:45,240 --> 00:19:57,360
+I wonder why those are gray that one's not maybe
+the newest one is always one up hmm hmm hmm okay
+
+205
+00:19:57,360 --> 00:20:22,920
+we're gonna talk about the blogs and the kit lab
+is organized these tabs here oh yeah I don't have
+
+206
+00:20:22,920 --> 00:20:34,040
+the when a mix going because it keeps crashing
+with audacity let's see if I can get mix up and
+
+207
+00:20:34,040 --> 00:20:47,200
+running does not like to play kindly with
+audacity unable to open error opening okay yep
+
+208
+00:20:47,200 --> 00:21:00,680
+because audacity is using the mobile pre USB audio
+so let's okay well crashed let me reconfigure you
+
+209
+00:21:00,680 --> 00:21:14,320
+mix let me change my inputs man retry after fixing
+the issue reconfigure get help exit yes I would
+
+210
+00:21:14,320 --> 00:21:25,800
+like to reconfigure please but it all just crashes
+oh good god alright turn the recording back on
+
+211
+00:21:25,800 --> 00:21:38,360
+so going going lit live item tag is I don't know
+it's probably not gonna work but got some some
+
+212
+00:21:38,360 --> 00:21:48,440
+good leads as to why so let me catch everybody up
+on what's going on issue number one audio routing
+
+213
+00:21:48,440 --> 00:21:59,640
+so I have a microphone going into a mixer and then
+I have two balanced quarter inches to a three
+
+214
+00:21:59,640 --> 00:22:08,680
+and a half millimeter stereo jack output from
+the mixer that I'm putting into an M audio USB
+
+215
+00:22:08,680 --> 00:22:18,960
+interface that connects to the computer and when
+I have two software stacks open audacity and mix
+
+216
+00:22:18,960 --> 00:22:27,120
+they can't pull from the same source which is
+crazy to me and I don't know if that's because
+
+217
+00:22:27,120 --> 00:22:36,360
+I'm not using jack and I'm just using the default
+also I think I feel like if I was using jack I
+
+218
+00:22:36,360 --> 00:22:48,160
+should be able to patch in the microphone input
+to both applications but as it stands I cannot
+
+219
+00:22:48,160 --> 00:23:05,280
+oh no parsing error that's not good what did I
+break man so I ran my XML through a validator
+
+220
+00:23:05,280 --> 00:23:12,480
+for the RSS feed and it said my live item was
+wrong when I looked at the example compared to
+
+221
+00:23:12,480 --> 00:23:24,240
+mine I had a closing out tag in the very first line
+there and when I look at how it should be set
+
+222
+00:23:24,240 --> 00:23:33,600
+up from the bare bones example there's just a
+closing greater than bracket and so that's what
+
+223
+00:23:33,600 --> 00:23:51,960
+I did but it doesn't look like it helps hmm
+all right podcast live item status got that
+
+224
+00:23:51,960 --> 00:24:17,680
+got that got that just a closing bracket and
+I've got the title the enclosure URL make
+
+225
+00:24:17,680 --> 00:24:30,200
+sure that looks the same closure URL it's
+got a forward slash greater than closure
+
+226
+00:24:30,200 --> 00:24:59,440
+yep yep and then double enclosure podcast
+live item at the end yep now when I had the
+
+227
+00:24:59,440 --> 00:25:13,880
+slash in there I didn't get this error hmm XML
+parsing error not well formed status there's
+
+228
+00:25:13,880 --> 00:25:26,560
+an ampersand is that what it's yelling at me about
+well that would be in my config so that's the live
+

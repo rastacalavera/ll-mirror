@@ -1,0 +1,58 @@
+{
+    "version": "1.2.0",
+    "chapters":
+    [
+    	{
+            "startTime": "20",
+            "title": "Introduction"
+    	},
+    	{
+            "startTime": "43",
+            "title": "Getting LIT"
+    	},
+    	{
+            "startTime": "117",
+            "title": "Steps to get LIT"
+    	},
+    	{
+            "startTime": "132",
+            "title": "Step 1. Get a Server"
+    	},
+    	{
+            "startTime": "206",
+            "title": "Step 2. Send audio to Server"
+    	},
+    	{
+            "startTime": "235",
+            "title": "Step 3. Add the LIT Tag to RSS Feed"
+    	},
+    	{
+            "startTime": "459",
+            "title": "Step 4. Publish RSS Feed"
+    	},
+    	{
+            "startTime": "473",
+            "title": "Step 5. Send a Podping"
+    	},
+    	{
+            "startTime": "647",
+            "title": "What's a GUID?"
+    	},
+    	{
+            "startTime": "668",
+            "title": "Chapter Adventures"
+    	},
+    	{
+            "startTime": "787",
+            "title": "Value for Value Plug"
+    	},
+    	{
+            "startTime": "1006",
+            "title": "Closing"
+    	},
+    	{
+            "startTime": "1065",
+            "title": "Live Steam Out Takes"
+    	}
+    ]
+}

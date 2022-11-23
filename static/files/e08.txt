@@ -1,0 +1,228 @@
+Hello, and welcome to another episode of the Linux Lemming.
+I'm your host, Rasta Calavera.
+I was really hoping to do a live recording with this episode.
+It was going to be kind of the whole focus, and it kind of fell flat on its face, so we
+will revisit the hows and whys of that happening in just a moment here.
+All right, so let's talk about getting lit, and the lit LIT stands for Live Item Tag.
+So this is a podcast 2.0 namespace, and it's something that you can put in the RSS feed
+of your podcast to let the new podcast 2.0 apps know that you are going live, and you're
+doing a live recording, or a live broadcast, not a recording.
+And the only podcast that I'm subscribed to that actually makes the use of this is podcasting
+2.0.
+I think it's a really cool feature, it makes me really excited about podcasting.
+But I think more and more content creators will support this in the future, but it is
+a bit burdensome to wrap your head around it, especially if you're somebody like myself
+who watches all this stuff vicariously on the side, and then tries to figure out how
+to do it all, having no coding background, and this is very limited knowledge on programming
+languages and things like that.
+It truly is running the scissors, I got a lot of cuts tonight.
+But you know what, I think I figured out some of the basic steps, so let's walk through
+what that is.
+Okay, so step one, you need to get a server that will allow you to broadcast a live stream.
+There's probably easier approaches to this, maybe there are servers out there that will
+let you create an account and let you, you know, hop on them as needed.
+I am self-hosting, so I am using an application called AzuraCast, and this is an internet
+radio station, and it has a live DJ live broadcast feature.
+So that is the application that I am running on my server to actually get audio out and
+available in the wider internet, and let's take a look.
+Is anybody currently listening?
+No.
+Which I don't blame you, because right now I just have a loop of Adam Curry saying this
+lovely little clip of audio.
+I screwed it up already, I can't figure anything out anymore.
+Because I literally can't figure anything out anymore, I got kind of stuck in a rabbit
+hole this evening.
+Oh boy.
+But so anyway, AzuraCast is doing the broadcasting of all of that, and how I'm sending the audio
+from my local laptop machine to my headless server running AzuraCast is using a software
+called Mix with 3X's.
+Again, I picked this because it was pre-installed on my machine with my distro of Zoran, so
+why not?
+And it was pretty straightforward to connect the two pieces together, so I'm happy enough
+with that.
+Now the next step is adding the lit tag to the RSS feed, and I wasn't sure originally
+if this had to live inside of the tag for an individual episode, or if this lived outside
+of that overall item tag, and I compared a couple different feeds, and I finally figured
+it out, ran it through a validator and everything, and it has to live outside of the item tag.
+And how it's actually added into my RSS feed is a little complicated, because I'm using
+Hugo Static Website Generator, and I'm using Castinet as the theme.
+I had to play around with the actual, well, two main files, the episode RSS XML in the
+Castinet theme, and also the default config.toml file.
+So in the Castinet episode RSS XML file, right below the description of my podcast, I had
+to put in the podcast live item tag, and within that first line, it had to have the status,
+so whether it is ended, live, or pending, it also has to have a start and an end time.
+And those three things, it pulls from the config, the config.toml.
+I mean, I guess you could come in here and manually put those in, but my thought process
+was I only want to touch a single file, so I could touch the config file to put in those
+three things pretty easily, and then just push that up to the site, rather than having
+to go through all the folder structure of themes, Castinet, layout, you know, all the
+way down to find the actual file every single time, I could just go to my config and put
+it in.
+And then there's some other fields, too, and these all remain static, so there's like
+a title, so I just called it the Linux Lemming Livestream.
+There's the enclosure URL, which is the URL to the stream from Azure Cast.
+You have to say what type it is and the length of it, and I had to do a little bit of a conversion
+from kilobytes to bytes for the length, nothing too complicated.
+And then you close it out with a podcast content link, which is basically the same link as
+above in the enclosure URL, I'm pretty sure that's okay.
+That might be if maybe you're using alternate enclosures, maybe you had other types of streams
+like a Vorbis stream or an Opus stream or something like that, you'd have a couple different
+things, but I only have the one, keeping it as easy as possible.
+Then you close that out with a podcast live item tag.
+So yeah, in the config file then, I just have three things that I added under the main params
+section.
+I added a show live status, and again, I can have three different values pending live
+or ended, show live start, and this needs to be in an ISO 8601 extended format.
+So I put a link in my file that's available on GitLab for everybody to see, just a website
+that'll do that conversion for you.
+So you put in like the date and the time of when you plan on the stream starting and ending
+and then it converts it and then you just copy and paste it over.
+So easy peasy.
+So once that technical stuff is out of the way, you publish it.
+So it goes to the website, the RSS XML refreshes, everything's updated.
+The next step is to send off a pod ping, which will update the podcast index to let everybody
+know that you're live basically, and it should send a thing to all of the podcast players
+and everything else and whatnot.
+And I got some help with this.
+I kind of reached out on Mastodon and other places, and the millennial media offensive
+gave me a Python script that I used, and it said feed is marked for immediate update.
+So seemed like that worked.
+But then when I checked the podcast index and everything, didn't say that I was live.
+I didn't get any notifications in Podverse.
+So I don't know what that's about.
+There was another way, Stephen Bell from, I don't know if he is directly associated
+with Sovereign feeds, or if he just had the suggestion of it.
+But there's a website called sovereignfeeds.com, and you can look up your RSS feed.
+It's basically a standalone RSS feed editor, and you can add podcasting 2.0 tags to your
+feed from that.
+You can also send pod pings from that.
+So I sent a pod ping, and you have to solve a little captcha, and it was like, all right,
+we're going to send this for an update.
+But then, I don't know, I never got an update, which is confusing to me.
+But when I ran it through the XML, through the Livewire podcast validator, it said that
+I have four podcast names based tags.
+I have the content link, I have the live item, the transcript, and the chapters, and they're
+all green.
+So I've done it appropriately.
+So I don't know what the missing part is, but you know what, it doesn't really matter
+that much because I can't have my microphone go to both Audacity and Mix at the same time.
+So even though I have a looping live stream and nobody's listening to it, it's not really
+a value anyway because my voice isn't on it.
+So I'll probably have to reach out to the community and get some help to figure out
+how I can do some audio routing.
+But yeah, the coding and stuff, it was just a lot of trial and error.
+Wasn't super horrible, you know, to figure out.
+I don't know, I got to learn more about GUIDs and how to have that per episode and for the
+podcast as a whole because I feel like that would be like a good logical next step would
+be doing something with the GUID.
+So that's going to be where I'm headed.
+But actually, you know what, as long as we're talking about podcast 2.0 tags, we should
+just go right into what I've been doing with chapters.
+Oh my goodness.
+So I started an issue on my GitHub about how one could take a chapter file from Audacity
+and well, I guess it's a label.
+They don't call it chapters because you can put labels into Audacity and then you can
+export all your labels with timestamps and it's like a tab separated text file.
+So you can get this like nice little output and it's a three column output and it's like,
+you know what, I should be able to take this text file and convert it into a JSON to use
+it for the chapters for podcasting 2.0.
+That would make a lot of sense, like this should work.
+It was way more complicated than I wanted it to be.
+I wanted to just use built in bash tools to edit the text and everything.
+But I very quickly learned that you got to use something more robust like Python.
+That's where I eventually landed on it.
+And I had another community member kind of hop in and try to help out Eric.
+Eric seems like a really cool dude.
+He's active on the mastodon.
+He's the host of our podcast and I started listening to that recently since he's helping
+me out.
+Just kind of like check out that little area where he is and it's pretty cool.
+He uses the castnet theme too and everything.
+So Eric and I were kind of going back and forth on different approaches for how we could
+accomplish this because I assume he uses Audacity as well and he's interested in the podcasting
+2.0 namespace.
+And so, you know, we both have something we want to solve.
+So awesome to work together to try to solve the problem.
+And you know what?
+That's really the whole value for value mantra, time talent, treasure.
+He was giving me some time and some talent to just even reach out and say, hey, yeah,
+let's work on this.
+I might be able to help out.
+So I did a lot of tinkering with it, a lot of different approaches.
+And I eventually landed on a good enough solution.
+So basically, I took, I found some different examples of Python scripts online and I mushed
+them into one file.
+So I bring in two libraries, import CSV and import JSON.
+And when you get your export from Audacity, your text file, the first step is to get
+you to trim away the first column of text.
+And you can do that just using like a bash tool.
+So I would use something like to just get rid of that first column of text.
+And then I want to find a cleaner way to round out the values just to the nearest whole number.
+That might be something to do with AWK.
+I'm not quite sure on that, but cut is just a clean, easy way to get rid of that first
+column of numbers so that you're just left with start times and titles.
+And then in your file, you have to add headers of start time and title to your text file
+because that's needed for the final JSON.
+So once you've done that to your text file, then you're ready to start launching this
+Python script that I kind of mushed together.
+So it loads two libraries, it then will open up the text file and you have to put in the
+proper name of the text file.
+So you need to have an established naming scheme if you don't constantly want to change
+things inside of this Python script.
+So it opens your text file, it reads the items.
+The first thing it does is it finds all of the tab spaces and cuts the tab space and
+replaces it with a comma and then it will save that file as a CSV file and then it will
+open up that CSV file and it pulls everything into a JSON array.
+And then once you've got this whole JSON array going in, it will strip everything out, create
+the new file and then spit it out to where it needs to be.
+So the very last step then is once you have this JSON file, you just need to add the versions
+and the chapters to the top of the header.
+And so that's where I'm at right now with getting chapters easily created and not having
+to do too much by hand.
+Ideally it'd be nice to automate the entire process, but I just don't have the coding
+background and the knowledge to do easy loops through all that stuff because how I envision
+it actually working is you'd export your text file and it would have the name, episode,
+E, number, number, number, three digit number and then you drop that into a folder and then
+the second it's dropped into the folder, your machine is aware like, oh, time to convert
+this and then it just does everything for you and you get the JSON file and then you
+throw that on the website and link to it and everything.
+So that would be the ideal flow for that.
+So yeah, maybe Eric will come in and do some looping magic and get that all to be awesome
+and hopefully I'll figure out this whole lit business because I think it'd be pretty cool
+to just do a little live broadcast pretty easy, but I got to figure out pod ping and
+I got to figure out my audio routing I guess, it's just kind of a little bit of a, not great
+with that.
+All right, well that brings us to the end of this episode of the Linux Lemon.
+Oh, that is weird, it's only coming in a single channel.
+Okay, wow, let's see here, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm,
+hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm, hmm.
+says it is sending a pod ping live pod ping sent the other one marked for immediate update
+I don't know how to like verify anything with that but who knows we'll see okay well a lot
+of new things going on tonight it's not very scientific change all the things and
+complain when it doesn't work goodness goodness goodness okay keep that up so I
+kind of see if anybody does get on to the channel see if it's live
+I wonder why those are gray that one's not maybe the newest one is always one up hmm hmm hmm okay
+we're gonna talk about the blogs and the kit lab is organized these tabs here oh yeah I don't have
+the when a mix going because it keeps crashing with audacity let's see if I can get mix up and
+running does not like to play kindly with audacity unable to open error opening okay yep
+because audacity is using the mobile pre USB audio so let's okay well crashed let me reconfigure you
+mix let me change my inputs man retry after fixing the issue reconfigure get help exit yes I would
+like to reconfigure please but it all just crashes oh good god alright turn the recording back on
+so going going lit live item tag is I don't know it's probably not gonna work but got some some
+good leads as to why so let me catch everybody up on what's going on issue number one audio routing
+so I have a microphone going into a mixer and then I have two balanced quarter inches to a three
+and a half millimeter stereo jack output from the mixer that I'm putting into an M audio USB
+interface that connects to the computer and when I have two software stacks open audacity and mix
+they can't pull from the same source which is crazy to me and I don't know if that's because
+I'm not using jack and I'm just using the default also I think I feel like if I was using jack I
+should be able to patch in the microphone input to both applications but as it stands I cannot
+oh no parsing error that's not good what did I break man so I ran my XML through a validator
+for the RSS feed and it said my live item was wrong when I looked at the example compared to
+mine I had a closing out tag in the very first line there and when I look at how it should be set
+up from the bare bones example there's just a closing greater than bracket and so that's what
+I did but it doesn't look like it helps hmm all right podcast live item status got that
+got that got that just a closing bracket and I've got the title the enclosure URL make
+sure that looks the same closure URL it's got a forward slash greater than closure
+yep yep and then double enclosure podcast live item at the end yep now when I had the
+slash in there I didn't get this error hmm XML parsing error not well formed status there's
+an ampersand is that what it's yelling at me about well that would be in my config so that's the live
