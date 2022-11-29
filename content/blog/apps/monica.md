@@ -2,6 +2,7 @@
 Description = "A Personal Relationship Management tool to help you document your social life."
 Date = 2022-11-17T15:12:13-06:00
 PublishDate = 2022-11-17T15:12:13-06:00 # this is the datetime for the when the epsiode was published. This will default to Date if it is not set. Example is "2016-04-25T04:09:45-05:00"
+draft = true
 title = "Monica CRM"
 #blog_banner = ""
 blog_image = "img/host/calaveraJP.jpeg"
