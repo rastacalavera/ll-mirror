@@ -1,0 +1,179 @@
+TRANSCRIPT WAS CREATED USING AI and may have inaccuracies. 
+
+Hello and welcome to the Linux Lemming. I'm your host, RastaCalavera. We're going to have two parts to this episode.
+I'm going to start by talking about some podcast 2.0 features, and then I'm going to dive into the project Link Ace, which is a really cool, self-hosted, link archiving bookmark manager type thing.
+So, I should have chapters, so if you want to skip ahead, I'm not going to stop you. I highly encourage it. That's why I make chapters.
+Alright, so let's talk about podcasting.
+I've been struggling recently with chapters.
+I had this big crusade on how to use Audacity's label export as the starting point to convert that tab separated text file into a podcasting 2.0 compliant JSON file for podcast chapters.
+And it was a huge pain in the butt.
+I really wanted to try to stick to command line tools. I thought that would be the best way, and I went down this huge rabbit hole with that.
+The first one I went down was trying to figure out how to use the cut command, because you have three columns of text, two of those columns are timestamps, and they're identical to each other.
+So, I don't need one of them, so I wanted to remove one, cut it out. So, cut seemed like the right thing to do, and it was pretty easy.
+But now, once I have this two column text, the timestamps go out way too far. I only need to a whole number, and they go out, let's see, two, four, six decimal places.
+It does count in seconds to the whole second, which is nice, but I don't need six decimal places after it.
+So, then I was trying to figure out how I could do that. There's probably a way to do a delimiter cut, but I couldn't figure that out.
+It'd be nice if I didn't have to do two commands, like cut, cut.
+But I played around with AWK. I don't know if it's called AWK or whatever, but I was trying to use these two different tools, SCD or AWK.
+They're both command line tools, and they're super complicated. They're very powerful things, but reading the documentation, the man pages, it was a lot to digest.
+And when you try to look up how to do different things like this on Stack Exchange or Stack Overflow and things like that, the conversations get real heavy real quick.
+But I did find a way to use AWK to accomplish what I wanted, where you get seconds to the whole number and your title for the label.
+But you have to declare how many rows you have in there.
+So, like, if I have seven rows, and on each row I have a time and a title, then in the command I have to do $3, $4, repeat all the way up to seven.
+And that will give me what I want, but I don't want to have to type out how many rows I have.
+So, it was an imperfect result.
+And then once I even got that, I still got to convert it all into JSON. And you got to do, like, a loop through it.
+And I was trying to figure out how best to do that.
+And I knew that bash tools or command line tools would not be a great way of doing that.
+So I'd have to change to either JavaScript or Python or some other language.
+And, you know, it's been a long time since I've really tried to code. Loops are always a thing.
+So I was just stuck trying to figure out how I could loop through with these two different things that I needed to put into a JSON format.
+But I did find some shoddy Python that, well, it's not shoddy. I made it shoddy. I found Python examples where people had done similar things.
+And I played around with that for a couple days and learned about, like, Python dictionaries and lists and stuff like that.
+And I got it to a point where it was putting out close to the format I wanted, but with excess information.
+And that was because it was using, like, the dictionary in Python.
+It was adding, like, a whole extra piece in the JSON file, which I think is called the declaration.
+Dictionaries need, like, two parts. And I can't remember if it's like statement and something else.
+Or no, it's key. Key and whatever that dictionary input is.
+And the key that it kept spitting out, I didn't want a key. I just wanted what was inside of the dictionary.
+So I learned that Python dictionaries is not what I wanted to do to make a JSON file.
+I had been, you know, publicly working through this problem on my Git lab page and everything.
+And I actually had a couple of contributions, people coming in and saying they were going to take a look at it and things like that.
+But I actually, I went to Reddit and I posted some stuff there.
+And people were mentioning pandas and different JSON packages and libraries that could be used.
+And that was really helpful to kind of send me down my way to look for ways of approaching this and to solve this.
+You know, when somebody just gives you a little bit of a push, like, hey, you could explore this tool,
+that gives me another thing to put into my Google string and just get closer and closer and closer to find somebody
+who has already asked a very similar thing that I can benefit from and try to use and mold into my situation.
+So the Reddit was good. And I made a lot of progress with that.
+But then I actually, so a while ago I found this project and it was a Jekyll project.
+So I didn't pay it much mind because I don't use Jekyll, I use Hugo.
+But user Penguin999 created this podcast template to create a podcasting website using Jekyll.
+It's a static site generator just like Hugo is.
+But he had some very advanced features in there.
+You could put your mp3 file, your show notes, your cover art, and then you have to make a metadata file in JSON.
+But once you make all these things and you drop them in a very specific folder,
+as Jekyll goes through the CI CD, well, I guess not Jekyll, as GitLab goes through the CI CD build process to create your Jekyll public site,
+it will actually take all of that information and put ID3 tags into the mp3
+and output a JSON with all of that information in it as well.
+So really cool stuff.
+It also generated a blog post, put a lot of page information above the embedded player for this project and different things like that.
+It did a lot of things that I don't need, but it also did the few crucial things that I really want and need.
+So I decided, you know what, instead of scouring, I'm just going to really try to dig into what already exists here and see if I can make it work for my use case.
+And I think I have.
+So, oh, and a big thing about this, too, is it was designed to work with the Audacity label exports, and you don't have to do anything with it.
+It can work with the three columns just fine.
+So this was like the goose that laid the golden egg.
+So Penguin 999.
+Thank you very much for your hard work.
+I'll probably try to reach out just to let you know I'm benefiting from this and using it and I'm very grateful.
+There's no license in the project.
+I assume it's GPL.
+But yeah, there's no license here.
+And actually funny thing, too, when I was having the issues with my server not being able to stream MP3s to podcast players and it was like messing up all the times and everything.
+I had found, I believe it was Penguin 999.
+He had raised an issue specifically with the GitLab team about rate limiting with GitLab pages and how they need to be engineered a little bit differently so that people can stream from a GitLab page specifically for a podcast.
+So small world, Penguin 999 feels all my struggles has gone through them.
+So maybe I need to reach out and get in touch and we can, you know, cheers to figuring stuff out.
+So I tinkered with this Python file and it was really just a lot of cutting things out, trying to run it, see what broke, read the error outputs, try to troubleshoot that and rinse and repeat.
+And then once I got something working close to how I needed it, then I could try to trim out all the other little extra fluff.
+Like if there's quotation marks that I don't need or if I need to rename something a little bit different.
+And I'm finally in a good place with it and I'm going to use it to try to produce this episode when it's all done.
+So the workflow as it is right now is I need two folders and they can be new folders or I can use existing folders.
+But one of them is a source and inside of this source, I have to have my art, my MP3, my JSON and my chapters.
+And they all need to be named using a three digit format.
+So this will be episode nine.
+So it'll be two leading zeros and a nine for all of those files.
+And then once I have all those in there, I run the Python script and it does its magic with all the Python libraries and everything else to modify the MP3 file,
+to put that chapter art into the MP3, to put the tags into it for each chapter, to put myself as the author, the title of the episode, all that.
+So really cool stuff.
+Saves me a step from using Easy Tag to do some of that or when I export out of my DAW, whether that's Arduer or Audacity, this just does it, boom, one time done.
+And it does it in everywhere that it needs to happen.
+So that's great.
+So I'll try to do that with this.
+And a cool thing that you can do to verify that the MP3 actually has the tags, and I read this somewhere when I was searching, is you can use FFMpeg to read all the data on that file.
+And it'll tell you whether or not there are actually chapters in there.
+Because I was having a heck of a time finding a podcast player on Linux that would show it.
+Rhythmbox doesn't show chapters, VLC didn't show chapters.
+So I'm not really sure what players are going to take advantage of this, but it's kind of nice to have chapters done both ways pretty painlessly.
+So hopefully with this, maybe in, I know, Pocketcast, they support chapters, so maybe this will show up there.
+And also I just found out, what is the name of this app I downloaded?
+I downloaded Cast-o-Matic and it says right in there that it does support podcast 2.0 and embedded MP3 chapters.
+So I don't know which it'll show me in Cast-o-Matic, but it supports both, which is kind of cool.
+Oh, and I guess the one last thing, when you get the JSON file from the output, it's all on a single line.
+So I have to open that in Visual Studio Code and then right-click and format the document and then just save it.
+So that's one other little thing to kind of point out there if you want to try this.
+But yeah, I threw out my work on Mastodon, you got a couple re-blogs and favorites and stuff, but it didn't bring me any contributors.
+Maybe that's a network effect with GitLab or whatever.
+And my one other participant who was going to jump in, trail's gone cold, but I mean, it's been holidays and crazy times and everything else.
+So maybe they'll come back, maybe the work that I've thrown together will make their contribution a lot easier.
+Oh, another cool thing, you can easily put in the strings for URL and image if you wanted to add images to your chapters.
+I don't really want to do that, but it's a cool thing to have there if I ever felt like I needed to.
+So there is that.
+All right, well, I guess that's going to take us to the end of podcasting 2.0 stuff and we'll transition over to LinkAce.
+All right, so LinkAce is a self-hosted tool that provides a way to archive a website.
+You can add tags to this archive and you can even put it into like an organized list and it all lives inside of a dashboard.
+It's just this really cool way of keeping all your things.
+If you can imagine how you keep bookmarks in a traditional browser, you can put it in folders, you can do different things like that.
+I believe you can even tag it in Firefox and Chrome, but it's not archived.
+So if that website goes dead, your bookmark is useless.
+This archives it.
+So you've got it forever, which is huge, really, really cool.
+And you can actually make your dashboard of your collection of links, your archive of links, public if you want.
+And when you bookmark things in the future, when you do that, you can say whether it's public or private.
+So if you want to have things public, if you're sharing it as like a group or whatever, but once in a while you want to keep something just for you, you can do that, which is pretty neat.
+So if you want to explore this project, there are two options to set up LinkAce.
+There's a simple and the advanced and the main difference between them is how the database backend connects to it.
+The creator of the project recommends that if you have full control of your system, and you're not limited to a lockdown or constrained environment, then you should do the advanced.
+Otherwise, the simple should be used.
+Now I personally chose to go the simple route because I was just testing it.
+But maybe if I notice any like performance hits or something, I'll migrate to the advanced setup.
+But just for myself, I'm running the simple and I've been really enjoying it.
+So the installation process for this is you pull down the different stuff from their GitHub account.
+You have to unzip it, and then it's a Docker compose. So you got to go into a dot and v file, fill out the different fields in there that need to be customized.
+And then once you're done with that, it's a Docker compose away to bring up the stack.
+Now because I use a proxy, and I wanted to have this exposed so that I could access it from anywhere.
+I also had to put in a network section to make sure that it ran on the same Docker network as my LSIO swag reverse proxy.
+And I documented that in the blog that'll go along with this.
+So if you're in a situation where the information for linkage does not live on the same compose file as your reverse proxy, this is how you get the networks to talk and connect.
+Now originally, I had been using linkage a long time ago, probably like, I don't know, a couple months ago.
+And then stuff happened and I couldn't get it back up by migrated systems and everything.
+And I thought I was going to have to start completely from scratch because I didn't think I had the environmental file anymore.
+But it turned out I was being ridiculous and it's a dot file. So unless you LS tack a or show dot files in the file browser, you're not going to see it.
+And it was there the whole time. So I was able to bring back my old installation.
+I did have a little bit of a permission issue, but you know, because it's just my stuff, I just chmoded at 777 and called it a day.
+And it worked fine. Don't do as I do. Troubleshoot your permission issues and do it the right way.
+But once it got up and running, I was exploring some of the features a little bit more.
+And you can do two factor off, which I thought was really intriguing.
+And I hadn't tried this at all. And you can actually use bit warden to generate the two factor code.
+So I was like, whoa, this is awesome because I use bit warden every single day, I pay for their plan.
+It says project I absolutely love to support, but I've never tried the two factor off.
+And this was a great opportunity. So I gave it a whirl and it worked amazing. It works really, really well.
+It has a feature where you can like scan a QR code to make the two work together.
+I couldn't get that part to work, but you can put the token that it creates in there manually.
+And once I did that, I was on a roll. So now I have a self hosted application with two factor authentication, which is amazing.
+It's tied into my my password manager. So that's pretty cool.
+The app also has an email tie in which I get really confused when it comes to email because I use Google and they don't support the direct SMTP protocol anymore.
+You got to create a specific app token and do all this other stuff.
+Other projects have documented that. I believe it was caliber caliber web had pretty good documentation on that.
+This project didn't specifically call out how to use Gmail.
+And it was kind of convoluted when I was trying to remember, I didn't want to go back and try to dig up the other project.
+Now that I remembered it's caliber, I think it was, I could potentially go back, but I remember having to do these weird things in the web browser,
+and then having to copy and paste different things and then do it in the container environment.
+We had to exec into the container, paste some things, get another token to make it all talk together.
+And it was just very, very hacky.
+I didn't remember how to do it.
+So I don't have email working with link ace, but I don't really think I need to.
+I think this is a really cool project. I think it's worth checking out.
+Some other bookmarking things people have thrown out that I've seen are surely that's a big one.
+And I haven't really, I haven't played with those ones, but I really enjoy link ace.
+I think it's done really well. There's browser integration.
+You don't have to install an extension.
+It's just a really easy drag this to your bookmark bar.
+And then whenever you want to bookmark something, you click it and it does it and it works fantastic.
+I also created an iOS shortcut so I can do that from my iPhone and send things to it.
+It's really awesome.
+So if you're interested in archiving different things, check it out.
+Highly recommend it.
+And that will bring us to the end of this episode.
+I've been your host, Rasta Calavera.
