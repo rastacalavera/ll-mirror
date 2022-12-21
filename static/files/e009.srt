@@ -1,0 +1,872 @@
+1
+00:00:00,000 --> 00:00:27,000
+Hello and welcome to the Linux Lemming. I'm your host, Rasta
+Calavera. We're going to have two parts to this episode.
+
+2
+00:00:27,000 --> 00:00:42,000
+I'm going to start by talking about some podcast 2.0 features, and then I'm going to dive into the
+project Link Ace, which is a really cool, self-hosted, link archiving bookmark manager type thing.
+
+3
+00:00:42,000 --> 00:00:52,000
+So, I should have chapters, so if you want to skip ahead, I'm not
+going to stop you. I highly encourage it. That's why I make chapters.
+
+4
+00:00:52,000 --> 00:00:57,000
+Alright, so let's talk
+about podcasting.
+
+5
+00:00:57,000 --> 00:01:03,000
+I've been struggling
+recently with chapters.
+
+6
+00:01:03,000 --> 00:01:28,000
+I had this big crusade on how to use Audacity's label export as the starting point to convert
+that tab separated text file into a podcasting 2.0 compliant JSON file for podcast chapters.
+
+7
+00:01:28,000 --> 00:01:33,000
+And it was a huge
+pain in the butt.
+
+8
+00:01:33,000 --> 00:01:44,000
+I really wanted to try to stick to command line tools. I thought that
+would be the best way, and I went down this huge rabbit hole with that.
+
+9
+00:01:44,000 --> 00:01:59,000
+The first one I went down was trying to figure out how to use the cut command, because you have
+three columns of text, two of those columns are timestamps, and they're identical to each other.
+
+10
+00:01:59,000 --> 00:02:07,000
+So, I don't need one of them, so I wanted to remove one, cut it out.
+So, cut seemed like the right thing to do, and it was pretty easy.
+
+11
+00:02:07,000 --> 00:02:23,000
+But now, once I have this two column text, the timestamps go out way too far. I only
+need to a whole number, and they go out, let's see, two, four, six decimal places.
+
+12
+00:02:23,000 --> 00:02:31,000
+It does count in seconds to the whole second, which is
+nice, but I don't need six decimal places after it.
+
+13
+00:02:31,000 --> 00:02:42,000
+So, then I was trying to figure out how I could do that. There's
+probably a way to do a delimiter cut, but I couldn't figure that out.
+
+14
+00:02:42,000 --> 00:02:48,000
+It'd be nice if I didn't have to
+do two commands, like cut, cut.
+
+15
+00:02:48,000 --> 00:02:58,000
+But I played around with AWK. I don't know if it's called AWK or
+whatever, but I was trying to use these two different tools, SCD or AWK.
+
+16
+00:02:58,000 --> 00:03:13,000
+They're both command line tools, and they're super complicated. They're very powerful
+things, but reading the documentation, the man pages, it was a lot to digest.
+
+17
+00:03:13,000 --> 00:03:24,000
+And when you try to look up how to do different things like this on Stack Exchange or
+Stack Overflow and things like that, the conversations get real heavy real quick.
+
+18
+00:03:24,000 --> 00:03:39,000
+But I did find a way to use AWK to accomplish what I wanted, where
+you get seconds to the whole number and your title for the label.
+
+19
+00:03:39,000 --> 00:03:46,000
+But you have to declare how
+many rows you have in there.
+
+20
+00:03:46,000 --> 00:04:02,000
+So, like, if I have seven rows, and on each row I have a time and a title,
+then in the command I have to do $3, $4, repeat all the way up to seven.
+
+21
+00:04:02,000 --> 00:04:08,000
+And that will give me what I want, but I don't
+want to have to type out how many rows I have.
+
+22
+00:04:08,000 --> 00:04:11,000
+So, it was an imperfect result.
+
+23
+00:04:11,000 --> 00:04:19,000
+And then once I even got that, I still got to convert it
+all into JSON. And you got to do, like, a loop through it.
+
+24
+00:04:19,000 --> 00:04:23,000
+And I was trying to figure
+out how best to do that.
+
+25
+00:04:23,000 --> 00:04:29,000
+And I knew that bash tools or command line
+tools would not be a great way of doing that.
+
+26
+00:04:29,000 --> 00:04:37,000
+So I'd have to change to either JavaScript
+or Python or some other language.
+
+27
+00:04:37,000 --> 00:04:44,000
+And, you know, it's been a long time since I've
+really tried to code. Loops are always a thing.
+
+28
+00:04:44,000 --> 00:04:57,000
+So I was just stuck trying to figure out how I could loop through with
+these two different things that I needed to put into a JSON format.
+
+29
+00:04:57,000 --> 00:05:12,000
+But I did find some shoddy Python that, well, it's not shoddy. I made it
+shoddy. I found Python examples where people had done similar things.
+
+30
+00:05:12,000 --> 00:05:19,000
+And I played around with that for a couple days and learned
+about, like, Python dictionaries and lists and stuff like that.
+
+31
+00:05:19,000 --> 00:05:29,000
+And I got it to a point where it was putting out close
+to the format I wanted, but with excess information.
+
+32
+00:05:29,000 --> 00:05:33,000
+And that was because it was using,
+like, the dictionary in Python.
+
+33
+00:05:33,000 --> 00:05:41,000
+It was adding, like, a whole extra piece in the JSON
+file, which I think is called the declaration.
+
+34
+00:05:41,000 --> 00:05:46,000
+Dictionaries need, like, two parts. And I can't
+remember if it's like statement and something else.
+
+35
+00:05:46,000 --> 00:05:51,000
+Or no, it's key. Key and whatever
+that dictionary input is.
+
+36
+00:05:51,000 --> 00:05:58,000
+And the key that it kept spitting out, I didn't want a
+key. I just wanted what was inside of the dictionary.
+
+37
+00:05:58,000 --> 00:06:06,000
+So I learned that Python dictionaries is not
+what I wanted to do to make a JSON file.
+
+38
+00:06:06,000 --> 00:06:15,000
+I had been, you know, publicly working through
+this problem on my Git lab page and everything.
+
+39
+00:06:15,000 --> 00:06:21,000
+And I actually had a couple of contributions, people coming in and
+saying they were going to take a look at it and things like that.
+
+40
+00:06:21,000 --> 00:06:26,000
+But I actually, I went to Reddit
+and I posted some stuff there.
+
+41
+00:06:26,000 --> 00:06:36,000
+And people were mentioning pandas and different
+JSON packages and libraries that could be used.
+
+42
+00:06:36,000 --> 00:06:46,000
+And that was really helpful to kind of send me down my way
+to look for ways of approaching this and to solve this.
+
+43
+00:06:46,000 --> 00:06:54,000
+You know, when somebody just gives you a little bit
+of a push, like, hey, you could explore this tool,
+
+44
+00:06:54,000 --> 00:07:02,000
+that gives me another thing to put into my Google string
+and just get closer and closer and closer to find somebody
+
+45
+00:07:02,000 --> 00:07:13,000
+who has already asked a very similar thing that I can
+benefit from and try to use and mold into my situation.
+
+46
+00:07:13,000 --> 00:07:19,000
+So the Reddit was good. And I made
+a lot of progress with that.
+
+47
+00:07:19,000 --> 00:07:27,000
+But then I actually, so a while ago I found
+this project and it was a Jekyll project.
+
+48
+00:07:27,000 --> 00:07:32,000
+So I didn't pay it much mind because
+I don't use Jekyll, I use Hugo.
+
+49
+00:07:32,000 --> 00:07:42,000
+But user Penguin999 created this podcast template
+to create a podcasting website using Jekyll.
+
+50
+00:07:42,000 --> 00:07:46,000
+It's a static site generator
+just like Hugo is.
+
+51
+00:07:46,000 --> 00:07:51,000
+But he had some very
+advanced features in there.
+
+52
+00:07:51,000 --> 00:08:02,000
+You could put your mp3 file, your show notes, your cover
+art, and then you have to make a metadata file in JSON.
+
+53
+00:08:02,000 --> 00:08:07,000
+But once you make all these things and
+you drop them in a very specific folder,
+
+54
+00:08:07,000 --> 00:08:18,000
+as Jekyll goes through the CI CD, well, I guess not Jekyll, as GitLab
+goes through the CI CD build process to create your Jekyll public site,
+
+55
+00:08:18,000 --> 00:08:27,000
+it will actually take all of that
+information and put ID3 tags into the mp3
+
+56
+00:08:27,000 --> 00:08:34,000
+and output a JSON with all of
+that information in it as well.
+
+57
+00:08:34,000 --> 00:08:38,000
+So really cool stuff.
+
+58
+00:08:38,000 --> 00:08:49,000
+It also generated a blog post, put a lot of page information above
+the embedded player for this project and different things like that.
+
+59
+00:08:49,000 --> 00:08:58,000
+It did a lot of things that I don't need, but it also
+did the few crucial things that I really want and need.
+
+60
+00:08:58,000 --> 00:09:10,000
+So I decided, you know what, instead of scouring, I'm just going to really try to
+dig into what already exists here and see if I can make it work for my use case.
+
+61
+00:09:10,000 --> 00:09:13,000
+And I think I have.
+
+62
+00:09:13,000 --> 00:09:23,000
+So, oh, and a big thing about this, too, is it was designed to work with
+the Audacity label exports, and you don't have to do anything with it.
+
+63
+00:09:23,000 --> 00:09:29,000
+It can work with the
+three columns just fine.
+
+64
+00:09:29,000 --> 00:09:33,000
+So this was like the goose
+that laid the golden egg.
+
+65
+00:09:33,000 --> 00:09:36,000
+So Penguin 999.
+
+66
+00:09:36,000 --> 00:09:39,000
+Thank you very much
+for your hard work.
+
+67
+00:09:39,000 --> 00:09:45,000
+I'll probably try to reach out just to let you know I'm
+benefiting from this and using it and I'm very grateful.
+
+68
+00:09:45,000 --> 00:09:48,000
+There's no license
+in the project.
+
+69
+00:09:48,000 --> 00:09:52,000
+I assume it's GPL.
+
+70
+00:09:52,000 --> 00:09:55,000
+But yeah, there's
+no license here.
+
+71
+00:09:55,000 --> 00:10:09,000
+And actually funny thing, too, when I was having the issues with my server not being able
+to stream MP3s to podcast players and it was like messing up all the times and everything.
+
+72
+00:10:09,000 --> 00:10:14,000
+I had found, I believe
+it was Penguin 999.
+
+73
+00:10:14,000 --> 00:10:36,000
+He had raised an issue specifically with the GitLab team about rate limiting with GitLab pages and how they need to
+be engineered a little bit differently so that people can stream from a GitLab page specifically for a podcast.
+
+74
+00:10:36,000 --> 00:10:46,000
+So small world, Penguin 999 feels all
+my struggles has gone through them.
+
+75
+00:10:46,000 --> 00:10:55,000
+So maybe I need to reach out and get in touch and
+we can, you know, cheers to figuring stuff out.
+
+76
+00:10:55,000 --> 00:11:12,000
+So I tinkered with this Python file and it was really just a lot of cutting things out, trying to
+run it, see what broke, read the error outputs, try to troubleshoot that and rinse and repeat.
+
+77
+00:11:12,000 --> 00:11:20,000
+And then once I got something working close to how I needed it,
+then I could try to trim out all the other little extra fluff.
+
+78
+00:11:20,000 --> 00:11:28,000
+Like if there's quotation marks that I don't need or
+if I need to rename something a little bit different.
+
+79
+00:11:28,000 --> 00:11:36,000
+And I'm finally in a good place with it and I'm going to
+use it to try to produce this episode when it's all done.
+
+80
+00:11:36,000 --> 00:11:46,000
+So the workflow as it is right now is I need two folders
+and they can be new folders or I can use existing folders.
+
+81
+00:11:46,000 --> 00:11:58,000
+But one of them is a source and inside of this source, I
+have to have my art, my MP3, my JSON and my chapters.
+
+82
+00:11:58,000 --> 00:12:02,000
+And they all need to be named
+using a three digit format.
+
+83
+00:12:02,000 --> 00:12:04,000
+So this will be episode nine.
+
+84
+00:12:04,000 --> 00:12:10,000
+So it'll be two leading zeros and
+a nine for all of those files.
+
+85
+00:12:10,000 --> 00:12:23,000
+And then once I have all those in there, I run the Python script and it does its
+magic with all the Python libraries and everything else to modify the MP3 file,
+
+86
+00:12:23,000 --> 00:12:38,000
+to put that chapter art into the MP3, to put the tags into it for each
+chapter, to put myself as the author, the title of the episode, all that.
+
+87
+00:12:38,000 --> 00:12:40,000
+So really cool stuff.
+
+88
+00:12:40,000 --> 00:12:55,000
+Saves me a step from using Easy Tag to do some of that or when I export out of my
+DAW, whether that's Arduer or Audacity, this just does it, boom, one time done.
+
+89
+00:12:55,000 --> 00:12:59,000
+And it does it in everywhere
+that it needs to happen.
+
+90
+00:12:59,000 --> 00:13:01,000
+So that's great.
+
+91
+00:13:01,000 --> 00:13:03,000
+So I'll try to do
+that with this.
+
+92
+00:13:03,000 --> 00:13:16,000
+And a cool thing that you can do to verify that the MP3 actually has the tags, and I read this
+somewhere when I was searching, is you can use FFMpeg to read all the data on that file.
+
+93
+00:13:16,000 --> 00:13:20,000
+And it'll tell you whether or not
+there are actually chapters in there.
+
+94
+00:13:20,000 --> 00:13:28,000
+Because I was having a heck of a time finding
+a podcast player on Linux that would show it.
+
+95
+00:13:28,000 --> 00:13:35,000
+Rhythmbox doesn't show chapters,
+VLC didn't show chapters.
+
+96
+00:13:35,000 --> 00:13:47,000
+So I'm not really sure what players are going to take advantage of this,
+but it's kind of nice to have chapters done both ways pretty painlessly.
+
+97
+00:13:47,000 --> 00:13:56,000
+So hopefully with this, maybe in, I know, Pocketcast,
+they support chapters, so maybe this will show up there.
+
+98
+00:13:56,000 --> 00:14:01,000
+And also I just found out, what is
+the name of this app I downloaded?
+
+99
+00:14:01,000 --> 00:14:10,000
+I downloaded Cast-o-Matic and it says right in there that
+it does support podcast 2.0 and embedded MP3 chapters.
+
+100
+00:14:10,000 --> 00:14:20,000
+So I don't know which it'll show me in Cast-o-Matic,
+but it supports both, which is kind of cool.
+
+101
+00:14:20,000 --> 00:14:28,000
+Oh, and I guess the one last thing, when you get the
+JSON file from the output, it's all on a single line.
+
+102
+00:14:28,000 --> 00:14:36,000
+So I have to open that in Visual Studio Code and then
+right-click and format the document and then just save it.
+
+103
+00:14:36,000 --> 00:14:43,000
+So that's one other little thing to kind of
+point out there if you want to try this.
+
+104
+00:14:43,000 --> 00:14:53,000
+But yeah, I threw out my work on Mastodon, you got a couple re-blogs
+and favorites and stuff, but it didn't bring me any contributors.
+
+105
+00:14:53,000 --> 00:14:58,000
+Maybe that's a network effect
+with GitLab or whatever.
+
+106
+00:14:58,000 --> 00:15:08,000
+And my one other participant who was going to jump in, trail's gone cold,
+but I mean, it's been holidays and crazy times and everything else.
+
+107
+00:15:08,000 --> 00:15:18,000
+So maybe they'll come back, maybe the work that I've thrown
+together will make their contribution a lot easier.
+
+108
+00:15:18,000 --> 00:15:29,000
+Oh, another cool thing, you can easily put in the strings for
+URL and image if you wanted to add images to your chapters.
+
+109
+00:15:29,000 --> 00:15:36,000
+I don't really want to do that, but it's a cool thing
+to have there if I ever felt like I needed to.
+
+110
+00:15:36,000 --> 00:15:39,000
+So there is that.
+
+111
+00:15:39,000 --> 00:15:51,000
+All right, well, I guess that's going to take us to the end of
+podcasting 2.0 stuff and we'll transition over to LinkAce.
+
+112
+00:15:51,000 --> 00:15:59,000
+All right, so LinkAce is a self-hosted tool
+that provides a way to archive a website.
+
+113
+00:15:59,000 --> 00:16:10,000
+You can add tags to this archive and you can even put it into
+like an organized list and it all lives inside of a dashboard.
+
+114
+00:16:10,000 --> 00:16:15,000
+It's just this really cool way
+of keeping all your things.
+
+115
+00:16:15,000 --> 00:16:23,000
+If you can imagine how you keep bookmarks in a traditional browser,
+you can put it in folders, you can do different things like that.
+
+116
+00:16:23,000 --> 00:16:28,000
+I believe you can even tag it in Firefox
+and Chrome, but it's not archived.
+
+117
+00:16:28,000 --> 00:16:33,000
+So if that website goes dead,
+your bookmark is useless.
+
+118
+00:16:33,000 --> 00:16:35,000
+This archives it.
+
+119
+00:16:35,000 --> 00:16:41,000
+So you've got it forever, which
+is huge, really, really cool.
+
+120
+00:16:41,000 --> 00:16:51,000
+And you can actually make your dashboard of your collection
+of links, your archive of links, public if you want.
+
+121
+00:16:51,000 --> 00:16:57,000
+And when you bookmark things in the future, when you
+do that, you can say whether it's public or private.
+
+122
+00:16:57,000 --> 00:17:09,000
+So if you want to have things public, if you're sharing it as like a group or whatever, but once
+in a while you want to keep something just for you, you can do that, which is pretty neat.
+
+123
+00:17:09,000 --> 00:17:15,000
+So if you want to explore this project,
+there are two options to set up LinkAce.
+
+124
+00:17:15,000 --> 00:17:23,000
+There's a simple and the advanced and the main difference
+between them is how the database backend connects to it.
+
+125
+00:17:23,000 --> 00:17:37,000
+The creator of the project recommends that if you have full control of your system, and you're
+not limited to a lockdown or constrained environment, then you should do the advanced.
+
+126
+00:17:37,000 --> 00:17:41,000
+Otherwise, the simple
+should be used.
+
+127
+00:17:41,000 --> 00:17:47,000
+Now I personally chose to go the simple
+route because I was just testing it.
+
+128
+00:17:47,000 --> 00:17:53,000
+But maybe if I notice any like performance hits or
+something, I'll migrate to the advanced setup.
+
+129
+00:17:53,000 --> 00:18:00,000
+But just for myself, I'm running the
+simple and I've been really enjoying it.
+
+130
+00:18:00,000 --> 00:18:09,000
+So the installation process for this is you pull
+down the different stuff from their GitHub account.
+
+131
+00:18:09,000 --> 00:18:21,000
+You have to unzip it, and then it's a Docker compose. So you got to go into a dot
+and v file, fill out the different fields in there that need to be customized.
+
+132
+00:18:21,000 --> 00:18:26,000
+And then once you're done with that, it's a
+Docker compose away to bring up the stack.
+
+133
+00:18:26,000 --> 00:18:35,000
+Now because I use a proxy, and I wanted to have this
+exposed so that I could access it from anywhere.
+
+134
+00:18:35,000 --> 00:18:46,000
+I also had to put in a network section to make sure that it
+ran on the same Docker network as my LSIO swag reverse proxy.
+
+135
+00:18:46,000 --> 00:18:50,000
+And I documented that in the blog
+that'll go along with this.
+
+136
+00:18:50,000 --> 00:19:02,000
+So if you're in a situation where the information for linkage does not live on the same
+compose file as your reverse proxy, this is how you get the networks to talk and connect.
+
+137
+00:19:02,000 --> 00:19:10,000
+Now originally, I had been using linkage a long time
+ago, probably like, I don't know, a couple months ago.
+
+138
+00:19:10,000 --> 00:19:16,000
+And then stuff happened and I couldn't get it
+back up by migrated systems and everything.
+
+139
+00:19:16,000 --> 00:19:23,000
+And I thought I was going to have to start completely from scratch
+because I didn't think I had the environmental file anymore.
+
+140
+00:19:23,000 --> 00:19:35,000
+But it turned out I was being ridiculous and it's a dot file. So unless you
+LS tack a or show dot files in the file browser, you're not going to see it.
+
+141
+00:19:35,000 --> 00:19:41,000
+And it was there the whole time. So I was
+able to bring back my old installation.
+
+142
+00:19:41,000 --> 00:19:51,000
+I did have a little bit of a permission issue, but you know, because
+it's just my stuff, I just chmoded at 777 and called it a day.
+
+143
+00:19:51,000 --> 00:19:59,000
+And it worked fine. Don't do as I do. Troubleshoot
+your permission issues and do it the right way.
+
+144
+00:19:59,000 --> 00:20:05,000
+But once it got up and running, I was exploring
+some of the features a little bit more.
+
+145
+00:20:05,000 --> 00:20:11,000
+And you can do two factor off, which
+I thought was really intriguing.
+
+146
+00:20:11,000 --> 00:20:18,000
+And I hadn't tried this at all. And you can actually
+use bit warden to generate the two factor code.
+
+147
+00:20:18,000 --> 00:20:27,000
+So I was like, whoa, this is awesome because I use
+bit warden every single day, I pay for their plan.
+
+148
+00:20:27,000 --> 00:20:34,000
+It says project I absolutely love to support,
+but I've never tried the two factor off.
+
+149
+00:20:34,000 --> 00:20:42,000
+And this was a great opportunity. So I gave it a whirl
+and it worked amazing. It works really, really well.
+
+150
+00:20:42,000 --> 00:20:48,000
+It has a feature where you can like scan
+a QR code to make the two work together.
+
+151
+00:20:48,000 --> 00:20:53,000
+I couldn't get that part to work, but you can put
+the token that it creates in there manually.
+
+152
+00:20:53,000 --> 00:21:02,000
+And once I did that, I was on a roll. So now I have a self hosted
+application with two factor authentication, which is amazing.
+
+153
+00:21:02,000 --> 00:21:09,000
+It's tied into my my password
+manager. So that's pretty cool.
+
+154
+00:21:09,000 --> 00:21:23,000
+The app also has an email tie in which I get really confused when it comes to email
+because I use Google and they don't support the direct SMTP protocol anymore.
+
+155
+00:21:23,000 --> 00:21:27,000
+You got to create a specific app
+token and do all this other stuff.
+
+156
+00:21:27,000 --> 00:21:36,000
+Other projects have documented that. I believe it was
+caliber caliber web had pretty good documentation on that.
+
+157
+00:21:36,000 --> 00:21:42,000
+This project didn't specifically
+call out how to use Gmail.
+
+158
+00:21:42,000 --> 00:21:50,000
+And it was kind of convoluted when I was trying to remember, I
+didn't want to go back and try to dig up the other project.
+
+159
+00:21:50,000 --> 00:22:00,000
+Now that I remembered it's caliber, I think it was, I could potentially go
+back, but I remember having to do these weird things in the web browser,
+
+160
+00:22:00,000 --> 00:22:06,000
+and then having to copy and paste different things
+and then do it in the container environment.
+
+161
+00:22:06,000 --> 00:22:12,000
+We had to exec into the container, paste some things,
+get another token to make it all talk together.
+
+162
+00:22:12,000 --> 00:22:16,000
+And it was just
+very, very hacky.
+
+163
+00:22:16,000 --> 00:22:18,000
+I didn't remember how to do it.
+
+164
+00:22:18,000 --> 00:22:24,000
+So I don't have email working with link
+ace, but I don't really think I need to.
+
+165
+00:22:24,000 --> 00:22:28,000
+I think this is a really cool project.
+I think it's worth checking out.
+
+166
+00:22:28,000 --> 00:22:36,000
+Some other bookmarking things people have thrown
+out that I've seen are surely that's a big one.
+
+167
+00:22:36,000 --> 00:22:42,000
+And I haven't really, I haven't played with
+those ones, but I really enjoy link ace.
+
+168
+00:22:42,000 --> 00:22:46,000
+I think it's done really well.
+There's browser integration.
+
+169
+00:22:46,000 --> 00:22:48,000
+You don't have to
+install an extension.
+
+170
+00:22:48,000 --> 00:22:52,000
+It's just a really easy drag
+this to your bookmark bar.
+
+171
+00:22:52,000 --> 00:22:58,000
+And then whenever you want to bookmark something,
+you click it and it does it and it works fantastic.
+
+172
+00:22:58,000 --> 00:23:04,000
+I also created an iOS shortcut so I can do
+that from my iPhone and send things to it.
+
+173
+00:23:04,000 --> 00:23:06,000
+It's really awesome.
+
+174
+00:23:06,000 --> 00:23:10,000
+So if you're interested in archiving
+different things, check it out.
+
+175
+00:23:10,000 --> 00:23:12,000
+Highly recommend it.
+
+176
+00:23:12,000 --> 00:23:16,000
+And that will bring us to
+the end of this episode.
+
+177
+00:23:16,000 --> 00:23:22,000
+I've been your host,
+Rasta Calavera.
+

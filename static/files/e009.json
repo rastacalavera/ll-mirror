@@ -1,0 +1,95 @@
+{
+    "version": "1.2.0",
+    "chapters": [
+        {
+            "startTime": 18,
+            "title": "Welcome",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 54,
+            "title": "Podcast Chapter Crusade",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 93,
+            "title": "CLI Approach",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 248,
+            "title": "Alternate Languages",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 298,
+            "title": "Python Attempts",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 436,
+            "title": "Jekyll Podcasting",
+            "url": "https://gitlab.com/pinguin999/podcast-template/-/tree/master/",
+            "img": "https://jekyllrb.com/img/logo-2x.png"
+        },
+        {
+            "startTime": 539,
+            "title": "Double down and commit",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 568,
+            "title": "Thank you Pinguin999",
+            "url": "https://gitlab.com/pinguin999",
+            "img": "https://secure.gravatar.com/avatar/acca34b9113c87aadb1d79836c82aea7?s=192&d=identicon"
+        },
+        {
+            "startTime": 654,
+            "title": "I can't create code from scratch, but I can read and trouble shoot errors!",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 783,
+            "title": "FFMPEG can show you chapters in a mp3 file!?!",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 860,
+            "title": "How to quickly format the JSON file in VScode",
+            "url": "",
+            "img": ""
+        },
+        {
+            "startTime": 950,
+            "title": "LinkAce",
+            "url": "https://www.linkace.org/",
+            "img": "https://camo.githubusercontent.com/1b3d5cc069ccc614d37652a98efd8d58285fb1f55d70cb9e7fd7cea9b734d9a3/68747470733a2f2f7777772e6c696e6b6163652e6f72672f696d616765732f6c696e6b6163652d736f6369616c2e6a7067"
+        },
+        {
+            "startTime": 1029,
+            "title": "Installation",
+            "url": "https://www.linkace.org/",
+            "img": "https://camo.githubusercontent.com/1b3d5cc069ccc614d37652a98efd8d58285fb1f55d70cb9e7fd7cea9b734d9a3/68747470733a2f2f7777772e6c696e6b6163652e6f72672f696d616765732f6c696e6b6163652d736f6369616c2e6a7067"
+        },
+        {
+            "startTime": 1201,
+            "title": "2FA in LinkAce with Bitwarden",
+            "url": "https://www.linkace.org/",
+            "img": "https://camo.githubusercontent.com/1b3d5cc069ccc614d37652a98efd8d58285fb1f55d70cb9e7fd7cea9b734d9a3/68747470733a2f2f7777772e6c696e6b6163652e6f72672f696d616765732f6c696e6b6163652d736f6369616c2e6a7067"
+        },
+        {
+            "startTime": 1392,
+            "title": "End",
+            "url": "",
+            "img": ""
+        }
+    ]
+}
