@@ -20,6 +20,9 @@
       <enclosure url="https://cautiouslycurious.com/listen/lemming/radio.mp3" type= "audio/mpeg" length="16000" />
       <podcast:contentLink href="https://cautiouslycurious.com/listen/lemming/radio.mp3">Listen Live!</podcast:contentLink> 
     </podcast:liveItem>
+    <podcast:value type="lightning" method="keysend" suggested="0.00000005000"> 
+      <podcast:valueRecipient name="podcaster" type="node" address="0261db1fa033f03abe90af45590ae6539d812b4fc34708510ad18bdc8e616e06c9" split="100" /> 
+    </podcast:value> 
     <lastBuildDate>{{ dateFormat "Mon, 2 Jan 2006 15:04:05 -0700" .Date }}</lastBuildDate>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
