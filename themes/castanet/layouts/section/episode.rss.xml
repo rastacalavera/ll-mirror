@@ -22,7 +22,8 @@
     </podcast:liveItem>
     <podcast:value type="lightning" method="keysend" suggested="0.00000005000"> 
       <podcast:valueRecipient name="podcaster" type="node" address="0261db1fa033f03abe90af45590ae6539d812b4fc34708510ad18bdc8e616e06c9" split="100" /> 
-    </podcast:value> 
+    </podcast:value>
+    <podcast:person role="host" href="https://linuxlemming.com/host/" img="https://linuxlemming.com/img/host/calaveraJP.jpeg">Rastacalavera</podcast:person> 
     <lastBuildDate>{{ dateFormat "Mon, 2 Jan 2006 15:04:05 -0700" .Date }}</lastBuildDate>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
