@@ -77,6 +77,12 @@ buildFuture = true
     url = "/Credits"
     parent = "resources"    
 
+[[Menu.Main]]
+    name = "Software Queue"
+    identifier = "software"
+    url = "/software queue"
+    parent = "resources"
+
 [params]
 mainSections = ["episode"]
 #episode_number_style  = "brackets"
