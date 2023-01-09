@@ -80,7 +80,8 @@
           </title>
           <link>{{ .Permalink }}</link>
           <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }} </pubDate>
-          <dc:creator>{{ .Site.Params.itunes_author }}</dc:creator>
+          <!-- <dc:creator>{{ .Site.Params.itunes_author }}</dc:creator> -->
+          <podcast:person role="host" href="https://linuxlemming.com/host/" img="https://linuxlemming.com/img/host/calaveraJP.jpeg">Rastacalavera</podcast:person> 
           <guid>{{- if isset .Params "guid" -}}{{ .Params.guid }}{{- else -}}{{ .Site.Params.media_prefix }}{{ .Params.podcast_file }}{{- end -}}</guid>
           <itunes:author>
           {{- if isset .Params "hosts" -}}
