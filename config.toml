@@ -132,6 +132,7 @@ media_prefix = "https://linuxlemming.com/files/"
     github = "rastacalavera/linuxlemming"
     gitlab = "rastacalavera/linuxlemming"
     mastodon = "https://podcastindex.social/@rastacalavera"
+    lightning = "5734992"
 
   [params.authors]
     [params.authors.show]

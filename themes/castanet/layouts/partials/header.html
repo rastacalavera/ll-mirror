@@ -81,6 +81,9 @@
       <li>
         {{ partial "social-link.html" (dict "context" $.Site.Params.social.mastodon "aclass" "social-links" "iclass" "fab fa-mastodon fa-2x" "prefix" "https://podcastindex.social/" "text" "") }}
       </li>
+      <li>
+        {{ partial "social-link.html" (dict "context" $.Site.Params.social.lightning "aclass" "social-links" "iclass" "fa fa-bolt fa-2x" "prefix" "https://podcastindex.org/podcast/" "text" "") }}
+      </li>
         {{ end }}
       </ul>
   </div>
